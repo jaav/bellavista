@@ -1,0 +1,99 @@
+// flex grid boxes
+
+.flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /*-webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -o-flex-row: row wrap;
+  flex-flow: row wrap;*/
+  -webkit-flex-flow: row;
+  -moz-flex-flow: row;
+  -o-flex-row: row;
+  flex-flow: row;
+  justify-content: space-between;
+
+  &.wide {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  &.center {
+    justify-content: center;
+  }
+  .flex {
+    .fixed-width {
+      flex: 0 0 500px;
+      background-color: rgba(255, 0, 0, 0.1) !important;
+    }
+    .center & {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    //nested grids
+  }
+  .order-1 {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  .order-2 {
+    -webkit-flex: 2;
+    flex: 2;
+  }
+}
+.flex {
+  .grid-span-th {
+    flex-basis: 33.33%;
+  }
+  .grid-span-1 {
+    flex-basis: 10%;
+  }
+  .grid-span-2 {
+    flex-basis: 20%;
+  }
+  .grid-span-3 {
+    flex-basis: 30%;
+  }
+  .grid-span-4 {
+    flex-basis: 40%;
+  }
+  .grid-span-5 {
+    flex-basis: 50%;
+  }
+  .grid-span-6 {
+    flex-basis: 60%;
+  }
+  .grid-span-7 {
+    flex-basis: 70%;
+  }
+  .grid-span-8 {
+    flex-basis: 80%;
+  }
+  .grid-span-9 {
+    flex-basis: 90%;
+  }
+  .grid-span-10 {
+    flex-basis: 100%;
+  }
+  @media all and (max-width: 768px) {
+    .grid-span-1,
+    .grid-span-2,
+    .grid-span-3,
+    .grid-span-4,
+    .grid-span-5 {
+      flex-basis: 50%;
+    }
+    .grid-span-6,
+    .grid-span-7,
+    .grid-span-8,
+    .grid-span-9,
+    .grid-span-10,
+    .grid-span-11 {
+      flex-basis: 100%;
+    }
+    .grid .grid {
+      flex-basis: 100%;
+    }
+  }
+}
+

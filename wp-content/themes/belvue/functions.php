@@ -4,30 +4,18 @@
  */
 function custom_scripts() {
 
-    wp_register_style('font-awesome.min', get_stylesheet_directory_uri()."/assets/font-awesome/css/font-awesome.min.css");
-    wp_enqueue_style('font-awesome.min');
-/*    wp_register_style('fonts', get_stylesheet_directory_uri()."/css/fonts.css" );
-    wp_enqueue_style('fonts');*/
-    wp_register_style( 'bootstrap.min', get_stylesheet_directory_uri()."/bootstrap.css");
-    wp_enqueue_style('bootstrap.min');
+    wp_register_style('font-awesome', get_stylesheet_directory_uri()."/css/font-awesome.min.css" );
+    wp_enqueue_style('font-awesome');
     wp_deregister_script('jquery');
     wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', '1.0',  false );
     wp_enqueue_script('jquery');
-   /* wp_register_style('jquery_ui_css', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css');
-    wp_enqueue_style('jquery_ui_css');
-    wp_register_script('jquery_ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js', '1.0',  false );
-    wp_enqueue_script('jquery_ui');*/
     wp_register_script('bootstrap_js', get_stylesheet_directory_uri()."/js/bootstrap.min.js", '1.0',  false );
     wp_enqueue_script('bootstrap_js');
-/*    wp_register_script('easing', get_stylesheet_directory_uri()."/js/jquery.easing.min.js", '1.0',  false );
-    wp_enqueue_script('easing')*/;
-   /* wp_register_script('modernizr', get_stylesheet_directory_uri()."/js/modernizr.js", '1.0',  false );
-    wp_enqueue_script('modernizr');*/
-    wp_register_style('owl.carousel', get_stylesheet_directory_uri()."/assets/owl-carousel/owl.carousel.css");
+    wp_register_style('owl.carousel', get_stylesheet_directory_uri()."/owl/owl.carousel.css");
     wp_enqueue_style('owl.carousel');
-    wp_register_style('owl.theme', get_stylesheet_directory_uri()."/assets/owl-carousel/owl.theme.css");
+    wp_register_style('owl.theme', get_stylesheet_directory_uri()."/owl/owl.theme.css");
     wp_enqueue_style('owl.theme');
-    wp_register_script('owl_js', get_stylesheet_directory_uri()."/assets/owl-carousel//owl.carousel.min.js", '1.0',  false );
+    wp_register_script('owl_js', get_stylesheet_directory_uri()."/owl/owl.carousel.min.js", '1.0',  false );
     wp_enqueue_script('owl_js');
     wp_register_style('style', get_stylesheet_uri());
     wp_enqueue_style( 'style' );
@@ -47,6 +35,7 @@ if (function_exists('register_options_page')){
  * Main menu
  */
 register_nav_menu( 'main', __( 'Main menu', 'belvue' ) );
+register_nav_menu( 'user', __( 'User menu', 'belvue' ) );
 
 /*/*
  * Remove additional menu classes
@@ -64,6 +53,27 @@ function nav_css_filter($classes) {
     }
     return $classes;
 }
+
+add_theme_support( 'html5', array( 'search-form' ) );
+
+
+// add custom logo
+function belvue_theme_customizer( $wp_customize ) {
+    $wp_customize->add_section( 'belvue_logo_section' , array(
+        'title'       => __( 'Logo', 'belvue' ),
+        'priority'    => 30,
+        'description' => 'Upload a logo to replace the default site name and description in the header',
+    ) );
+    $wp_customize->add_setting( 'belvue_logo' );
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'belvue_logo', array(
+        'label'    => __( 'Logo', 'belvue' ),
+        'section'  => 'belvue_logo_section',
+        'settings' => 'belvue_logo',
+    ) ) );
+}
+add_action('customize_register', 'belvue_theme_customizer');
+
+
 
 
 

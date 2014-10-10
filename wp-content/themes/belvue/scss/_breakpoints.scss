@@ -1,0 +1,16 @@
+$breakpoints: (
+  "(min-width: 320px)" "xsmall",
+  "(min-width: 481px)" "small",
+  "(min-width: 769px)" "med",
+  "(min-width: 993px)" "large"
+);
+
+@mixin breakpoint($point) {
+  @each $breakpoint in $breakpoints {
+    $query: nth($breakpoint, 1);
+    $name: nth($breakpoint, 2);
+    @if ($name == $point) {
+      @media #{$query} { @content }
+    }
+  }
+}

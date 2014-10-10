@@ -1,234 +1,173 @@
 <?php get_header(); ?>
-<section id="intro" data-speed="0.1">
-    <div class="container dimfull">
-        <div class="row">
-            <div class="col-sm-12">
-                <?php $post_id = 61; $my_post = get_post($post_id);?>
-                <?php echo $my_post->post_content; ?>
-                <?php wp_reset_postdata(); ?>
-                <a href="#portfolio" class="btn-scroll">
-                    <i class="fa fa-long-arrow-down animated"></i>
-                    Check out our work
+    <?php while ( have_posts() ) : the_post(); ?>
+        <section class="video">
+           <div class="container">
+                 <div class="row grid">
+                     <div class="grid-span-10">
+                         <?php $video = get_field('mp4_video'); $image = get_field('video_cover'); ?>
+                         <h2><?php echo get_field('video_title'); ?></h2>
+                         <video width="100%" height="auto" poster="<?php echo $image['url'] ?>" controls="controls" preload="none">
+                             <source type="video/mp4" src="<?php echo $video['url']; ?>" />
+                             <object width="320" height="240" type="application/x-shockwave-flash" data="flashmediaelement.swf">
+                                 <param name="movie" value="flashmediaelement.swf" />
+                                 <param name="flashvars" value="controls=true&file=<?php echo $video['url']; ?>" />
+                                 <img src="<?php echo $image['url'] ?>" width="100%" height="auto" title="No video playback capabilities" />
+                             </object>
+                         </video>
+                     </div>
+                </div>
+            </div>
+        </section>
+    <?php endwhile; ?>
+    <section class="home">
+    <div class="container">
+        <div class="row flex">
+            <div class="grid-span-4">
+                <div class="flex">
+                    <div class="grid-span-5 snip">
+                        <h2 class="xl">15%</h2>
+                        <p>off best rate for citizens only</p>
+                        <p>sign up here</p>
+                    </div>
+                    <div class="grid-span-5 snip">
+                        <h2 class="xl ">XL</h2>
+                        <p>huge soft XL sized beds</p>
+                    </div>
+                </div>
+                <a href="/content/innovative-rooms" class="full-image flex">
+                    <img data-width="767" data-height="767" src="http://lorempixel.com/479/479/" alt="citizenM Rooms">
+                    <div class="flex fixed">
+                        <div class="grid-span-5 tooltip">
+                            <h2><em>citizenM says:</em> <br>our rooms bring you free wifi and free movies. So you’ll feel, well, freer</h2>
+                        </div>
+                    </div>
                 </a>
             </div>
-        </div>
-    </div>
-</section>
-<?php $args = array(
-    'post_type'		=> 'portfolio',
-    'numberposts'	=> 6,
-); $portfolio = get_posts($args); ?>
-<?php if ($portfolio):?>
-<section id="portfolio">
-    <div class="container" data-speed="1.2">
-        <div class="row">
-            <div class="col-xs-12">
-                <div id="slider">
-                    <?php foreach($portfolio as $post): setup_postdata($post); ?>
-                        <?php if( have_rows('portfolio') ): ?>
-                                <?php while ( have_rows('portfolio') ) : the_row(); ?>
-                                    <article>
-                                        <div class="desc col-md-4 col-sm-6 pull-right">
-                                            <h2><?php the_title();?></h2>
-                                            <?php the_content();?>
-                                            <h3>What We Did:</h3>
-                                            <?php if(get_sub_field('what_we_did')): ?>
-                                                <ul>
-                                                    <?php while(has_sub_field('what_we_did')): ?>
-                                                        <li>
-                                                            <?php the_sub_field('task'); ?>
-                                                        </li>
-                                                    <?php endwhile; ?>
-                                                </ul>
-                                            <?php endif; ?>
-                                            <h3>Testimonial:</h3>
-                                            <blockquote><em><?php echo get_sub_field('testimonial'); ?></em></blockquote>
-                                            <a href="<?php echo get_sub_field('link'); ?>" target="_blank">Visit the site</a>
-                                        </div>
-                                        <div class="photo col-md-8 col-sm-6 col-xs-12">
-                                            <?php $img = get_sub_field('image') ?>
-                                            <img src="<?php echo $img['sizes']['portfolio'] ?>" alt="<?php echo $img['alt'] ?>" />
-                                        </div>
-                                    </article>
-                                <?php endwhile;?>
-                        <?php endif; ?>
-                    <?php wp_reset_postdata(); endforeach;?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<?php endif; //portfolio ?>
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <article>
-                <?php $post_id = 115; $my_post = get_post($post_id);?>
-                <div class="col-sm-7 pull-right">
-                    <?php echo $my_post->post_content; ?>
-                </div>
-                <div class="col-sm-5">
-                    <?php echo get_the_post_thumbnail($my_post->ID); ?>
-                </div>
-                <?php wp_reset_postdata(); ?>
-            </article>
-        </div>
-    </div>
-</section>
-<section id="touch">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2><?php echo get_field('about',  19); ?></h2>
-                <a href="#contact" class="btn btn-default btn-lg btn-scroll animated">get in touch</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="services">
-    <header>
-        <div class="container">
-            <div class="row">
-                <?php $post_id = 19; $my_post = get_post($post_id); $title = $my_post->post_title; ?>
-                <?php echo $my_post->post_content; ?>
-                <?php wp_reset_postdata(); ?>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <?php if( have_rows('service', 19) ): ?>
-                    <?php while ( have_rows('service', 19) ) : the_row(); ?>
-                        <article class="col-sm-6">
-                            <h3><?php the_sub_field('title');?></h3>
-                            <div class="desc"> <?php the_sub_field('desc');?></div>
-                            <a class="more">Learn more</a>
-                        </article>
-                    <?php endwhile;?>
-                <?php endif; ?>
-                <a href="<?php echo get_permalink(21); ?>" class="btn-scroll">
-                    <i class="fa fa-long-arrow-down animated"></i>
-                    Check out my results
+            <div class="grid-span-6">
+                <a href="/content/the-citizenm-story" class="full-image flex">
+                    <img data-width="719" data-height="479" src="http://lorempixel.com/719/479/" alt="citizenM - hotel of the future">
+                    <div class="flex fixed rt">
+                        <div class="grid-span-th tooltip">
+                            <h2><em>citizenM says:</em> <br>even the hotel of the future has to start somewhere</h2>
+                        </div>
+                    </div>
                 </a>
+                <div class="flex">
+                    <div class="grid-span-th snip be">
+                        <h2 class="xxl">1</h2>
+                        <p><em>Minute</em> check in/out</p>
+                    </div>
+                    <div class="grid-span-th snip be">
+                        <h2 class="xxl t-red">free</h2>
+                        <p>Wifi. <em>Always</em></p>
+                    </div>
+                    <div class="grid-span-th snip be">
+                        <h2 class="xxl">24</h2>
+                        <p>Hour Food &amp; Drinks</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
-    <section id="success">
-        <?php $post_id = 21;
-        $my_post = get_post($post_id);
-        $title = $my_post->post_title; ?>
-        <header data-speed="0.1">
-            <div class="container">
-                <div class="row">
-                    <h2><?php echo $my_post->post_title; ?></h2>
-                </div>
+    <div class="container">
+        <div class="row flex">
+            <div class="grid-span-6">
+                    <a href="/content/new-york" class="full-image flex">
+                        <img data-width="719" data-height="0" src="<?php echo get_template_directory_uri()?>/img/flowers.jpg" alt="citizenM New York City">
+                        <div class="flex fixed rb">
+                            <div class="grid-span-th tooltip">
+                                <h2><em>citizenM says: <br></em>to the city that never sleeps, we're here to help</h2>
+                                <h2>citizenM New York Times Square</h2>
+                                <p>Rooms starting at $199..</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="owl twitter be">
+                        <p><i class="fa fa-twitter"></i></p>
+                        <div class="wrap">
+                            <div class="item">
+                                <h2><a href="https://twitteNY2SYSolo/status/460760356885786625">NY2SYSolo</a></h2>
+                                <p>Looking foward to another stay at <a href="https://twitter.com/citizenM" target="_blank"><s>@</s><strong>citizenM</strong></a> Glasgow on Fri before flying out to New York to begin my Atlantic row :) <a href="http://t.co/ed4puq0q87" target="_blank" title="http://www.citizenm.com/glasgow/" rel="nofollow" data-expanded-url="http://www.citizenm.com/glasgow/"><span class="invisible">http://www.</span><span class="js-display-url">citizenm.com/glasgow/</span></a></p>
+                            </div>
+                            <div class="item">
+                                <h2><a href="https://twittom/NY2SYSolo/status/460760356885786625">NY2SYSolo</a></h2>
+                                <p>Looking foward to another stay at <a href="https://twitter.com/citizenM" target="_blank"><s>@</s><strong>citizenM</strong></a> Glasgow on Fri before flying out to New York to begin my Atlantic row :) <a href="http://t.co/ed4puq0q87" target="_blank" title="http://www.citizenm.com/glasgow/" rel="nofollow" data-expanded-url="http://www.citizenm.com/glasgow/"><span class="invisible">http://www.</span><span class="js-display-url">citizenm.com/glasgow/</span></a></p>
+                            </div>
+                            <div class="item">
+                                <h2><a href="https://twitterm/NY2SYSolo/status/460760356885786625">NY2SYSolo</a></h2>
+                                <p>Looking foward to another stay at <a href="https://twitter.com/citizenM" target="_blank"><s>@</s><strong>citizenM</strong></a> Glasgow on Fri before flying out to New York to begin my Atlantic row :) <a href="http://t.co/ed4puq0q87" target="_blank" title="http://www.citizenm.com/glasgow/" rel="nofollow" data-expanded-url="http://www.citizenm.com/glasgow/"><span class="invisible">http://www.</span><span class="js-display-url">citizenm.com/glasgow/</span></a></p>
+                            </div>
+                        </div>
+                        <a href="http://twitter.com/citizenM">follow us</a>
+                    </div>
+                    <a href="/destinations/rotterdam/rotterdam-hotel" class="full-image flex" target="_blank">
+                        <img data-width="719" data-height="0" src="<?php echo get_template_directory_uri()?>/img/ch32.jpg" alt="citizenM Rotterdam">
+                        <div class="flex fixed rb">
+                            <div class="grid-span-th tooltip">
+                                <h2><em>citizenM says: </em>we have drowned hotel clichés in the Nieuwe Maas</h2>
+                                <h2>citizenM Rotterdam</h2>
+                                <p>Rooms starting at €69..</p>
+                            </div>
+                        </div>
+                    </a>
             </div>
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <article>
-                        <header>
-                            <h3 class="col-md-5"><?php echo get_field('subtitle', 21); ?></h3>
-                            <?php $img = get_field('thumbnail', 21);?>
-                            <img src="<?php echo $img['sizes']['logo'] ?>" class="img-responsive col-md-7" alt="<?php the_sub_field('subtitle'); ?>" />
-                        </header>
-                        <?php echo $my_post->post_content; ?>
-                        <?php wp_reset_postdata(); ?>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <?php if(get_field('testimonial', 21)): ?>
-                        <?php while(has_sub_field('testimonial', 21)): ?>
-                            <article>
-                                <div class="desc col-md-9 pull-right">
-                                    <p> <?php the_sub_field('desc'); ?></p>
-                                    <strong> <?php the_sub_field('name'); ?> <em> <?php the_sub_field('position'); ?></em></strong>
-                                </div>
-                                <div class="col-md-3 photo">
-                                    <?php $face = get_sub_field('thumbnail');?>
-                                    <img src="<?php echo $face['sizes']['testimonial'] ?>" class="img-responsive" alt="<?php the_sub_field('subtitle'); ?>" />
-                                </div>
-                            </article>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="blog">
-        <header>
-            <h1>~ Blog ~</h1>
-        </header>
-        <div id="categories">
-            <div class="container">
-                <div class="row">
-                    <ul>
-                        <li class="col-sm-4">
-                            <button type="button" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="name">Categories</span>
-                                <span class="trigger"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <?php wp_list_categories('hide_empty=1&title_li'); ?>
-                                <?php if(count($customPostTaxonomies) > 0) {
-                                    foreach($customPostTaxonomies as $tax)
-                                    {
-                                        $args = array(
-                                            'orderby' => 'name',
-                                            'show_count' => 0,
-                                            'pad_counts' => 0,
-                                            'hierarchical' => 1,
-                                            'taxonomy' => $tax,
-                                            'title_li' => ''
-                                        );
-
-                                        wp_list_categories( $args );
+            <div class="grid-span-4">
+                <div class="full-image flex">
+                    <img data-width="767" data-height="1151" src="<?php echo get_template_directory_uri()?>/img/umbrella.jpg" alt="citizenM weekender">
+                    <div class="flex fixed">
+                        <script type="text/javascript">
+                            //<![CDATA[
+                            if (typeof newsletter_check !== "function") {
+                                window.newsletter_check = function (f) {
+                                    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+                                    if (!re.test(f.elements["ne"].value)) {
+                                        alert("The email is not correct");
+                                        return false;
                                     }
-                                } ?>
-                            </ul>
-                        </li>
-                        <li class="col-sm-4">
-                            <a href="<?php echo get_permalink(39); ?>">Recent posts</a>
-                        </li>
-                        <li class="col-sm-4"><a href="http://finntheo.us2.list-manage.com/subscribe?u=95304b096a0ce803358467e45&id=f52d9bce54">Sign-up</a></li>
-                    </ul>
+                                    if (f.elements["ny"] && !f.elements["ny"].checked) {
+                                        alert("You must accept the privacy statement");
+                                        return false;
+                                    }
+                                    return true;
+                                }
+                            }
+                            //]]>
+                        </script>
+                        <div class="newsletter newsletter-subscription tooltip red grid-span-5">
+                            <form method="post" action="http://belvue.dev/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+                                <h2><em>subscribe to the </em> newsletter</h2>
+                                <label>Get discounts, news and some (very) special treats</label>
+                                <input class="newsletter-email" type="email" name="ne" size="30"  placeholder="Enter your email"  required>
+                                <button class="newsletter-submit be" type="submit"><span><?php echo esc_attr_x( 'Sign me up', 'submit button', 'belvue' ); ?></span><i class="fa fa-angle-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <ul>
-                        <?php while (have_posts()): the_post(); ?>
-                            <li>
-                                <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
-                                <p><time><?php the_time('F j/Y') ?></time> - By: <?php echo get_the_author(); ?></p>
-                            </li>
-                        <?php endwhile; ?>
-                    </ul>
+
+                <a href="/content/pariscdg" class="full-image flex">
+                    <img data-width="767" data-height="767" src="<?php echo get_template_directory_uri()?>/img/plane.jpg" alt="citizenM Paris Charles de Gaulle Airport">
+                    <div class="flex fixed br">
+                        <div class="grid-span-5 tooltip br">
+                            <h2><em>citizenM says: </em>bienvenue &agrave; Paris CdG!</h2>
+                            <p>Rooms starting at &euro;79..</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex reviews be">
+                    <div class="grid-span-5 snip">
+                        <p> <i class="fa fa-pencil-square-o"></i> &quot;These guys have it right in every way...&quot;</p>
+                        <a href="" target="_blank">Read the entire review on Tripadvisor..</a>
+                    </div>
+                    <div class="grid-span-5 snip">
+                        <p> <i class="fa fa-pencil-square-o"></i> &ldquo;Amazing room for a great price!&rdquo;</p>
+                        <a href="" target="_blank">Read the entire review on Tripadvisor..</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <?php $post_id = 23; $my_post = get_post($post_id); ?>
-                <?php echo $my_post->post_content; ?>
-                <?php echo do_shortcode( '[contact-form-7 id="38" title="Contact form"]' ); ?>
+
+
             </div>
         </div>
     </div>
 </section>
+
 <?php get_footer(); ?>
