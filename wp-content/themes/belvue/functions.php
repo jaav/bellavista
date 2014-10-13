@@ -1,6 +1,7 @@
 <?php
 /*
  * Custom styles
+ *
  */
 function custom_scripts() {
 
@@ -24,6 +25,13 @@ function custom_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 
+
+add_theme_support( 'post-thumbnails' );
+
+add_image_size( 'home-thumb', 1200, 600, true );
+add_image_size( 'slider', 600, 600, true );
+add_image_size( 'slider-small', 720, 320, true );
+
 /*
  * ACF options
  */
@@ -36,6 +44,7 @@ if (function_exists('register_options_page')){
  */
 register_nav_menu( 'main', __( 'Main menu', 'belvue' ) );
 register_nav_menu( 'user', __( 'User menu', 'belvue' ) );
+register_nav_menu( 'membership', __( 'Membership menu', 'belvue' ) );
 
 /*/*
  * Remove additional menu classes

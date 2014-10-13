@@ -350,7 +350,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 			if ( ! class_exists( 'ITSEC_Lockout' ) ) {
 
 				require( trailingslashit( $itsec_globals['plugin_dir'] ) . 'core/class-itsec-lockout.php' );
-				$itsec_lockout = new ITSEC_Lockout();
+				$itsec_lockout = new ITSEC_Lockout( $this );
 
 			}
 
@@ -1309,7 +1309,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 						require( $front_file );
 					}
 
-					$front = new $front_class;
+					$front = new $front_class( $this );
 
 					if ( method_exists( $front, 'run' ) ) {
 						$front->run( $this );

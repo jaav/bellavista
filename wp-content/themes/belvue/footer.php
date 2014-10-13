@@ -3,12 +3,12 @@
         <div class="container">
             <div class="row flex">
                 <div class="grid-span-2 snip">
-                    <h3>Some title</h3>
-                    <?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
+                    <h3><?php _e('about Belvue','belvue')?></h3>
+                    <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
                 </div>
                 <div class="grid-span-2 snip">
-                    <h3>Some title</h3>
-                    <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
+                    <h3><?php _e('more','belvue')?></h3>
+                    <?php wp_nav_menu( array( 'theme_location' => 'membership', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
                 </div>
                 <div class="grid-span-2 snip">
                     <h3>Subscribe</h3>
@@ -39,24 +39,23 @@
                     </div>
                 </div>
                 <div class="grid-span-2 snip">
-                    <h3>citizenM social</h3>
+                    <h3><?php _e('Belvue social','belvue')?></h3>
                         <ul class="list-inline banner-social-buttons">
-                            <?php if(get_field('social_links','options')): ?>
-                            <?php while(has_sub_field('social_links','options')): ?>
-                            <?php endwhile; ?>
-                            <?php endif;?>
-                            <li><a href="<?php the_sub_field('facebook');?>" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                            <li><a href="<?php the_sub_field('twitter'); ?>" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-                            <li><a href="<?php the_sub_field('four'); ?>" target="_blank"><i class="fa fa-foursquare"></i> Fourquare</a></li>
-                            <li><a href="<?php the_sub_field('yt'); ?>" target="_blank"><i class="fa fa-youtube"></i> Youtube</a></li>
-                            <li><a href="<?php the_sub_field('gp'); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> Google +</a></li>
+                            <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                            <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                            <li><a href="<?php the_field('four', 7); ?>" target="_blank"><i class="fa fa-foursquare"></i> Fourquare</a></li>
+                            <li><a href="<?php the_field('yt', 7); ?>" target="_blank"><i class="fa fa-youtube"></i> Youtube</a></li>
+                            <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> Google +</a></li>
                         </ul>
-
-                    </ul>
                 </div>
                 <div class="grid-span-2 snip">
                     <h3>like us on</h3>
-                    <h3>share this page on</h3>
+                    <h3><?php _e('>share this page on','belvue')?></h3>
+                    <ul class="list-inline banner-social-buttons">
+                        <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                        <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> Google +</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="flex">

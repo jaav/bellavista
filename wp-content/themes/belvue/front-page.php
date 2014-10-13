@@ -1,173 +1,279 @@
 <?php get_header(); ?>
     <?php while ( have_posts() ) : the_post(); ?>
-        <section class="video">
+        <section class="top">
            <div class="container">
                  <div class="row grid">
                      <div class="grid-span-10">
-                         <?php $video = get_field('mp4_video'); $image = get_field('video_cover'); ?>
-                         <h2><?php echo get_field('video_title'); ?></h2>
-                         <video width="100%" height="auto" poster="<?php echo $image['url'] ?>" controls="controls" preload="none">
-                             <source type="video/mp4" src="<?php echo $video['url']; ?>" />
-                             <object width="320" height="240" type="application/x-shockwave-flash" data="flashmediaelement.swf">
-                                 <param name="movie" value="flashmediaelement.swf" />
-                                 <param name="flashvars" value="controls=true&file=<?php echo $video['url']; ?>" />
-                                 <img src="<?php echo $image['url'] ?>" width="100%" height="auto" title="No video playback capabilities" />
-                             </object>
-                         </video>
+                         <?php the_post_thumbnail('home-thumb', array('class' => 'img-responsive')); ?>
+                         <div class="flex fixed bl">
+                             <div class="grid-span-4 tooltip bl">
+                                 <h2><em><?php bloginfo( 'name' ); ?></em></h2>
+                                 <?php the_content() ;?>
+                             </div>
+                         </div>
                      </div>
                 </div>
             </div>
         </section>
     <?php endwhile; ?>
-    <section class="home">
-    <div class="container">
-        <div class="row flex">
-            <div class="grid-span-4">
-                <div class="flex">
-                    <div class="grid-span-5 snip">
-                        <h2 class="xl">15%</h2>
-                        <p>off best rate for citizens only</p>
-                        <p>sign up here</p>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="flex be">
+                    <?php if (get_field('discount')): ?>
+                    <div class="grid-span-4 snip be xxl">
+                        <?php the_field('discount'); ?>
                     </div>
-                    <div class="grid-span-5 snip">
-                        <h2 class="xl ">XL</h2>
-                        <p>huge soft XL sized beds</p>
+                    <?php endif ?>
+                    <?php if (get_field('location')): ?>
+                    <div class="grid-span-2 snip be xxl">
+                        <?php the_field('location'); ?>
                     </div>
-                </div>
-                <a href="/content/innovative-rooms" class="full-image flex">
-                    <img data-width="767" data-height="767" src="http://lorempixel.com/479/479/" alt="citizenM Rooms">
-                    <div class="flex fixed">
-                        <div class="grid-span-5 tooltip">
-                            <h2><em>citizenM says:</em> <br>our rooms bring you free wifi and free movies. So you’ll feel, well, freer</h2>
-                        </div>
+                    <?php endif ;?>
+                    <?php if (get_field('area')): ?>
+                    <div class="grid-span-2 snip be xxl">
+                        <?php the_field('area'); ?>
                     </div>
-                </a>
-            </div>
-            <div class="grid-span-6">
-                <a href="/content/the-citizenm-story" class="full-image flex">
-                    <img data-width="719" data-height="479" src="http://lorempixel.com/719/479/" alt="citizenM - hotel of the future">
-                    <div class="flex fixed rt">
-                        <div class="grid-span-th tooltip">
-                            <h2><em>citizenM says:</em> <br>even the hotel of the future has to start somewhere</h2>
-                        </div>
-                    </div>
-                </a>
-                <div class="flex">
-                    <div class="grid-span-th snip be">
-                        <h2 class="xxl">1</h2>
-                        <p><em>Minute</em> check in/out</p>
-                    </div>
-                    <div class="grid-span-th snip be">
-                        <h2 class="xxl t-red">free</h2>
-                        <p>Wifi. <em>Always</em></p>
-                    </div>
-                    <div class="grid-span-th snip be">
-                        <h2 class="xxl">24</h2>
-                        <p>Hour Food &amp; Drinks</p>
+                    <?php endif; ?>
+                    <div class="review grid-span-2 snip be">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <a href="" target="_blank">“Amazing room for a great price!”</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row flex">
-            <div class="grid-span-6">
-                    <a href="/content/new-york" class="full-image flex">
-                        <img data-width="719" data-height="0" src="<?php echo get_template_directory_uri()?>/img/flowers.jpg" alt="citizenM New York City">
-                        <div class="flex fixed rb">
-                            <div class="grid-span-th tooltip">
-                                <h2><em>citizenM says: <br></em>to the city that never sleeps, we're here to help</h2>
-                                <h2>citizenM New York Times Square</h2>
-                                <p>Rooms starting at $199..</p>
-                            </div>
+    </section>
+    <section class="room">
+        <div class="container">
+            <div class="row">
+                <?php if( have_rows('description', 35) ): ?>
+                    <?php while ( have_rows('description', 35) ) : the_row(); ?>
+                        <div class="flex">
+                            <?php if (get_sub_field('desc', 35)): ?>
+                                <div class="grid-span-6 desc">
+                                    <?php the_sub_field('desc', 35); ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if (get_sub_field('photo', 35)): ?>
+                                <div class="grid-span-6 photo">
+                                    <?php $photo = get_sub_field('photo',35) ?>
+                                    <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
+                                </div>
+                            <?php endif; ?>
                         </div>
-                    </a>
-                    <div class="owl twitter be">
-                        <p><i class="fa fa-twitter"></i></p>
-                        <div class="wrap">
-                            <div class="item">
-                                <h2><a href="https://twitteNY2SYSolo/status/460760356885786625">NY2SYSolo</a></h2>
-                                <p>Looking foward to another stay at <a href="https://twitter.com/citizenM" target="_blank"><s>@</s><strong>citizenM</strong></a> Glasgow on Fri before flying out to New York to begin my Atlantic row :) <a href="http://t.co/ed4puq0q87" target="_blank" title="http://www.citizenm.com/glasgow/" rel="nofollow" data-expanded-url="http://www.citizenm.com/glasgow/"><span class="invisible">http://www.</span><span class="js-display-url">citizenm.com/glasgow/</span></a></p>
-                            </div>
-                            <div class="item">
-                                <h2><a href="https://twittom/NY2SYSolo/status/460760356885786625">NY2SYSolo</a></h2>
-                                <p>Looking foward to another stay at <a href="https://twitter.com/citizenM" target="_blank"><s>@</s><strong>citizenM</strong></a> Glasgow on Fri before flying out to New York to begin my Atlantic row :) <a href="http://t.co/ed4puq0q87" target="_blank" title="http://www.citizenm.com/glasgow/" rel="nofollow" data-expanded-url="http://www.citizenm.com/glasgow/"><span class="invisible">http://www.</span><span class="js-display-url">citizenm.com/glasgow/</span></a></p>
-                            </div>
-                            <div class="item">
-                                <h2><a href="https://twitterm/NY2SYSolo/status/460760356885786625">NY2SYSolo</a></h2>
-                                <p>Looking foward to another stay at <a href="https://twitter.com/citizenM" target="_blank"><s>@</s><strong>citizenM</strong></a> Glasgow on Fri before flying out to New York to begin my Atlantic row :) <a href="http://t.co/ed4puq0q87" target="_blank" title="http://www.citizenm.com/glasgow/" rel="nofollow" data-expanded-url="http://www.citizenm.com/glasgow/"><span class="invisible">http://www.</span><span class="js-display-url">citizenm.com/glasgow/</span></a></p>
-                            </div>
-                        </div>
-                        <a href="http://twitter.com/citizenM">follow us</a>
+                        <!--<a class="btn green" href="">explore</a>-->
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if( have_rows('explore', 35) ): ?>
+                    <div class="explore">
+                    <?php while ( have_rows('explore', 35) ) : the_row(); ?>
+                       <?php get_template_part('partials/carousel'); ?>
+                    <?php endwhile; ?>
                     </div>
-                    <a href="/destinations/rotterdam/rotterdam-hotel" class="full-image flex" target="_blank">
-                        <img data-width="719" data-height="0" src="<?php echo get_template_directory_uri()?>/img/ch32.jpg" alt="citizenM Rotterdam">
-                        <div class="flex fixed rb">
-                            <div class="grid-span-th tooltip">
-                                <h2><em>citizenM says: </em>we have drowned hotel clichés in the Nieuwe Maas</h2>
-                                <h2>citizenM Rotterdam</h2>
-                                <p>Rooms starting at €69..</p>
-                            </div>
-                        </div>
-                    </a>
+                <?php endif; ?>
+                <?php if( have_rows('carte',35) ): ?>
+                    <div class="carte">
+                    <?php while ( have_rows('carte',35) ) : the_row(); ?>
+                        <?php get_template_part('partials/carousel'); ?>
+                    <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
             </div>
-            <div class="grid-span-4">
-                <div class="full-image flex">
-                    <img data-width="767" data-height="1151" src="<?php echo get_template_directory_uri()?>/img/umbrella.jpg" alt="citizenM weekender">
-                    <div class="flex fixed">
-                        <script type="text/javascript">
-                            //<![CDATA[
-                            if (typeof newsletter_check !== "function") {
-                                window.newsletter_check = function (f) {
-                                    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
-                                    if (!re.test(f.elements["ne"].value)) {
-                                        alert("The email is not correct");
-                                        return false;
-                                    }
-                                    if (f.elements["ny"] && !f.elements["ny"].checked) {
-                                        alert("You must accept the privacy statement");
-                                        return false;
-                                    }
-                                    return true;
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="flex be">
+                    <div class="grid-span-6 snip map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1259.3678761071938!2d4.319498695703299!3d50.85457741557473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f987841379%3A0x6ff843bf2a71cc4!2sRue+Pierre-J.+Demessemaeker+1%2C+1080+Molenbeek-Saint-Jean%2C+Belgia!5e0!3m2!1spl!2spl!4v1413192835280" width="100%" height="240" frameborder="0" style="border:0"></iframe>
+                       <!-- <?php
+/*                        $location = get_field('map');
+                        if( !empty($location) ):
+                            */?>
+                            <div class="map">
+                                <div class="marker" data-lat="<?php /*echo $location['lat']; */?>" data-lng="<?php /*echo $location['lng']; */?>"></div>
+                            </div>
+                        --><?php /*endif; */?>
+                    </div>
+                    <div class="grid-span-2 snip be xxl">
+                        <h2><?php _e('address','belvue')?></h2>
+                        <p><?php echo the_field('address', 7); ?></p>
+                    </div>
+                    <div class="grid-span-2 snip be xxl">
+                        <h2><?php _e('contacts','belvue')?></h2>
+                        <p><a href="mailto:"><?php echo the_field('email', 7); ?></a>
+                        <?php echo the_field('phone', 7); ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breakfast">
+        <div class="container">
+            <div class="row">
+                <?php if( have_rows('description_b', 39) ): ?>
+                    <?php while ( have_rows('description_b',39) ) : the_row(); ?>
+                        <div class="flex">
+                            <?php if (get_sub_field('desc')): ?>
+                                <div class="grid-span-6 desc">
+                                    <?php the_sub_field('desc'); ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if (get_sub_field('photo')): ?>
+                                <div class="grid-span-6 photo">
+                                    <?php $photo = get_sub_field('photo') ?>
+                                    <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <!--<a class="btn green" href="">explore</a>-->
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if( have_rows('explore_b',39) ): ?>
+                    <div class="explore">
+                        <?php while ( have_rows('explore_b',39) ) : the_row(); ?>
+                            <?php get_template_part('partials/carousel'); ?>
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="flex be">
+                    <div class="grid-span-2 snip be red">
+                        <?php echo the_field('rooms'); ?>
+                    </div>
+                    <div class="grid-span-2 be snip">
+                        <p><?php echo the_field('wifi'); ?></p>
+                    </div>
+                    <div class="grid-span-2 be snip">
+                        <p><?php echo the_field('breakfasts'); ?></p>
+                    </div>
+                    <div class="grid-span-2 be snip">
+                        <p><?php echo the_field('pay'); ?></p>
+                    </div>
+                    <div class="grid-span-2 be snip">
+                        <p><?php echo the_field('price'); ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <div class="container">
+            <div class="row">
+                <?php if( have_rows('description', 85) ): ?>
+                    <?php while ( have_rows('description', 85) ) : the_row(); ?>
+                        <div class="flex">
+                            <?php if (get_sub_field('desc', 85)): ?>
+                                <div class="grid-span-6 desc">
+                                    <?php the_sub_field('desc', 85); ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if (get_sub_field('photo', 85)): ?>
+                                <div class="grid-span-6 photo">
+                                    <?php $photo = get_sub_field('photo',85) ?>
+                                    <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <!--<a class="btn green" href="">explore</a>-->
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if( have_rows('explore', 85) ): ?>
+                    <div class="explore">
+                        <?php while ( have_rows('explore', 85) ) : the_row(); ?>
+                            <?php get_template_part('partials/carousel'); ?>
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if( have_rows('carte',85) ): ?>
+                    <div class="carte">
+                        <?php while ( have_rows('carte',85) ) : the_row(); ?>
+                            <?php get_template_part('partials/carousel'); ?>
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="flex">
+                    <div class="grid-span-6 photo">
+                        <?php if( have_rows('slides') ): ?>
+                            <?php while (have_rows('slides')) : the_row(); ?>
+                                <div class="full-image flex">
+                                    <?php $photo = get_sub_field('slide') ?>
+                                    <img src="<?php echo $photo['sizes']['slider-small'] ?>" alt="<?php echo $photo['alt'] ?>"/>
+                                </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="grid-span-4 desc snip">
+                        <?php the_field('desc'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discoveries">
+        <div class="container">
+            <div class="row">
+                <div class="flex">
+                    <div class="grid-span-4 desc snip">
+                        <?php the_field('desc'); ?>
+                    </div>
+                    <div class="grid-span-6 photo">
+                        <?php if( have_rows('pwt') ): ?>
+                            <?php while (have_rows('pwt')) : the_row(); ?>
+                                <div class="full-image flex">
+                                    <?php $photo = get_sub_field('photo') ?>
+                                    <img src="<?php echo $photo['sizes']['slider-small'] ?>" alt="<?php echo $photo['alt'] ?>"/>
+                                    <div class="flex fixed">
+                                        <div class="grid-span-2 snip tooltip red ">
+                                            <p><?php the_sub_field('tooltip_1'); ?></p>
+                                        </div>
+                                        <div class="grid-span-2 snip tooltip red ">
+                                            <p><?php the_sub_field('tooltip_2'); ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <h2><a href="<?php echo get_permalink('92')?>"><?php _e('Belvue FAQ', 'belvue')?></a></h2>
+                <div class="flex">
+                    <?php if( have_rows('faq',92) ): ?>
+                        <?php $count = 0; while (have_rows('faq',92) ): ?>
+                            <?php
+                                $count++;
+                                if ($count > 5) {
+                                    break;
                                 }
-                            }
-                            //]]>
-                        </script>
-                        <div class="newsletter newsletter-subscription tooltip red grid-span-5">
-                            <form method="post" action="http://belvue.dev/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
-                                <h2><em>subscribe to the </em> newsletter</h2>
-                                <label>Get discounts, news and some (very) special treats</label>
-                                <input class="newsletter-email" type="email" name="ne" size="30"  placeholder="Enter your email"  required>
-                                <button class="newsletter-submit be" type="submit"><span><?php echo esc_attr_x( 'Sign me up', 'submit button', 'belvue' ); ?></span><i class="fa fa-angle-right"></i></button>
-                            </form>
-                        </div>
-                    </div>
+                                the_row();
+                            ?>
+                            <div class="grid-span-2 snip">
+                                <h4><?php the_sub_field('title'); ?></h4>
+                                <p><?php the_sub_field('content'); ?></p>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
-
-                <a href="/content/pariscdg" class="full-image flex">
-                    <img data-width="767" data-height="767" src="<?php echo get_template_directory_uri()?>/img/plane.jpg" alt="citizenM Paris Charles de Gaulle Airport">
-                    <div class="flex fixed br">
-                        <div class="grid-span-5 tooltip br">
-                            <h2><em>citizenM says: </em>bienvenue &agrave; Paris CdG!</h2>
-                            <p>Rooms starting at &euro;79..</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="flex reviews be">
-                    <div class="grid-span-5 snip">
-                        <p> <i class="fa fa-pencil-square-o"></i> &quot;These guys have it right in every way...&quot;</p>
-                        <a href="" target="_blank">Read the entire review on Tripadvisor..</a>
-                    </div>
-                    <div class="grid-span-5 snip">
-                        <p> <i class="fa fa-pencil-square-o"></i> &ldquo;Amazing room for a great price!&rdquo;</p>
-                        <a href="" target="_blank">Read the entire review on Tripadvisor..</a>
-                    </div>
-                </div>
-
-
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <?php get_footer(); ?>

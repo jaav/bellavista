@@ -6,6 +6,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Cabin:400,500,600,700,400italic,500italic,600italic,700italic' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
@@ -46,7 +47,7 @@
     </div>
     <div class="container book">
         <div class="row">
-            <h2><?php bloginfo( 'description' ); ?></h2>
+            <h2><?php bloginfo( 'name' ); ?></h2>
             <ul class="tabs">
                 <li><a href="/reservations">book a room</a></li>
                 <li class="visible-sm"><a href="#">book for today</a></li>

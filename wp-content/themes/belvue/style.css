@@ -3036,12 +3036,19 @@ body {
   top: -36px;
   border-color: transparent transparent rgba(13, 13, 13, 0.8) rgba(13, 13, 13, 0.8);
 }
+.tooltip.bl:after {
+  bottom: initial;
+  right: 36px;
+  top: -36px;
+  border-color: transparent rgba(13, 13, 13, 0.8) rgba(13, 13, 13, 0.8) transparent;
+}
 .tooltip h2 {
   font-size: 25px;
   color: #fff;
   line-height: 28px;
 }
 .tooltip h2 em {
+  font-style: normal;
   color: #ff1600;
 }
 
@@ -3127,7 +3134,7 @@ header .navbar-collapse .navbar-nav {
 header .navbar-collapse .navbar-nav li {
   float: left;
   height: 70px;
-  min-width: 20%;
+  min-width: 16%;
 }
 header .navbar-collapse .navbar-nav li a {
   display: block;
@@ -3226,7 +3233,7 @@ header .book ul li a:after {
 }
 
 main {
-  padding-top: 195px;
+  padding-top: 163px;
   background: #2b2b2b;
 }
 main .container {
@@ -3296,23 +3303,21 @@ main .row {
 }
 .home main .row {
   padding: 0;
-}
-.home main .video {
   position: relative;
-  margin-bottom: -4px;
 }
-.home main .video h2 {
+.home main .row:after {
   position: absolute;
-  top: 40%;
-  left: 15px;
-  color: #fff;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-  max-width: 388px;
-  margin: 0 0 0 20px;
-  z-index: 999;
-  text-shadow: 1px 1px 1px rgba(13, 13, 13, 0.2);
+  left: 0;
+  top: 0;
+  height: 16px;
+  box-shadow: inset 0px 16px 16px -16px #000;
+  width: 100%;
+}
+.home main .flex {
+  padding: 0 !important;
+}
+.home main .top {
+  position: relative;
 }
 
 .flex {
@@ -3332,6 +3337,11 @@ main .row {
   top: initial;
   bottom: 0;
   align-self: flex-end;
+}
+.flex.fixed.bl {
+  top: initial;
+  bottom: 0;
+  align-self: flex-start;
 }
 
 .snip {
@@ -3353,19 +3363,50 @@ main .row {
   color: #ff1600;
   font-style: normal;
 }
-.snip .xl {
+.snip .xl, .snip.xl h2 {
   color: #fff;
   font-size: 63px;
   line-height: 1.04762;
   font-weight: 800;
 }
-.snip .xxl {
+.snip .xxl, .snip.xxl h2 {
   font-weight: 800;
   font-size: 113px;
   line-height: 1;
 }
-.snip .xxl.t-red {
+.snip .xxl.t-red, .snip.xxl h2.t-red {
   color: #ff1600;
+}
+.snip.review {
+  text-align: center;
+}
+.snip.review i {
+  font-size: 40px;
+  margin-bottom: 18.5px;
+}
+.snip.review a {
+  display: block;
+  font-size: 20px;
+  color: #ff1600;
+}
+.snip.review a:hover {
+  color: #cc1200;
+}
+.snip.xxl {
+  text-align: left;
+}
+.snip.xxl h2 {
+  margin-top: 0;
+  font-size: 50px;
+}
+.snip.xxl p {
+  font-size: 20px;
+}
+.snip.xxl a {
+  color: #ff1600;
+}
+.snip.xxl a:hover {
+  color: #cc1200;
 }
 .snip p {
   color: #fff;
@@ -3379,7 +3420,7 @@ main .row {
 }
 
 .t-red {
-  color: #ff1600;
+  color: #ff1600 !important;
 }
 
 .red {
@@ -3431,14 +3472,39 @@ main .row {
   font-size: 16px;
 }
 
-.owl-controls .owl-page span {
-  width: 6px !important;
-  height: 6px !important;
-  opacity: 1 !important;
-  background: #ff1600 !important;
+.owl-controls {
+  position: absolute;
+  left: 100%;
+  width: 100px;
+  bottom: 10px;
 }
-.owl-controls .owl-page.active span {
-  background: #0d0d0d !important;
+.owl-controls .owl-buttons {
+  width: 100px;
+  display: block;
+  height: 40px;
+  margin-left: 20px;
+}
+.owl-controls .owl-buttons {
+  float: left;
+}
+.owl-controls .owl-buttons div {
+  margin: 0 1px 0 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+  background: #1f9f2b !important;
+}
+.owl-controls .owl-buttons div:hover {
+  color: #1f9f2b !important;
+  background: #fff !important;
+}
+.owl-controls .owl-buttons div i {
+  font-size: 32px;
+}
+.owl-controls .owl-buttons.active div {
+  color: #1f9f2b !important;
+  background: #fff !important;
 }
 
 .newsletter {
@@ -3499,6 +3565,126 @@ main .row {
 .reviews p {
   color: #0d0d0d;
   height: 93px;
+}
+
+.home .room .row > div, .home .breakfast .row > div, .home .events .row > div {
+  display: none;
+}
+.home .room .row > div:first-child, .home .breakfast .row > div:first-child, .home .events .row > div:first-child {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  -moz-flex-flow: row;
+  -o-flex-row: row;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.home .room .desc, .home .breakfast .desc, .home .events .desc {
+  padding: 38px 10%  20px 20px;
+}
+.home .room .desc h3, .home .breakfast .desc h3, .home .events .desc h3 {
+  font-size: 25px;
+  line-height: 1.15em;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 40px;
+}
+.home .room .desc .tooltip h3, .home .breakfast .desc .tooltip h3, .home .events .desc .tooltip h3 {
+  color: #0d0d0d;
+}
+.home .room .desc p, .home .breakfast .desc p, .home .events .desc p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+.home .room .desc ul li, .home .breakfast .desc ul li, .home .events .desc ul li {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.contact .map {
+  width: 100%;
+  padding: 0;
+  min-height: 240px;
+}
+
+.faq h2 {
+  padding: 0 20px;
+}
+.faq h4 {
+  line-height: 20px;
+  font-size: 16px;
+  height: 40px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #fff;
+}
+.faq p {
+  font-weight: 100;
+  line-height: 20px;
+  font-size: 15px;
+  height: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.faq .col-full {
+  border-bottom: 1px dotted #8c8c8c;
+}
+.faq .col-full:last-of-type {
+  border: 0;
+}
+.faq .col-full h2 {
+  font-size: 22px;
+  padding: 0;
+  color: #ff1600;
+}
+
+.discoveries p, .discoveries .desc p, .slider p, .slider .desc p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.discoveries .owl-controls {
+  left: -140px;
+}
+
+.page .row {
+  position: relative;
+}
+.page .row h1 em, .page .row h2 em {
+  font-style: normal;
+  color: #ff1600;
+}
+.page .row .flex {
+  padding: 30px 0;
+}
+.page .row .flex.top {
+  padding: 0;
+}
+.page .row:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 16px;
+  box-shadow: inset 0px 16px 16px -16px #000;
+  width: 100%;
+}
+
+.links {
+  padding: 20px 0;
+  list-style: none;
+}
+.links li a {
+  font-size: 18px;
+  color: #ff1600;
+  line-height: 22px;
+}
+.links li a:hover {
+  color: #fff;
 }
 
 .flex {

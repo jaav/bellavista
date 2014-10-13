@@ -76,11 +76,20 @@ body {
       border-color: transparent transparent rgba($dg, .8) rgba($dg, .8);
     }
   }
+  &.bl {
+    &:after {
+      bottom: initial;
+      right: 36px;
+      top: -36px;
+      border-color: transparent rgba($dg, .8) rgba($dg, .8) transparent;
+    }
+  }
   h2 {
     font-size: 25px;
     color: $w;
     line-height: 28px;
     em {
+      font-style: normal;
       color: $r;
     }
   }
@@ -172,7 +181,7 @@ header {
       li {
         float: left;
         height: 70px;
-        min-width: 20%;
+        min-width: 16%;
         a {
           display: block;
           font-size: 18px;
@@ -279,7 +288,7 @@ header {
 }
 // main container
 main {
-  padding-top: 195px;
+  padding-top: 163px;
   background: lighten($dg, 12%);
   .container {
     padding: 0;
@@ -360,23 +369,21 @@ main {
   .home & {
     .row {
       padding: 0;
-    }
-    .video {
       position: relative;
-      margin-bottom: -4px;
-      h2 {
+      &:after {
         position: absolute;
-        top: 40%;
-        left: 15px;
-        color: $w;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.2;
-        max-width: 388px;
-        margin: 0 0 0 20px;
-        z-index: 999;
-        text-shadow: 1px 1px 1px rgba($dg,.2);
+        left: 0;
+        top: 0;
+        height: 16px;
+        box-shadow: inset 0px 16px 16px -16px $b;
+        width: 100%;
       }
+    }
+    .flex {
+      padding: 0 !important;
+    }
+    .top {
+      position: relative;
     }
     .home {
     }
@@ -398,6 +405,11 @@ main {
       bottom: 0;
       align-self: flex-end;
     }
+    &.bl {
+      top: initial;
+      bottom: 0;
+      align-self: flex-start;
+    }
   }
 }
 .snip {
@@ -418,18 +430,49 @@ main {
         }
       }
     }
-  .xl {
+  .xl, &.xl h2 {
     color: $w;
     font-size: 63px;
     line-height: 1.04762;
     font-weight: 800;
   }
-  .xxl {
+  .xxl, &.xxl h2 {
     font-weight: 800;
     font-size: 113px;
     line-height: 1;
     &.t-red {
       color: $r;
+    }
+  }
+  &.review {
+    text-align: center;
+    i {
+      font-size: 40px;
+      margin-bottom: 18.5px;
+    } 
+    a {
+      display: block;
+      font-size: 20px;
+      color: $r;
+      &:hover {
+        color: darken($r,10%)
+      }
+    }
+  }
+  &.xxl {
+    text-align: left;
+    h2 {
+      margin-top: 0;
+      font-size: 50px;
+    }
+    p {
+      font-size: 20px;
+    }
+    a {
+      color: $r;
+      &:hover {
+        color: darken($r,10%)
+      }
     }
   }
   p {
@@ -444,7 +487,7 @@ main {
   }
 }
 .t-red {
-  color: $r;
+  color: $r !important;
 }
 .red {
   background: $r;
@@ -494,16 +537,38 @@ main {
   }
 }
 .owl-controls {
-  .owl-page {
-    span {
-      width: 6px !important;
-      height: 6px !important;
+  position: absolute;
+  left: 100%;
+  width: 100px;
+  bottom: 10px;
+  .owl-buttons {
+    width: 100px;
+    display: block;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .owl-buttons {
+    float: left;
+
+    div {
+      margin: 0 1px 0 0!important;
+      width: 40px !important;
+      height: 40px !important;
       opacity: 1 !important;
-      background: $r !important;
+      border-radius: 0 !important;
+      background: #1f9f2b !important;
+      &:hover {
+        color: #1f9f2b !important;
+        background: $w !important;
+      }
+      i {
+        font-size: 32px;
+      }
     }
     &.active {
-      span {
-        background: $dg !important;
+      div {
+        color: #1f9f2b !important;
+        background: $w !important;
       }
     }
   }
@@ -569,4 +634,143 @@ main {
     height: 93px;
   }
   i {}
+}
+.room, .breakfast, .events {
+  .home & {
+    .row > div {
+      display: none;
+      &:first-child {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row;
+        -moz-flex-flow: row;
+        -o-flex-row: row;
+        flex-flow: row;
+        justify-content: space-between;
+      }
+    }
+    .desc {
+      padding: 38px 10%  20px 20px;
+      h3 {
+        font-size: 25px;
+        line-height: 1.15em;
+        font-weight: 700;
+        padding: 0;
+        margin: 0 0 40px;
+      }
+      .tooltip {
+        h3 {
+          color: $dg;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        color: $w;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 22px;
+          color: $w;
+        }
+      }
+    }
+    .photo {}
+  }
+}
+.contact {
+  .map {
+    width: 100%;
+    padding: 0;
+    min-height: 240px;
+  }
+}
+.advantages {
+
+}
+.faq {
+  h2 {
+    padding: 0 20px;
+  }
+  h4 {
+    line-height: 20px;
+    font-size: 16px;
+    height: 40px;
+    font-weight: 800;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: $w;
+  }
+  p {
+    font-weight: 100;
+    line-height: 20px;
+    font-size: 15px;
+    height: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .col-full {
+    &:last-of-type {
+      border: 0;
+    }
+    border-bottom: 1px dotted lighten($dg, 50%);
+    h2 {
+      font-size: 22px;
+      padding: 0;
+      color: $r;
+    }
+  }
+}
+.discoveries, .slider {
+  p, .desc p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.discoveries {
+  .owl-controls {
+    left: -140px;
+  }
+}
+.page {
+  .row {
+    position: relative;
+    h1, h2 {
+      em {
+        font-style: normal;
+        color: $r;
+      }
+    }
+    .flex {
+      padding: 30px 0;
+      &.top {
+        padding: 0;
+      }
+    }
+    &:after{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 16px;
+      box-shadow: inset 0px 16px 16px -16px #000;
+      width: 100%;
+    }
+  }
+}
+.links {
+  padding: 20px 0 ;
+  list-style: none;
+  li {
+    a {
+      font-size: 18px;
+      color: $r;
+      line-height: 22px;
+      &:hover {
+        color: $w;
+      }
+    }
+  }
 }
