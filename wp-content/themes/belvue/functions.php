@@ -16,6 +16,8 @@ function custom_scripts() {
     wp_enqueue_style('owl.carousel');
     wp_register_style('owl.theme', get_stylesheet_directory_uri()."/owl/owl.theme.css");
     wp_enqueue_style('owl.theme');
+    wp_register_style('owl.transitions', get_stylesheet_directory_uri()."/owl/owl.transitions.css");
+    wp_enqueue_style('owl.transitions');
     wp_register_script('owl_js', get_stylesheet_directory_uri()."/owl/owl.carousel.min.js", '1.0',  false );
     wp_enqueue_script('owl_js');
     wp_register_style('style', get_stylesheet_uri());

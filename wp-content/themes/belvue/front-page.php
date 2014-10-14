@@ -2,7 +2,7 @@
     <?php while ( have_posts() ) : the_post(); ?>
         <section class="top">
            <div class="container">
-                 <div class="row grid">
+                 <div class="row flex">
                      <div class="grid-span-10">
                          <?php the_post_thumbnail('home-thumb', array('class' => 'img-responsive')); ?>
                          <div class="flex fixed bl">
@@ -50,12 +50,14 @@
                     <?php while ( have_rows('description', 35) ) : the_row(); ?>
                         <div class="flex">
                             <?php if (get_sub_field('desc', 35)): ?>
-                                <div class="grid-span-6 desc">
+                                <div class="grid-span-5 desc">
                                     <?php the_sub_field('desc', 35); ?>
+                                    <a class="btn green trigger trigger_e" ><span>explore</span> <i class="fa fa-angle-down"></i></a>
+                                    <a class="btn green trigger trigger_c" ><span>Room à la carte</span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('photo', 35)): ?>
-                                <div class="grid-span-6 photo">
+                                <div class="grid-span-5 photo">
                                     <?php $photo = get_sub_field('photo',35) ?>
                                     <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
                                 </div>
@@ -65,14 +67,14 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php if( have_rows('explore', 35) ): ?>
-                    <div class="explore">
+                    <div class="explore wrap">
                     <?php while ( have_rows('explore', 35) ) : the_row(); ?>
                        <?php get_template_part('partials/carousel'); ?>
                     <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
                 <?php if( have_rows('carte',35) ): ?>
-                    <div class="carte">
+                    <div class="carte wrap">
                     <?php while ( have_rows('carte',35) ) : the_row(); ?>
                         <?php get_template_part('partials/carousel'); ?>
                     <?php endwhile; ?>
@@ -116,12 +118,13 @@
                     <?php while ( have_rows('description_b',39) ) : the_row(); ?>
                         <div class="flex">
                             <?php if (get_sub_field('desc')): ?>
-                                <div class="grid-span-6 desc">
+                                <div class="grid-span-5 desc">
                                     <?php the_sub_field('desc'); ?>
+                                    <a class="btn green trigger trigger_e" ><span>explore</span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('photo')): ?>
-                                <div class="grid-span-6 photo">
+                                <div class="grid-span-5 photo">
                                     <?php $photo = get_sub_field('photo') ?>
                                     <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
                                 </div>
@@ -131,7 +134,7 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php if( have_rows('explore_b',39) ): ?>
-                    <div class="explore">
+                    <div class="explore wrap">
                         <?php while ( have_rows('explore_b',39) ) : the_row(); ?>
                             <?php get_template_part('partials/carousel'); ?>
                         <?php endwhile; ?>
@@ -170,29 +173,30 @@
                     <?php while ( have_rows('description', 85) ) : the_row(); ?>
                         <div class="flex">
                             <?php if (get_sub_field('desc', 85)): ?>
-                                <div class="grid-span-6 desc">
+                                <div class="grid-span-5 desc">
                                     <?php the_sub_field('desc', 85); ?>
+                                    <a class="btn green trigger trigger_e" ><span>explore</span> <i class="fa fa-angle-down"></i></a>
+                                    <a class="btn green trigger trigger_c" ><span>Room à la carte</span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('photo', 85)): ?>
-                                <div class="grid-span-6 photo">
+                                <div class="grid-span-5 photo">
                                     <?php $photo = get_sub_field('photo',85) ?>
                                     <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
                                 </div>
                             <?php endif; ?>
                         </div>
-                        <!--<a class="btn green" href="">explore</a>-->
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php if( have_rows('explore', 85) ): ?>
-                    <div class="explore">
+                    <div class="explore wrap">
                         <?php while ( have_rows('explore', 85) ) : the_row(); ?>
                             <?php get_template_part('partials/carousel'); ?>
                         <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
                 <?php if( have_rows('carte',85) ): ?>
-                    <div class="carte">
+                    <div class="carte wrap">
                         <?php while ( have_rows('carte',85) ) : the_row(); ?>
                             <?php get_template_part('partials/carousel'); ?>
                         <?php endwhile; ?>

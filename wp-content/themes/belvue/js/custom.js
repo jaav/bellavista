@@ -93,4 +93,85 @@ $(document).ready(function() {
         navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
         stopOnHover : true
     });
+    $('.explore, .carte').owlCarousel({
+        pagination: false,
+        navigation : true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        autoPlay : false,
+        navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        stopOnHover : true,
+        transitionStyle : "fade"
+    });
+
+    $('.row > .flex .trigger').removeClass("open");
+    $('.row > .flex .desc .trigger').click(function(e) {
+        e.preventDefault();
+        var button = $('.row > .flex .trigger');
+        var photo = $('.row > .flex .photo');
+        $(this).addClass('open');
+
+        if($('.row > .wrap').is(":visible")){
+            $('.row > .flex .desc p').hide();
+        }
+        else {
+            $('.row > .flex .desc p').show();
+        };
+
+        if($(this).hasClass("trigger_c")){
+            $('.trigger_e').removeClass("open");
+            $('.row > .explore').removeClass('show');
+            $('.row > .flex .desc').toggleClass('hide');
+            $('.row > .carte').addClass('show').delay(500).animate({ opacity: 1 });
+            $('.row > .explore').removeClass('show');
+
+        }
+        else if($(this).hasClass("trigger_e")){
+            $('.trigger_c').removeClass("open");
+            $('.row > .carte').removeClass('show');
+            $('.row > .explore').addClass('show').delay(500).animate({ opacity: 1 });
+
+        };
+        photo.toggleClass("transparent");
+
+        //$('.row > .flex .trigger').
+
+    });
+
+    $('body').each(function(){
+        var width = $(this).width();
+        if(width <= 768) {
+            $('.about .flex, .advantages .flex').owlCarousel({
+                pagination: false,
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                autoPlay: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                stopOnHover: true,
+                transitionStyle: "fade"
+            })
+        }
+    });
+});
+
+$(window).resize(function(){
+    $('body').each(function(){
+        var width = $(this).width();
+        if(width <= 768) {
+            $('.about .flex, .advantages .flex').owlCarousel({
+                pagination: false,
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                autoPlay: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                stopOnHover: true,
+                transitionStyle: "fade"
+            })
+        }
+    });
 });

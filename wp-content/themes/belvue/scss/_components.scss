@@ -13,7 +13,9 @@
   -o-flex-row: row;
   flex-flow: row;
   justify-content: space-between;
-
+  @media all and (max-width: 480px) {
+    display: block;
+  }
   &.wide {
     margin-left: -10px;
     margin-right: -10px;
@@ -76,6 +78,10 @@
     flex-basis: 100%;
   }
   @media all and (max-width: 768px) {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    flex-flow: row wrap;
     .grid-span-1,
     .grid-span-2,
     .grid-span-3,
@@ -92,6 +98,31 @@
       flex-basis: 100%;
     }
     .grid .grid {
+      flex-basis: 100%;
+    }
+  }
+  @media all and (max-width: 480px) {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    .grid-span-1,
+    .grid-span-2,
+    .grid-span-3,
+    .grid-span-4,
+    .grid-span-5,
+    .grid-span-6,
+    .grid-span-7,
+    .grid-span-8,
+    .grid-span-9,
+    .grid-span-10 {
+      width: 100%;
+    }
+  }
+}
+.about {
+  .flex {
+    div[class*=grid-span-] {
+      text-align: center;
       flex-basis: 100%;
     }
   }
