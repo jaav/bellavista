@@ -21,7 +21,7 @@
         <div class="container tools">
             <div class="row">
                 <?php get_search_form(); ?>
-                <?php if (function_exists('qts_language_menu') ) qts_language_menu('image'); ?>
+                <?php do_action('icl_language_selector'); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
             </div>
         </div>

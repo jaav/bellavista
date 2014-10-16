@@ -3129,7 +3129,12 @@ header .navbar-brand {
   height: auto;
   padding-top: 10px;
   padding-bottom: 5px;
-  padding-left: 15px;
+  padding-left: 0;
+}
+@media (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 15px;
+  }
 }
 header .navbar-brand img {
   -webkit-transition: all 0.5s ease-in-out;
@@ -3210,8 +3215,22 @@ header .navbar-collapse .navbar-nav li a {
   padding: 40px 10px 5px 10px;
   border-left: 1px dotted gray;
 }
+@media (max-width: 768px) {
+  header .navbar-collapse .navbar-nav li a {
+    height: auto;
+    border: 0;
+    text-align: right;
+    padding: 10px;
+    border-top: 1px dotted gray;
+  }
+}
 header .navbar-collapse .navbar-nav li a:hover {
   background: none;
+}
+@media (max-width: 768px) {
+  header .navbar-collapse .navbar-nav li:first-child a {
+    border: 0;
+  }
 }
 header .tools {
   height: 40px;
@@ -3221,6 +3240,11 @@ header .tools {
 header .tools #menu-user-menu {
   float: right;
   margin: 0;
+}
+@media (max-width: 480px) {
+  header .tools #menu-user-menu {
+    display: none;
+  }
 }
 header .tools #menu-user-menu li {
   float: left;
@@ -3246,6 +3270,12 @@ header .book {
   position: relative;
   width: 100%;
 }
+@media (max-width: 480px) {
+  header .book {
+    height: 30px;
+    line-height: 30px;
+  }
+}
 header .book:after {
   position: absolute;
   left: 0;
@@ -3267,6 +3297,11 @@ header .book h2 {
   margin: 0;
   color: #fff;
 }
+@media (max-width: 480px) {
+  header .book h2 {
+    display: none;
+  }
+}
 header .book ul {
   float: right;
   margin: 0;
@@ -3276,6 +3311,11 @@ header .book ul li {
   width: 200px;
   margin-left: 1px;
 }
+@media (max-width: 480px) {
+  header .book ul li {
+    width: auto;
+  }
+}
 header .book ul li a {
   display: block;
   height: 60px;
@@ -3284,6 +3324,12 @@ header .book ul li a {
   font-size: 16px;
   background: #ff1600;
   position: relative;
+}
+@media (max-width: 480px) {
+  header .book ul li a {
+    height: 30px;
+    line-height: 30px;
+  }
 }
 header .book ul li a:hover {
   background: #fff;
@@ -3300,6 +3346,16 @@ header .book ul li a:after {
 main {
   padding-top: 163px;
   background: #2b2b2b;
+}
+@media (max-width: 768px) {
+  main {
+    padding-top: 143px;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding-top: 115px;
+  }
 }
 main .container {
   padding: 0;
@@ -3321,6 +3377,13 @@ footer {
 footer .snip {
   padding: 0 20px;
   margin: 20px 0;
+}
+@media (max-width: 480px) {
+  footer .snip + .snip {
+    padding-top: 10px;
+    border: 0;
+    border-top: 1px dotted gray;
+  }
 }
 footer h3 {
   font-size: 18px;
@@ -3482,6 +3545,13 @@ main .row {
 }
 .snip + .snip {
   border-left: 1px dotted gray;
+}
+@media (max-width: 480px) {
+  .snip + .snip {
+    padding-top: 10px;
+    border: 0;
+    border-top: 1px dotted gray;
+  }
 }
 
 .t-red {
@@ -3645,8 +3715,18 @@ main .row {
   flex-flow: row;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .home .room .row > div:first-child, .home .breakfast .row > div:first-child, .home .events .row > div:first-child {
+    display: none;
+  }
+}
 .home .room .desc, .home .breakfast .desc, .home .events .desc {
   padding: 38px 10%  20px 20px;
+}
+@media (max-width: 768px) {
+  .home .room .desc, .home .breakfast .desc, .home .events .desc {
+    display: none;
+  }
 }
 .home .room .desc h3, .home .breakfast .desc h3, .home .events .desc h3 {
   font-size: 25px;
@@ -3667,6 +3747,11 @@ main .row {
   font-size: 16px;
   line-height: 22px;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .home .room .photo, .home .breakfast .photo, .home .events .photo {
+    flex-basis: 100%;
+  }
 }
 
 .room .row, .events .row, .breakfast .row {
@@ -3692,6 +3777,16 @@ main .row {
   transition: all 0.5s ease-in-out;
   height: 0 !important;
 }
+@media (max-width: 768px) {
+  .room .row .explore, .room .row .carte, .events .row .explore, .events .row .carte, .breakfast .row .explore, .breakfast .row .carte {
+    position: relative;
+    height: auto !important;
+    opacity: 1 !important;
+  }
+  .room .row .explore .photo img, .room .row .carte .photo img, .events .row .explore .photo img, .events .row .carte .photo img, .breakfast .row .explore .photo img, .breakfast .row .carte .photo img {
+    width: 100%;
+  }
+}
 .room .row .explore.show, .room .row .carte.show, .events .row .explore.show, .events .row .carte.show, .breakfast .row .explore.show, .breakfast .row .carte.show {
   opacity: 1 !important;
   height: auto !important;
@@ -3713,6 +3808,25 @@ main .row {
   width: 100%;
   padding: 0;
   min-height: 240px;
+}
+
+.advantages .snip, .about .snip {
+  margin-bottom: 10px;
+}
+.advantages .snip h2, .about .snip h2 {
+  margin: 0;
+}
+.advantages .snip p, .about .snip p {
+  margin-top: 0;
+}
+.advantages .owl-controls, .about .owl-controls {
+  width: 100%;
+  left: 0;
+}
+.advantages .owl-controls .owl-buttons, .about .owl-controls .owl-buttons {
+  display: inline-block;
+  margin: 0;
+  float: none;
 }
 
 .faq h2 {
@@ -3790,6 +3904,41 @@ main .row {
 }
 .links li a:hover {
   color: #fff;
+}
+
+#lang_sel_list {
+  float: left;
+}
+
+.gallery {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 0;
+  list-style: none;
+}
+.gallery li {
+  padding: 0 20px 20px 0;
+}
+.gallery li a {
+  display: block;
+  box-shadow: 16px 16px 16px -16px #000;
+}
+.gallery li a:hover {
+  box-shadow: 16px 16px 16px -16px #0d0d0d;
+}
+.gallery li a:hover img {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(0.5);
+  -moz-filter: grayscale(0.5);
+  -o-filter: grayscale(0.5);
+  -ms-filter: grayscale(0.5);
 }
 
 .flex {

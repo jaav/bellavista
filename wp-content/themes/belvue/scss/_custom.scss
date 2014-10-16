@@ -187,7 +187,10 @@ header {
     height: auto;
     padding-top: 10px;
     padding-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 0;
+    @media(max-width: 768px) {
+      padding-left: 15px;
+    }
     img {
       @include transition(all .5s ease-in-out);
     }
@@ -260,8 +263,22 @@ header {
           height: 65px;
           padding: 40px 10px 5px 10px;
           border-left: 1px dotted lighten($b, 50%);
+          @media(max-width: 768px) {
+            height: auto;
+            border: 0;
+            text-align: right;
+            padding: 10px;
+            border-top: 1px dotted lighten($b, 50%);
+          }
           &:hover {
             background: none;
+          }
+        }
+        @media(max-width: 768px) {
+          &:first-child {
+            a {
+              border: 0;
+            }
           }
         }
       }
@@ -279,6 +296,9 @@ header {
     #menu-user-menu {
       float: right ;
       margin: 0;
+      @media (max-width: 480px) {
+        display: none;
+      }
       li {
         float: left;
         font-size: 11px;
@@ -299,6 +319,10 @@ header {
   .book {
     height: 60px;
     line-height: 60px;
+    @media (max-width: 480px) {
+      height: 30px;
+      line-height: 30px;
+    }
     background: lighten($b,10%);
     margin: 0;
     padding: 0;
@@ -324,6 +348,9 @@ header {
       padding: 0;
       margin: 0;
       color: $w;
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
     ul {
       float: right;
@@ -332,6 +359,9 @@ header {
         float: left;
         width: 200px;
         margin-left: 1px;
+        @media (max-width: 480px) {
+          width: auto;
+        }
         a {
           display: block;
           height: 60px;
@@ -340,6 +370,10 @@ header {
           font-size: 16px;
           background: $r;
           position: relative;
+          @media (max-width: 480px) {
+            height: 30px;
+            line-height: 30px;
+          }
           &:hover {
             background: $w;
           }
@@ -359,6 +393,12 @@ header {
 // main container
 main {
   padding-top: 163px;
+  @media (max-width: 768px) {
+    padding-top: 143px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 115px;
+  }
   background: lighten($dg, 12%);
   .container {
     padding: 0;
@@ -380,6 +420,13 @@ footer {
   .snip {
     padding: 0 20px;
     margin: 20px 0;
+    @media(max-width: 480px) {
+      + .snip {
+        padding-top: 10px;
+        border: 0;
+        border-top: 1px dotted lighten($b, 50%);
+      }
+    }
   }
   h3 {
     font-size: 18px;
@@ -554,6 +601,11 @@ main {
   }
   + .snip {
     border-left: 1px dotted lighten($b, 50%);
+    @media(max-width: 480px) {
+        padding-top: 10px;
+        border: 0;
+        border-top: 1px dotted lighten($b, 50%);
+    }
   }
 }
 .t-red {
@@ -718,10 +770,16 @@ main {
         -o-flex-row: row;
         flex-flow: row;
         justify-content: space-between;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
     .desc {
       padding: 38px 10%  20px 20px;
+      @media (max-width: 768px) {
+        display: none;
+      }
       h3 {
         font-size: 25px;
         line-height: 1.15em;
@@ -747,7 +805,11 @@ main {
         }
       }
     }
-    .photo {}
+    .photo {
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
   }
 }
 .room, .events, .breakfast {
@@ -770,6 +832,16 @@ main {
       overflow: hidden;
       @include transition(all .5s ease-in-out);
       height: 0 !important;
+      @media (max-width: 768px) {
+        position: relative;
+        height: auto !important;
+        opacity: 1 !important;
+        .photo {
+          img {
+            width: 100%;
+          }
+        }
+      }
       &.show {
         opacity: 1 !important;
         height: auto !important;
@@ -798,8 +870,25 @@ main {
     min-height: 240px;
   }
 }
-.advantages {
-
+.advantages, .about {
+  .snip {
+    margin-bottom: 10px;
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+  .owl-controls {
+    width: 100%;
+    left: 0;
+    .owl-buttons {
+      display: inline-block;
+      margin: 0;
+      float: none;
+    }
+  }
 }
 .faq {
   h2 {
@@ -881,6 +970,40 @@ main {
       line-height: 22px;
       &:hover {
         color: $w;
+      }
+    }
+  }
+}
+// lang switcher
+#lang_sel_list {
+  float: left;
+}
+.gallery {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 0;
+  list-style: none;
+  li {
+    padding: 0 20px 20px 0;
+    a {
+      display: block;
+      box-shadow: 16px 16px 16px -16px #000;
+      &:hover {
+        box-shadow: 16px 16px 16px -16px lighten($b, 5%);
+        img {
+          filter: grayscale(1);
+          -webkit-filter: grayscale(0.5);
+          -moz-filter: grayscale(0.5);
+          -o-filter: grayscale(0.5);
+          -ms-filter: grayscale(0.5);
+        }
       }
     }
   }
