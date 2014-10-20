@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="flex">
-                <p class="grid-span-10">© citizenM 2014</p>
+                <p class="grid-span-10">© Belvue Hotel 2014</p>
             </div>
         </div>
     </footer>
