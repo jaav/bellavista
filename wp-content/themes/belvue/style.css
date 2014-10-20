@@ -1609,6 +1609,7 @@ select[multiple].input-lg,
   position: fixed;
   right: 0;
   left: 0;
+  width: 100%;
   z-index: 1030;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -3089,7 +3090,7 @@ body {
   border-color: transparent transparent rgba(13, 13, 13, 0.8) rgba(13, 13, 13, 0.8);
 }
 .tooltip.bl:after {
-  bottom: initial;
+  bottom: auto;
   right: 36px;
   top: -36px;
   border-color: transparent rgba(13, 13, 13, 0.8) rgba(13, 13, 13, 0.8) transparent;
@@ -3344,17 +3345,17 @@ header .book ul li a:after {
 }
 
 main {
-  padding-top: 163px;
+  padding-top: 195px;
   background: #2b2b2b;
 }
 @media (max-width: 768px) {
   main {
-    padding-top: 143px;
+    padding-top: 190px;
   }
 }
 @media (max-width: 480px) {
   main {
-    padding-top: 115px;
+    padding-top: 160px;
   }
 }
 main .container {
@@ -3467,7 +3468,7 @@ main .row {
   align-self: flex-end;
 }
 .flex.fixed.bl {
-  top: initial;
+  top: auto;
   bottom: 0;
   align-self: flex-start;
 }
@@ -3923,12 +3924,18 @@ main .row {
   padding: 0;
   list-style: none;
 }
+.ie .gallery {
+  justify-content: space-between;
+}
 .gallery li {
   padding: 0 20px 20px 0;
 }
 .gallery li a {
   display: block;
   box-shadow: 16px 16px 16px -16px #000;
+}
+.gallery li a img {
+  width: 100%;
 }
 .gallery li a:hover {
   box-shadow: 16px 16px 16px -16px #0d0d0d;
@@ -4030,6 +4037,13 @@ main .row {
   .flex .grid-span-4,
   .flex .grid-span-5 {
     flex-basis: 50%;
+  }
+  .ie .flex .grid-span-1, .ie
+  .flex .grid-span-2, .ie
+  .flex .grid-span-3, .ie
+  .flex .grid-span-4, .ie
+  .flex .grid-span-5 {
+    flex-basis: 40%;
   }
   .flex .grid-span-6,
   .flex .grid-span-7,

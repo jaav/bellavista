@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+<!--[if !IE]><!-->
 <html <?php language_attributes(); ?>>
+<!--<![endif]-->
+<!--[if IE]>
+<html class="ie" <?php language_attributes(); ?>>
+<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <title><?php wp_title( '|', true, 'right' ); ?></title>

@@ -88,6 +88,9 @@
     .grid-span-4,
     .grid-span-5 {
       flex-basis: 50%;
+      .ie & {
+        flex-basis: 40%;
+      }
     }
     .grid-span-6,
     .grid-span-7,

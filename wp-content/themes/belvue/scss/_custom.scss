@@ -139,7 +139,7 @@ body {
   }
   &.bl {
     &:after {
-      bottom: initial;
+      bottom: auto;
       right: 36px;
       top: -36px;
       border-color: transparent rgba($dg, .8) rgba($dg, .8) transparent;
@@ -392,12 +392,12 @@ header {
 }
 // main container
 main {
-  padding-top: 163px;
+  padding-top: 195px;
   @media (max-width: 768px) {
-    padding-top: 143px;
+    padding-top: 190px;
   }
   @media (max-width: 480px) {
-    padding-top: 115px;
+    padding-top: 160px;
   }
   background: lighten($dg, 12%);
   .container {
@@ -523,7 +523,7 @@ main {
       align-self: flex-end;
     }
     &.bl {
-      top: initial;
+      top: auto;
       bottom: 0;
       align-self: flex-start;
     }
@@ -990,11 +990,17 @@ main {
   flex-flow: row wrap;
   padding: 0;
   list-style: none;
+  .ie & {
+    justify-content: space-between;
+  }
   li {
     padding: 0 20px 20px 0;
     a {
       display: block;
       box-shadow: 16px 16px 16px -16px #000;
+      img {
+        width: 100%;
+      }
       &:hover {
         box-shadow: 16px 16px 16px -16px lighten($b, 5%);
         img {
