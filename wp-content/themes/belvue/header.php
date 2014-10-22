@@ -54,9 +54,9 @@
         <div class="row">
             <h2><?php bloginfo( 'name' ); ?></h2>
             <ul class="tabs">
-                <li><a href="/reservations">book a room</a></li>
-                <li class="visible-sm"><a href="#">book for today</a></li>
-                <li class="visible-sm"><a href="#">book for tomorrow</a></li>
+                <li><a href="/reservations"><?php _e('book a room','belvue')?></a></li>
+                <li class="visible-sm"><a href="#"><?php _e('book for today','belvue')?></a></li>
+                <li class="visible-sm"><a href="#"><?php _e('book for tomorrow','belvue')?></a></li>
             </ul>
         </div>
     </div>

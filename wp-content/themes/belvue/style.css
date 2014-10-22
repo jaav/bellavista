@@ -3375,6 +3375,9 @@ main p {
 footer {
   background: #0d0d0d;
 }
+footer .container {
+  padding: 0;
+}
 footer .snip {
   padding: 0 20px;
   margin: 20px 0;

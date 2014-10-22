@@ -36,7 +36,6 @@
                                     <a href="<?php echo $image['url']; ?>">
                                         <img src="<?php echo $image['sizes']['gallery']; ?>" alt="<?php echo $image['alt']; ?>" />
                                     </a>
-                                        <!--<p><?php /*echo $image['caption']; */?></p>-->
                                 </li>
                             <?php endforeach; ?>
                         </ul>
@@ -51,7 +50,6 @@
                         </div>
                     </div>
                 <?php endif; ?>
-
             </div>
             <?php if (get_field('title') || get_field('content')): ?>
                 <div class="row">
@@ -63,7 +61,7 @@
                     </div>
                 </div>
             <?php endif; ?>
-        <?php endwhile; // end of the loop. ?>
+        <?php endwhile; ?>
     </div>
 <?php get_footer(); ?>
 

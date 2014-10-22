@@ -18,11 +18,11 @@
                             window.newsletter_check = function (f) {
                                 var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
                                 if (!re.test(f.elements["ne"].value)) {
-                                    alert("The email is not correct");
+                                    alert("<?php _e('The email is not correct','belvue')?>");
                                     return false;
                                 }
                                 if (f.elements["ny"] && !f.elements["ny"].checked) {
-                                    alert("You must accept the privacy statement");
+                                    alert("<?php _e('You must accept the privacy statement','belvue')?>");
                                     return false;
                                 }
                                 return true;
@@ -31,8 +31,8 @@
                         //]]>
                     </script>
                     <div class="newsletter newsletter-subscription">
-                        <form method="post" action="http://belvue.dev/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
-                            <label>Get discounts, news and some (very) special treats</label>
+                        <form method="post" action="<?php echo plugins_url();?>/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+                            <label><?php _e('Get discounts, news and some (very) special treats','belvue')?></label>
                             <input class="newsletter-email" type="email" name="ne" size="30"  placeholder="Enter your email"  required>
                             <button class="newsletter-submit be" type="submit"><span><?php echo esc_attr_x( 'Sign me up', 'submit button', 'belvue' ); ?></span><i class="fa fa-angle-right"></i></button>
                         </form>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="flex">
-                <p class="grid-span-10">© Belvue Hotel 2014</p>
+                <p class="grid-span-10">© HOTEL BELVUE 2014</p>
             </div>
         </div>
     </footer>

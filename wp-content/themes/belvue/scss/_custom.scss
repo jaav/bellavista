@@ -417,6 +417,9 @@ main {
 //footer
 footer {
   background: $dg;
+  .container {
+    padding: 0;
+  }
   .snip {
     padding: 0 20px;
     margin: 20px 0;
