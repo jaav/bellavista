@@ -6,6 +6,16 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 // Variables
 // --------------------------------------------------
 
+// custom variables
+$b: #000;
+$w: #fff;
+$dg: lighten($b,5%);
+$gr: #1c711f;
+$r: #ff1600;
+$be: #D1D0BF;
+
+$ff: 'Arvo', serif;
+$ffh: 'Cabin', sans-serif;
 
 //== Colors
 //
