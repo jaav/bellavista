@@ -25,8 +25,15 @@
     <div class="top">
         <div class="container tools">
             <div class="row">
-                <?php get_search_form(); ?>
                 <?php do_action('icl_language_selector'); ?>
+                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                    <?php if ( get_theme_mod( 'belvue_logo' ) ) : ?>
+                        <img src='<?php echo esc_url( get_theme_mod( 'belvue_logo' ) ); ?>' alt='<?php bloginfo( 'name' ); ?>'>
+                    <?php else : ?>
+                        <?php bloginfo( 'name' ); ?>
+                    <?php endif; ?>
+                </a>
+                <?php get_search_form(); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
             </div>
         </div>
@@ -37,13 +44,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                    <?php if ( get_theme_mod( 'belvue_logo' ) ) : ?>
-                        <img src='<?php echo esc_url( get_theme_mod( 'belvue_logo' ) ); ?>' alt='<?php bloginfo( 'name' ); ?>'>
-                    <?php else : ?>
-                        <?php bloginfo( 'name' ); ?>
-                    <?php endif; ?>
-                </a>
             </div>
             <nav class="collapse navbar-collapse navbar-main-collapse">
                 <?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav navbar-nav', 'container' => '', 'menu_id' => '', ) ); ?>
@@ -54,9 +54,7 @@
         <div class="row">
             <h2><?php bloginfo( 'name' ); ?></h2>
             <ul class="tabs">
-                <li><a href="/reservations">book a room</a></li>
-                <li class="visible-sm"><a href="#">book for today</a></li>
-                <li class="visible-sm"><a href="#">book for tomorrow</a></li>
+                <li><a data-toggle="modal" data-target="#reservation" href="#"><?php _e('book a room','belvue')?></a></li>
             </ul>
         </div>
     </div>

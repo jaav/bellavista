@@ -1,4 +1,5 @@
 // variables
+// main variables
 $b: #000;
 $w: #fff;
 $dg: lighten($b,5%);
@@ -6,8 +7,20 @@ $gr: #1c711f;
 $r: #ff1600;
 $be: #D1D0BF;
 
+/*/custom variations
+$b: #000;
+$w: #fff;
+$dg: lighten($b,5%);
+$gr: #075973;
+$r: #592928;
+$be: #ccc;*/
+
+
+
 $ff: 'Arvo', serif;
 $ffh: 'Cabin', sans-serif;
+
+
 
 .hide {
   &.desc {
@@ -185,22 +198,27 @@ header {
   }
   .navbar-brand {
     height: auto;
-    padding-top: 10px;
+    top: 0;
+    padding-top: 0;
     padding-bottom: 5px;
     padding-left: 0;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    left: 0;
     @media(max-width: 768px) {
-      padding-left: 15px;
+      padding-left: 0;
+      width: auto;
+      top: 35px;
     }
     img {
+      max-height: 30px;
       @include transition(all .5s ease-in-out);
     }
     &:hover {
       img {
-        filter: grayscale(1);
-        -webkit-filter: grayscale(.5);
-        -moz-filter: grayscale(.5);
-        -o-filter: grayscale(.5);
-        -ms-filter: grayscale(.5);
+        opacity: .8
       }
     }
   }
@@ -208,6 +226,7 @@ header {
     float: right;
     position: relative;
     margin: 0;
+    z-index: 999;
     input[type="search"] {
       background: $be;
       width: 100%;
@@ -246,10 +265,11 @@ header {
     }
     .navbar-nav {
       width: 100%;
-      padding: 0 0 0 20px;
+      padding: 0;
       li {
         float: left;
-        height: 70px;
+        margin-top: 10px;
+        height: 60px;
         min-width: 16%;
         @media(max-width: 768px) {
           width: 100%;
@@ -296,6 +316,8 @@ header {
     #menu-user-menu {
       float: right ;
       margin: 0;
+      position: relative;
+      z-index: 999;
       @media (max-width: 480px) {
         display: none;
       }
@@ -392,9 +414,9 @@ header {
 }
 // main container
 main {
-  padding-top: 195px;
+  padding-top: 163px;
   @media (max-width: 768px) {
-    padding-top: 190px;
+    padding-top: 13r0px;
   }
   @media (max-width: 480px) {
     padding-top: 160px;
@@ -417,6 +439,9 @@ main {
 //footer
 footer {
   background: $dg;
+  .container {
+    padding: 0;
+  }
   .snip {
     padding: 0 20px;
     margin: 20px 0;
@@ -976,6 +1001,8 @@ main {
 }
 // lang switcher
 #lang_sel_list {
+  position: relative;
+  z-index: 1000;
   float: left;
 }
 .gallery {

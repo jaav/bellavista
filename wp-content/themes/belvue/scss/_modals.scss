@@ -53,7 +53,6 @@
   background-color: $modal-content-bg;
   border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid $modal-content-border-color;
-  border-radius: $border-radius-large;
   @include box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
@@ -77,12 +76,23 @@
 // Modal header
 // Top section of the modal w/ title and dismiss
 .modal-header {
+  background: $r;
   padding: $modal-title-padding;
+  color: $w;
   border-bottom: 1px solid $modal-header-border-color;
   min-height: ($modal-title-padding + $modal-title-line-height);
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 // Close icon
 .modal-header .close {
+  float: right;
+  background: none;
+  border: 0;
+  font-size: 40px;
+  line-height: .5;
   margin-top: -2px;
 }
 
