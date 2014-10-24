@@ -1633,11 +1633,19 @@ select[multiple].input-lg,
 }
 
 .navbar-brand {
-  float: left;
   padding: 15px 15px;
-  font-size: 18px;
   line-height: 20px;
   height: 50px;
+  position: absolute;
+  top: 5px;
+  left: auto;
+  right: auto;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 10px;
+  font-weight: bold;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -3909,6 +3917,9 @@ main .row {
 
 #lang_sel_list {
   float: left;
+}
+#lang_sel_list img.iclflag{
+  border: 1px solid #FFF;
 }
 
 .gallery {

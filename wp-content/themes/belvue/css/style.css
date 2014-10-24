@@ -95,3 +95,6 @@ Text Domain: basic
     flex-basis: 100%;
   }
 }
+#lang_sel_list img.iclflag{
+  border: 1px solid #FFF;
+}
