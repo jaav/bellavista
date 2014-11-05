@@ -18,7 +18,7 @@
                             <?php endif; ?>
                         </div>
                         <div class="grid-span-6">
-                            <?php the_post_thumbnail('slider', array('class' => 'img-responsive')); ?>
+                            <?php the_post_thumbnail('page-top', array('class' => 'img-responsive')); ?>
                         </div>
                     </div>
                 </div>

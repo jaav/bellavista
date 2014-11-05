@@ -20,15 +20,14 @@ $b: #fff;
 $w: #000;
 $dg: darken($b,5%);
 $gr: #1c711f;
-$r: #CC0000;
-$be: #eee;
+$r: #ff1600;
+$be: #D1D0BF;
 
 
 $ff: 'Arvo', serif;
 $ffh: 'Cabin', sans-serif;
 
-body {
-}
+
 
 .hide {
   &.desc {
@@ -86,10 +85,10 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
   }
   &.green {
     background: $gr;
-    color: $b;
+    color: $w;
     &:hover {
       background: $w;
-      color: $b;
+      color: $gr;
     }
   }
 }
@@ -114,14 +113,14 @@ body {
 .tooltip {
   position: relative;
   padding: 25px 20px;
-  background: rgba($r, .8);
+  background: rgba($dg, .8);
   &:after {
     position: absolute;
     bottom: -36px;
     right: 36px;
     content: '';
     border: 18px solid;
-    border-color: rgba($r, .8) rgba($r, .8) transparent transparent;
+    border-color: rgba($dg, .8) rgba($dg, .8) transparent transparent;
   }
   .rt & {
     &:after {
@@ -166,16 +165,16 @@ body {
       bottom: auto;
       right: 36px;
       top: -36px;
-      border-color: transparent rgba($r, .8) rgba($r, .8) transparent;
+      border-color: transparent rgba($dg, .8) rgba($dg, .8) transparent;
     }
   }
   h2 {
     font-size: 25px;
-    color: $b;
+    color: $w;
     line-height: 28px;
     em {
       font-style: normal;
-      color: $w;
+      color: $r;
     }
   }
 }
@@ -196,7 +195,7 @@ header {
   }
   max-width: 1200px;
   margin: 0 auto;
-  background: $r;
+  background: $dg;
   ul {
     list-style: none;
   }
@@ -293,7 +292,6 @@ header {
           font-weight: 700;
           height: 65px;
           padding: 40px 10px 5px 10px;
-          color: $b;
           border-left: 1px dotted lighten($b, 50%);
           @media(max-width: 768px) {
             height: auto;
@@ -303,7 +301,6 @@ header {
             border-top: 1px dotted lighten($b, 50%);
           }
           &:hover {
-            color: lighten($w,80%);
             background: none;
           }
         }
@@ -358,7 +355,7 @@ header {
       height: 30px;
       line-height: 30px;
     }
-    background: $b;
+    background: lighten($b,10%);
     margin: 0;
     padding: 0;
     position: relative;
@@ -368,7 +365,7 @@ header {
       left: 0;
       top: 0;
       height: 16px;
-      box-shadow: inset 0px 16px 16px -16px rgba($w,.1);
+      box-shadow: inset 0px 16px 16px -16px $b;
       width: 100%;
     }
     .row {
@@ -382,9 +379,7 @@ header {
       font-weight: 700;
       padding: 0;
       margin: 0;
-      color: $r;
-      text-transform: uppercase;
-      font-family: 'Allerta Stencil', sans-serif;
+      color: $w;
       @media (max-width: 480px) {
         display: none;
       }
@@ -406,7 +401,6 @@ header {
           line-height: 60px;
           font-size: 16px;
           background: $r;
-          color: $b;
           position: relative;
           @media (max-width: 480px) {
             height: 30px;
@@ -430,12 +424,12 @@ header {
 }
 // main container
 main {
-  padding-top: 195px;
+  padding-top: 163px;
   @media (max-width: 768px) {
-    padding-top: 175px;
+    padding-top: 13r0px;
   }
   @media (max-width: 480px) {
-    padding-top: 146px;
+    padding-top: 160px;
   }
   background: lighten($dg, 12%);
   .container {
@@ -447,7 +441,6 @@ main {
   h1, h2, h3 {
     color: $w;
     font-weight: 800;
-    font-family: 'Allerta Stencil', sans-serif;
   }
   p {
     color: $w;
@@ -455,21 +448,18 @@ main {
 }
 //footer
 footer {
-  background: $r;
+  background: $dg;
   .container {
     padding: 0;
   }
   .snip {
     padding: 0 20px;
     margin: 20px 0;
-    + .snip {
-      border-left: 1px dotted lighten($b, 20%);
-    }
     @media(max-width: 480px) {
       + .snip {
         padding-top: 10px;
         border: 0;
-        border-top: 1px dotted lighten($b, 20%);
+        border-top: 1px dotted lighten($b, 50%);
       }
     }
   }
@@ -478,12 +468,12 @@ footer {
     line-height: 1.3em;
     font-weight: 700;
     margin: 0 0 10px 0;
-    color: $b;
+    color: $r;
   }
   .newsletter {
     margin: 0;
     p {
-      color: $b;
+      color: $w;
       font-weight: 400;
       font-size: 16px;
     }
@@ -496,10 +486,6 @@ footer {
       line-height: 22px;
       font-weight: 700;
       a {
-        color: $b;
-        &:hover {
-          color: $w;
-        }
       }
     }
   }
@@ -507,8 +493,8 @@ footer {
     padding: 10px 0;
     margin: 0;
     text-align: center;
-    border-top: 1px dotted lighten($b, 20%);
-    color: $b;
+    border-top: 1px dotted lighten($dg, 50%);
+    color: $w;
     font-weight: 400;
     font-size: 13px;
   }
@@ -541,7 +527,7 @@ main {
         left: 0;
         top: 0;
         height: 16px;
-        box-shadow: inset 0px 16px 16px -16px lighten($w,.1);
+        box-shadow: inset 0px 16px 16px -16px $b;
         width: 100%;
       }
     }
@@ -584,12 +570,12 @@ main {
       background: $be;
       text-align: center;
       h2 {
-        color: lighten($w,10%);
+        color: lighten($b,2%);
       }
       p {
         margin: 18.5px 0;
         font-size: 18px;
-        color: lighten($w,10%);
+        color: lighten($b,2%);
         em {
           color: $r;
           font-style: normal;
@@ -597,16 +583,15 @@ main {
       }
     }
   .xl, &.xl h2 {
-    color: $b;
+    color: $w;
     font-size: 63px;
     line-height: 1.04762;
     font-weight: 800;
   }
   .xxl, &.xxl h2 {
     font-weight: 800;
-    font-size: 90px;
-    line-height: 1.2;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 113px;
+    line-height: 1;
     &.t-red {
       color: $r;
     }
@@ -630,7 +615,7 @@ main {
     text-align: left;
     h2 {
       margin-top: 0;
-      font-size: 40px;
+      font-size: 50px;
     }
     p {
       font-size: 20px;
@@ -643,18 +628,18 @@ main {
     }
   }
   p {
-    color: $b;
+    color: $w;
     margin: 10px 0;
     font-size: 25px;
     line-height: 27px;
     font-weight: 700;
   }
   + .snip {
-    border-left: 1px dotted lighten($w, 50%);
+    border-left: 1px dotted lighten($b, 50%);
     @media(max-width: 480px) {
         padding-top: 10px;
         border: 0;
-        border-top: 1px dotted lighten($w, 50%);
+        border-top: 1px dotted lighten($b, 50%);
     }
   }
 }
@@ -759,12 +744,12 @@ main {
   }
   label {
     margin: 15px 0;
-    color: $b;
+    color: $w;
   }
   input {
     width: 100%;
     height: 42px;
-    background: $b;
+    background: $w;
     bordeR: 0;
     margin-bottom: 10px;
     padding: 0 15px;
@@ -922,7 +907,7 @@ main {
 }
 .advantages, .about {
   .snip {
-    /*margin-bottom: 10px;*/
+    margin-bottom: 10px;
     h2 {
       margin: 0;
     }
@@ -941,12 +926,6 @@ main {
   }
 }
 .faq {
-  background: $be;
-  .snip {
-    + .snip {
-      border-left: 1px dotted lighten($w, 50%);
-    }
-  }
   h2 {
     padding: 0 20px;
   }
@@ -964,7 +943,6 @@ main {
     line-height: 20px;
     font-size: 15px;
     height: 80px;
-    color: $w;
     text-overflow: ellipsis;
     overflow: hidden;
   }
@@ -985,17 +963,6 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    color: $w;
-  }
-  .desc {
-    h2 {
-      margin-top: 0;
-    }
-  }
-}
-.discoveries, .slider {
-  .tooltip p, .desc .tooltip  p {
-    color: $b;
   }
 }
 .discoveries {
@@ -1009,8 +976,7 @@ main {
     h1, h2 {
       em {
         font-style: normal;
-        color: $w;
-        font-family: 'Allerta Stencil', sans-serif;
+        color: $r;
       }
     }
     .flex {
@@ -1083,14 +1049,5 @@ main {
         }
       }
     }
-  }
-}
-.page .row .flex.top {
-  width: -webkit-calc(100% + 30px);
-  width: -moz-calc(100% + 30px);
-  width: calc(100% + 30px);
-  margin: 0 -15px;
-  .grid-span-4 {
-    padding-left: 15px;
   }
 }

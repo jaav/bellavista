@@ -90,16 +90,16 @@
                         <?php echo the_field('rooms'); ?>
                     </div>
                     <div class="grid-span-2 be snip">
-                        <p><?php echo the_field('wifi'); ?></p>
+                        <?php echo the_field('wifi'); ?>
                     </div>
                     <div class="grid-span-2 be snip">
-                        <p><?php echo the_field('breakfasts'); ?></p>
+                        <?php echo the_field('breakfasts'); ?>
                     </div>
                     <div class="grid-span-2 be snip">
-                        <p><?php echo the_field('pay'); ?></p>
+                        <?php echo the_field('pay'); ?>
                     </div>
                     <div class="grid-span-2 be snip">
-                        <p><?php echo the_field('price'); ?></p>
+                        <?php echo the_field('price'); ?>
                     </div>
                 </div>
             </div>
