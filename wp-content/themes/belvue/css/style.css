@@ -1,0 +1,97 @@
+/*
+Theme Name: belvue
+Version: 0.1
+Text Domain: basic
+*/
+/*
+Theme Name: belvue
+Version: 0.1
+Text Domain: basic
+*/
+.row {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.row.wide {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.row.center {
+  justify-content: center;
+}
+.row .grid {
+  flex: 1 1 8%;
+  margin: 0 0 0.5rem 0;
+  padding: 0.5em 10px;
+  box-sizing: border-box;
+}
+.row .grid .fixed-width {
+  flex: 0 0 500px;
+  background-color: rgba(255, 0, 0, 0.1) !important;
+}
+.center .row .grid {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.row .grid .grid {
+  flex: 1 1 auto;
+  margin-top: -0.5em;
+}
+.row .grid .grid-span-1 {
+  flex-basis: 8.3333%;
+}
+.row .grid .grid-span-2 {
+  flex-basis: 16.6666%;
+}
+.row .grid .grid-span-3 {
+  flex-basis: 25%;
+}
+.row .grid .grid-span-4 {
+  flex-basis: 33.3333%;
+}
+.row .grid .grid-span-5 {
+  flex-basis: 41.6666%;
+}
+.row .grid .grid-span-6 {
+  flex-basis: 50%;
+}
+.row .grid .grid-span-7 {
+  flex-basis: 58.3333%;
+}
+.row .grid .grid-span-8 {
+  flex-basis: 66.6666%;
+}
+.row .grid .grid-span-9 {
+  flex-basis: 75%;
+}
+.row .grid .grid-span-10 {
+  flex-basis: 83.3333%;
+}
+.row .grid .grid-span-11 {
+  flex-basis: 91.6666%;
+}
+.row .grid .grid-span-12 {
+  flex-basis: 100%;
+}
+@media all and (max-width: 768px) {
+  .row .grid-span-1,
+  .row .grid-span-2,
+  .row .grid-span-3,
+  .row .grid-span-4,
+  .row .grid-span-5 {
+    flex-basis: 50%;
+  }
+  .row .grid-span-6,
+  .row .grid-span-7,
+  .row .grid-span-8,
+  .row .grid-span-9,
+  .row .grid-span-10,
+  .row .grid-span-11 {
+    flex-basis: 100%;
+  }
+  .row .grid .grid {
+    flex-basis: 100%;
+  }
+}
