@@ -14,6 +14,7 @@ $dg: lighten($b,5%);
 $gr: #075973;
 $r: #592928;
 $be: #ccc;*/
+
 //CHAMBRES
 $one: #feefea;
 $two: #f74720;
@@ -34,6 +35,12 @@ $be: #feefea;
 $ff: 'Arvo', serif;
 $ffh: 'Cabin', sans-serif;
 
+// main width variables - if you want to modify values go to _variables.scss
+// $screen-xs - 480px
+// $screen-sm - 768px
+// $screen-md - 992px
+// $screen-lg - 1200px
+
 body {
 }
 
@@ -47,7 +54,7 @@ body {
   }
 }
 .container {
-  max-width: 1200px;
+  max-width: $screen-lg;
 }
 .home {
   .explore, .carte {
@@ -227,7 +234,7 @@ header {
     width: 100%;
     text-align: center;
     left: 0;
-    @media(max-width: 768px) {
+    @media(max-width:  $screen-sm) {
       padding-left: 0;
       width: auto;
       top: 35px;
@@ -278,7 +285,7 @@ header {
     width: -moz-calc(100% - 160px);
     width: calc(100% - 160px);
     margin: 0 !important;
-    @media(max-width: 768px) {
+    @media(max-width: $screen-sm) {
       height: 0;
       width: 100%;
       overflow: hidden;
@@ -291,7 +298,7 @@ header {
         margin-top: 10px;
         height: 60px;
         min-width: 16%;
-        @media(max-width: 768px) {
+        @media(max-width: $screen-sm) {
           width: 100%;
           height: auto
         }
@@ -304,7 +311,7 @@ header {
           padding: 40px 10px 5px 10px;
           color: $b;
           border-left: 1px dotted lighten($b, 50%);
-          @media(max-width: 768px) {
+          @media(max-width: $screen-sm) {
             height: auto;
             border: 0;
             text-align: right;
@@ -316,7 +323,7 @@ header {
             background: none;
           }
         }
-        @media(max-width: 768px) {
+        @media(max-width: $screen-sm) {
           &:first-child {
             a {
               border: 0;
@@ -340,7 +347,7 @@ header {
       margin: 0;
       position: relative;
       z-index: 999;
-      @media (max-width: 480px) {
+      @media (max-width: $screen-xs) {
         display: none;
       }
       li {
@@ -365,7 +372,7 @@ header {
     line-height: 60px;
     border-left: 1px solid #be141b;
     border-right: 1px solid #be141b;
-    @media (max-width: 480px) {
+    @media (max-width: $screen-xs) {
       height: 30px;
       line-height: 30px;
     }
@@ -396,7 +403,7 @@ header {
       color: $r;
       text-transform: uppercase;
       font-family: 'Allerta Stencil', sans-serif;
-      @media (max-width: 480px) {
+      @media (max-width: $screen-xs) {
         display: none;
       }
     }
@@ -407,7 +414,7 @@ header {
         float: left;
         width: 200px;
         margin-left: 1px;
-        @media (max-width: 480px) {
+        @media (max-width: $screen-xs) {
           width: auto;
         }
         a {
@@ -419,7 +426,7 @@ header {
           background: $r;
           color: $b;
           position: relative;
-          @media (max-width: 480px) {
+          @media (max-width: $screen-xs) {
             height: 30px;
             line-height: 30px;
           }
@@ -444,11 +451,19 @@ main {
   padding-top: 166px;
   border-left: 1px solid #be141b;
   border-right: 1px solid #be141b;
+<<<<<<< HEAD
   @media (max-width: 768px) {
     padding-top: 132px;
   }
   @media (max-width: 480px) {
     padding-top: 102px;
+=======
+  @media (max-width: $screen-sm) {
+    padding-top: 175px;
+  }
+  @media (max-width: $screen-xs) {
+    padding-top: 146px;
+>>>>>>> 6c5bd737c789a98512ab1542f951cb873d86bf31
   }
   background: lighten($dg, 12%);
   .container {
@@ -478,7 +493,7 @@ footer {
     + .snip {
       border-left: 1px dotted lighten($b, 20%);
     }
-    @media(max-width: 480px) {
+    @media(max-width: $screen-xs) {
       + .snip {
         padding-top: 10px;
         border: 0;
@@ -670,7 +685,7 @@ main {
   }
   + .snip {
     border-left: 1px dotted lighten($w, 50%);
-    @media(max-width: 480px) {
+    @media(max-width: $screen-xs) {
         padding-top: 10px;
         border: 0;
         border-top: 1px dotted lighten($w, 50%);
@@ -842,14 +857,14 @@ main {
         -o-flex-row: row;
         flex-flow: row;
         justify-content: space-between;
-        @media (max-width: 768px) {
+        @media (max-width: $screen-sm) {
           display: none;
         }
       }
     }
     .desc {
       padding: 38px 10%  20px 20px;
-      @media (max-width: 768px) {
+      @media (max-width: $screen-sm) {
         display: none;
       }
       h3 {
@@ -878,7 +893,7 @@ main {
       }
     }
     .photo {
-      @media (max-width: 768px) {
+      @media (max-width: $screen-sm) {
         flex-basis: 100%;
       }
     }
@@ -904,7 +919,7 @@ main {
       overflow: hidden;
       @include transition(all .5s ease-in-out);
       height: 0 !important;
-      @media (max-width: 768px) {
+      @media (max-width: $screen-sm) {
         position: relative;
         height: auto !important;
         opacity: 1 !important;
