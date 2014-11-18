@@ -445,10 +445,10 @@ main {
   border-left: 1px solid #be141b;
   border-right: 1px solid #be141b;
   @media (max-width: 768px) {
-    padding-top: 175px;
+    padding-top: 132px;
   }
   @media (max-width: 480px) {
-    padding-top: 146px;
+    padding-top: 102px;
   }
   background: lighten($dg, 12%);
   .container {
@@ -589,6 +589,12 @@ main {
       bottom: 0;
       align-self: flex-start;
     }
+    @media (max-width: 768px) {
+      position: static;
+      .grid-span-4, .grid-span-5 {
+        flex-basis: 100%;
+      }
+    }
   }
 }
 .snip {
@@ -726,6 +732,9 @@ main {
   left: 100%;
   width: 100px;
   bottom: 10px;
+  @media (max-width: 768px) {
+    position: static;
+  }
   .owl-buttons {
     width: 100px;
     display: block;
