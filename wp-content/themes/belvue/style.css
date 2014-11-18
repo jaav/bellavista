@@ -1,0 +1,85 @@
+/*
+Error: Invalid CSS after "...951cb873d86bf31": expected "{", was "}"
+        on line 467 of scss/_custom.scss
+        from line 20 of scss/style.scss
+
+462:     padding-top: 175px;
+463:   }
+464:   @media (max-width: $screen-xs) {
+465:     padding-top: 146px;
+466: >>>>>>> 6c5bd737c789a98512ab1542f951cb873d86bf31
+467:   }
+468:   background: lighten($dg, 12%);
+469:   .container {
+470:     padding: 0;
+471:     .row {
+472:       padding: 0 15px;
+
+Backtrace:
+scss/_custom.scss:467
+scss/style.scss:20
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1163:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1099:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1094:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:641:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:661:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:642:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:401:in `media_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:219:in `special_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:194:in `directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:661:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:642:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:401:in `media_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:219:in `special_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:194:in `directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:661:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:642:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:635:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:660:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:299:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/sass_scss.rb:396:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.8/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...951cb873d86bf31\": expected \"{\", was \"}\"\A         on line 467 of scss/_custom.scss\A         from line 20 of scss/style.scss\A \A 462:     padding-top: 175px;\A 463:   }\A 464:   @media (max-width: $screen-xs) {\A 465:     padding-top: 146px;\A 466: >>>>>>> 6c5bd737c789a98512ab1542f951cb873d86bf31\A 467:   }\A 468:   background: lighten($dg, 12%);\A 469:   .container {\A 470:     padding: 0;\A 471:     .row {\A 472:       padding: 0 15px;"; }
