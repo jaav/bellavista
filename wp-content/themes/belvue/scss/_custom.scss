@@ -14,14 +14,21 @@ $dg: lighten($b,5%);
 $gr: #075973;
 $r: #592928;
 $be: #ccc;*/
+//CHAMBRES
+$one: #feefea;
+$two: #f74720;
+$three: #df005e;
+$four: #d46d7a;
+$five: #be141b;
+$six: #f8a798;
 
 //custom variations
-$b: #fff;
+$b: #feefea;
 $w: #000;
 $dg: darken($b,5%);
-$gr: #1c711f;
-$r: #CC0000;
-$be: #eee;
+$gr: #be141b;
+$r: #be141b;
+$be: #feefea;
 
 
 $ff: 'Arvo', serif;
@@ -186,6 +193,8 @@ body {
 header {
   border: 0 !important;
   .top {
+    border-left: 1px solid #be141b;
+    border-right: 1px solid #be141b;
     @include transition(margin-top .4s linear);
     padding-bottom: 25px;
   }
@@ -354,6 +363,8 @@ header {
   .book {
     height: 60px;
     line-height: 60px;
+    border-left: 1px solid #be141b;
+    border-right: 1px solid #be141b;
     @media (max-width: 480px) {
       height: 30px;
       line-height: 30px;
@@ -430,7 +441,9 @@ header {
 }
 // main container
 main {
-  padding-top: 195px;
+  padding-top: 166px;
+  border-left: 1px solid #be141b;
+  border-right: 1px solid #be141b;
   @media (max-width: 768px) {
     padding-top: 175px;
   }
@@ -541,7 +554,7 @@ main {
         left: 0;
         top: 0;
         height: 16px;
-        box-shadow: inset 0px 16px 16px -16px lighten($w,.1);
+        //box-shadow: inset 0px 2px 8px -6px #000;
         width: 100%;
       }
     }
@@ -1024,7 +1037,7 @@ main {
       left: 0;
       top: 0;
       height: 16px;
-      box-shadow: inset 0px 16px 16px -16px #000;
+      //box-shadow: inset 0px 16px 16px -16px #000;
       width: 100%;
     }
   }
@@ -1048,6 +1061,9 @@ main {
   position: relative;
   z-index: 1000;
   float: left;
+  img.iclflag{
+    border: 1px solid #FFF;
+  }
 }
 .gallery {
   display: -ms-flexbox;
