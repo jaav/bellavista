@@ -1,0 +1,1050 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPML String Translation v1.7.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-11-19 13:26:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: menu/string-translation.php:661
+#@ wpml-string-translation
+msgid ".po file:"
+msgstr ".po-bestand:"
+
+#: inc/functions.php:1487
+#@ wpml-string-translation
+msgid "= Your theme was scanned for texts ="
+msgstr "= Uw thema werd gescand op teksten ="
+
+#: menu/theme-localization-ui.php:98
+#: menu/theme-localization-ui.php:108
+#@ wpml-string-translation
+msgid "Active"
+msgstr "Actief"
+
+#: menu/string-translation.php:123
+#@ wpml-string-translation
+msgid "Add selected strings"
+msgstr "Geselecteerde strings toevoegen"
+
+#: menu/auto-download-mo.php:189
+#@ wpml-string-translation
+msgid "Add the new translations."
+msgstr "De nieuwe vertalingen toevoegen."
+
+#: menu/string-translation.php:152
+#: menu/string-translation.php:710
+#@ wpml-string-translation
+msgid "All contexts"
+msgstr "Alle contexten"
+
+#: menu/string-translation.php:132
+#@ wpml-string-translation
+msgid "All strings"
+msgstr "Alle strings"
+
+#: inc/wpml-string-translation.class.php:335
+#@ wpml-string-translation
+msgid "All strings are up to date."
+msgstr "Alle strings zijn up-to-date."
+
+#: inc/functions.php:2363
+#@ wpml-string-translation
+msgid "All strings were sent to translation."
+msgstr "Alle strings zijn verzonden om te vertalen."
+
+#: menu/string-translation.php:666
+#@ wpml-string-translation
+msgid "Also create translations according to the .po file"
+msgstr "Ook vertalingen volgens het .po-bestand creëren"
+
+#: menu/string-translation.php:718
+#@ wpml-string-translation
+msgid "Also include translations"
+msgstr "Ook vertalingen opnemen"
+
+#: menu/string-translation-translate-options.php:31
+#: menu/string-translation.php:559
+#: menu/string-translation.php:602
+#: menu/string-translation.php:785
+#@ wpml-string-translation
+msgid "Apply"
+msgstr "Toepassen"
+
+#: menu/string-translation.php:438
+#@ wpml-string-translation
+msgid ""
+"Are you sure you want to delete these strings?\n"
+"Their translations will be deleted too."
+msgstr ""
+"Bent u zeker dat u deze strings wilt verwijderen?\n"
+"Dan zullen de vertalingen ervan ook verwijderd worden."
+
+#: menu/string-translation.php:573
+#@ wpml-string-translation
+msgid "Auto register strings for translation"
+msgstr "Automatisch strings registreren voor de vertaling"
+
+#: menu/auto-download-mo.php:69
+#@ wpml-string-translation
+msgid "Auto-download WordPress translations"
+msgstr "Automatisch WordPress-vertalingen downloaden"
+
+#: menu/string-translation.php:596
+#@ sitepress
+msgid "Auto-register strings always"
+msgstr "Altijd strings automatisch registreren"
+
+#: menu/string-translation.php:590
+#@ sitepress
+msgid "Auto-register strings only when logged in as an administrator"
+msgstr "Strings enkel automatisch registreren indien aangemeld als een administrator"
+
+#: inc/widget-text.php:195
+#@ default
+msgid "Automatically add paragraphs"
+msgstr "Automatisch alinea's toevoegen"
+
+#: inc/functions.php:74
+#@ wpml-string-translation
+msgid "Blog Title"
+msgstr "Blogtitel"
+
+#: menu/auto-download-mo.php:196
+#: menu/string-translation.php:122
+#: menu/string-translation.php:318
+#@ wpml-string-translation
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: menu/auto-download-mo.php:77
+#: menu/auto-download-mo.php:203
+#@ default
+msgid "Check other languages"
+msgstr "Andere talen controleren"
+
+#: menu/string-translation-translate-options.php:12
+#, php-format
+#@ wpml-string-translation
+msgid "Choose the fields you'd like to translate and click on the 'Apply' button. Then, use WPML's <a%s>String translation</a> to translate them."
+msgstr "Selecteer de velden die u wilt laten vertalen en klik op de knop 'Toepassen'. Gebruik daarna de <a%s>Stringvertaling</a> van WPML om ze te vertalen."
+
+#: menu/string-translation.php:618
+#@ wpml-string-translation
+msgid "Choose the language in which the strings are written in."
+msgstr "Selecteer de taal waarin de strings geschreven zijn."
+
+#: menu/string-translation.php:527
+#: menu/string-translation.php:569
+#: menu/string-translation.php:611
+#: menu/string-translation.php:650
+#: menu/string-translation.php:736
+#@ wpml-string-translation
+msgid "Click to toggle"
+msgstr "Klik om om te schakelen"
+
+#: menu/string-translation-translate-options.php:16
+#@ wpml-string-translation
+msgid "Close"
+msgstr "Afsluiten"
+
+#: inc/wpml-string-translation.class.php:224
+#@ wpml-string-translation
+msgid "Configure"
+msgstr "Configureren"
+
+#: menu/string-translation.php:188
+#: menu/string-translation.php:198
+#@ wpml-string-translation
+msgid "Context"
+msgstr "Context"
+
+#: inc/widget-text.php:31
+#@ sitepress
+msgid "Convert to multilingual widget"
+msgstr "Converteren naar meertalige widget"
+
+#: inc/widget-text.php:76
+#@ sitepress
+msgid "Converting to multilingual widget failed. No sidebar specified."
+msgstr "Conversie naar meertalige widget is mislukt. Er is geen zijbalk gespecificeerd."
+
+#: menu/theme-localization-ui.php:17
+#: menu/theme-localization-ui.php:99
+#: menu/theme-localization-ui.php:109
+#@ wpml-string-translation
+msgid "Count"
+msgstr "Aantal"
+
+#: menu/string-translation.php:437
+#@ wpml-string-translation
+msgid "Delete selected strings"
+msgstr "Geselecteerde strings verwijderen"
+
+#: menu/string-translation.php:584
+#@ sitepress
+msgid "Disable auto-register strings"
+msgstr "Automatisch registreren van strings deactiveren"
+
+#: menu/string-translation.php:394
+#, php-format
+#@ wpml-string-translation
+msgid "Display %d results per page"
+msgstr "%d resultaten per pagina weergeven"
+
+#: menu/string-translation.php:426
+#@ wpml-string-translation
+msgid "Display all results"
+msgstr "Alle resultaten weergeven"
+
+#: menu/string-translation.php:400
+#, php-format
+#@ wpml-string-translation
+msgid "Displaying %s&#8211;%s of %s"
+msgstr "%s&#8211;%s van %s weergeven"
+
+#: menu/theme-localization-ui.php:15
+#@ wpml-string-translation
+msgid "Domain"
+msgstr "Domein"
+
+#: inc/functions.php:1483
+#: inc/functions.php:1580
+#@ wpml-string-translation
+msgid "Done scanning files"
+msgstr "Scan van bestanden voltooid"
+
+#: inc/auto-download-locales.php:288
+#@ wordpress-language
+msgid "Error getting the translation file. Please go back and try again."
+msgstr "Fout bij het ophalen van het vertaalbestand. Gelieve terug te keren en het opnieuw te proberen."
+
+#: inc/wpml-string-translation.class.php:182
+#@ wpml-string-translation
+msgid "Error: no strings selected"
+msgstr "Fout: geen strings geselecteerd"
+
+#: menu/string-translation.php:492
+#, php-format
+#@ wpml-translation-management
+msgid "Estimated cost: %s USD"
+msgstr "Geschatte prijs: %s USD"
+
+#: menu/string-translation.php:169
+#@ wpml-string-translation
+msgid "Exact match"
+msgstr "Exacte overeenkomst"
+
+#: menu/auto-download-mo.php:119
+#: menu/auto-download-mo.php:151
+#@ wpml-string-translation
+msgid "Existing translation"
+msgstr "Bestaande vertaling"
+
+#: menu/string-translation.php:178
+#@ wpml-string-translation
+msgid "Exit search"
+msgstr "Zoekopdracht afsluiten"
+
+#: menu/string-translation-translate-options.php:15
+#@ wpml-string-translation
+msgid "Export selected strings as PHP code to be added to the theme code"
+msgstr "De geselecteerde strings als een PHP-code exporteren om toe te voegen aan de code van het thema"
+
+#: menu/string-translation.php:704
+#@ wpml-string-translation
+msgid "Export strings into .po/.pot file"
+msgstr "Strings exporteren naar een .po-/.pot-bestand"
+
+#: inc/auto-download-locales.php:181
+#@ wpml-string-translation
+msgid "Failed downloading the language information file. Please go back and try a little later."
+msgstr "Het downloaden van het bestand met de taalinformatie is mislukt. Gelieve terug te keren en het straks eens opnieuw te proberen."
+
+#: inc/functions.php:135
+#@ wpml-string-translation
+msgid "File upload error"
+msgstr "Fout bij het uploaden van het bestand"
+
+#: menu/theme-localization-ui.php:29
+#: menu/theme-localization-ui.php:149
+#@ wpml-string-translation
+msgid "Fully translated"
+msgstr "Volledig vertaald"
+
+#: menu/string-translation.php:548
+#@ wpml-string-translation
+msgid "Highlight color for strings"
+msgstr "Kleur voor strings doen oplichten"
+
+#: menu/auto-download-mo-config.php:18
+#@ wpml-string-translation
+msgid "I will download translations for WordPress and save .mo files in wp-includes/languages"
+msgstr "Ik zal vertalingen downloaden voor WordPress en .mo-bestanden opslaan in wp-includes/languages"
+
+#: menu/string-translation.php:365
+#@ wpml-string-translation
+msgid "ICanLocalize "
+msgstr "ICanLocalize"
+
+#: menu/string-translation.php:657
+#@ wpml-string-translation
+msgid "Import"
+msgstr "Importeren"
+
+#: menu/string-translation.php:654
+#@ wpml-string-translation
+msgid "Import / export .po"
+msgstr ".po importeren / exporteren"
+
+#: inc/functions.php:2535
+#@ wpml-string-translation
+msgid "In progress"
+msgstr "In uitvoering"
+
+#: inc/wpml-string-translation.class.php:174
+#@ wpml-string-translation
+msgid "Include the following PHP in your code. <em>functions.php</em> would be a good place."
+msgstr "Neem de volgende PHP op in uw code. <em>functies.php</em> zou een goede plaats zijn."
+
+#: menu/auto-download-mo.php:85
+#, php-format
+#@ wpml-string-translation
+msgid "Invalid language: %s"
+msgstr "Ongeldige taal: %s"
+
+#: menu/theme-localization-ui.php:68
+#: menu/theme-localization-ui.php:180
+#@ wpml-string-translation
+msgid "Load translations if found in the .mo files. (it will not override existing translations)"
+msgstr "Vertalingen laden indien ze gevonden worden in de .mo-bestanden. (dit zal de bestaande vertalingen niet overschrijven)"
+
+#: menu/theme-localization-ui.php:134
+#@ wpml-string-translation
+msgid "MU"
+msgstr "MU"
+
+#: menu/string-translation.php:486
+#@ wpml-string-translation
+msgid "Manage translators"
+msgstr "Vertalers beheren"
+
+#: menu/auto-download-mo.php:81
+#@ wpml-string-translation
+msgid "Missing version number for translation."
+msgstr "Ontbrekend versienummer voor vertaling."
+
+#: inc/functions.php:1491
+#@ wpml-string-translation
+msgid "More details"
+msgstr "Meer details"
+
+#: menu/string-translation.php:740
+#@ wpml-string-translation
+msgid "More options"
+msgstr "Meer opties"
+
+#: inc/widget-text.php:125
+#@ sitepress
+msgid "Multilingual Text"
+msgstr "Meertalige tekst"
+
+#: inc/widget-text.php:123
+#@ sitepress
+msgid "Multilingual arbitrary text or HTML"
+msgstr "Meertalige willekeurige tekst of HTML"
+
+#: menu/string-translation.php:189
+#: menu/string-translation.php:199
+#@ wpml-string-translation
+msgid "Name"
+msgstr "Naam"
+
+#: menu/theme-localization-ui.php:132
+#@ wpml-string-translation
+msgid "Network"
+msgstr "Netwerk"
+
+#: menu/auto-download-mo.php:120
+#: menu/auto-download-mo.php:152
+#@ wpml-string-translation
+msgid "New translation"
+msgstr "Nieuwe vertaling"
+
+#: menu/auto-download-mo.php:160
+#, php-format
+#@ wpml-string-translation
+msgid "New translations (%d)"
+msgstr "Nieuwe vertalingen (%d)"
+
+#: menu/theme-localization-ui.php:137
+#@ wpml-string-translation
+msgid "No"
+msgstr "Nee"
+
+#: menu/auto-download-mo.php:43
+#@ wpml-string-translation
+msgid "No action performed. Please select the strings that you need to update or add."
+msgstr "Geen actie uitgevoerd. Gelieve de strings te selecteren die je wilt updaten of toevoegen."
+
+#: menu/string-translation-translate-options.php:40
+#@ wpml-string-translation
+msgid "No options found. Make sure you saved your theme options at least once. <br />Some themes only add these to the wp_options table after the user explicitly saves over the theme defaults"
+msgstr "Geen opties gevonden. Gelieve ervoor te zorgen dat u uw themaopties ten minste een keer opgeslagen hebt. <br />Sommige thema's voegen de opties enkel toe aan de WP-optietabel nadat de gebruiker de opties expliciet opgeslagen heeft en de standaardopties van het thema overschreven heeft."
+
+#: inc/functions.php:1824
+#: inc/functions.php:1880
+#@ wpml-string-translation
+msgid "No records found"
+msgstr "Geen documenten gevonden"
+
+#: inc/functions.php:175
+#@ wpml-string-translation
+msgid "No string found"
+msgstr "Geen string gevonden"
+
+#: inc/functions.php:2358
+#@ wpml-string-translation
+msgid "No string was sent to translation."
+msgstr "Er werd geen string verzonden om te vertalen."
+
+#: menu/string-translation.php:208
+#@ wpml-string-translation
+msgid "No strings found"
+msgstr "Geen strings gevonden"
+
+#: inc/functions.php:1600
+#@ wpml-string-translation
+msgid "No strings found."
+msgstr "Geen strings gevonden."
+
+#: inc/wpml-string-translation.class.php:155
+#@ wpml-string-translation
+msgid "No strings selected"
+msgstr "Geen strings geselecteerd"
+
+#: inc/functions.php:7
+#: inc/functions.php:2539
+#@ wpml-string-translation
+msgid "Not translated"
+msgstr "Niet vertaald"
+
+#: menu/theme-localization-ui.php:39
+#: menu/theme-localization-ui.php:153
+#@ wpml-string-translation
+msgid "Not translated or needs update"
+msgstr "Niet vertaald of moet worden geüpdatet"
+
+#: inc/functions.php:1462
+#: inc/functions.php:1561
+#, php-format
+#@ wpml-string-translation
+msgid "Opening folder: %s"
+msgstr "Openen map: %s"
+
+#: menu/string-translation.php:615
+#@ wpml-string-translation
+msgid "Original language of strings"
+msgstr "Originele taal van de strings"
+
+#: inc/functions.php:5
+#@ wpml-string-translation
+msgid "Partial translation"
+msgstr "Gedeeltelijke vertaling"
+
+#: menu/string-translation.php:137
+#, php-format
+#@ wpml-string-translation
+msgid "Pending %s translation (%d)"
+msgstr "Wachten op %s vertaling (%d)"
+
+#: menu/string-translation.php:698
+#@ wpml-string-translation
+msgid "Please enter a context!"
+msgstr "Gelieve een context in te voeren!"
+
+#: menu/string-translation.php:699
+#@ wpml-string-translation
+msgid "Please select the .po file to upload!"
+msgstr "Gelieve het .po-bestand te selecteren dat u wilt uploaden!"
+
+#: menu/theme-localization-ui.php:97
+#: menu/theme-localization-ui.php:107
+#@ wpml-string-translation
+msgid "Plugin"
+msgstr "Plug-in"
+
+#: menu/auto-download-mo.php:195
+#@ wpml-string-translation
+msgid "Proceed"
+msgstr "Verdergaan"
+
+#: menu/theme-localization-ui.php:5
+#@ wpml-string-translation
+msgid "Re-scanning the plugins or the themes will reset the strings tracked in the code or the HTML source"
+msgstr "Als u de plug-ins of thema's opnieuw scant, dan worden de strings verwijderd die bewaard worden in de code of in de HTML-bron"
+
+#: inc/functions.php:2538
+#@ wpml-string-translation
+msgid "Request failed"
+msgstr "Verzoek mislukt"
+
+#: inc/auto-download-locales.php:132
+#@ wpml-string-translation
+msgid "Review changes and update"
+msgstr "Wijzigingen nakijken en updaten"
+
+#: menu/_slug-translation-options.php:27
+#: menu/auto-download-mo-config.php:24
+#: menu/string-translation.php:350
+#@ wpml-string-translation
+msgid "Save"
+msgstr "Opslaan"
+
+#: menu/string-translation.php:636
+#@ wpml-string-translation
+msgid "Save options and rescan strings"
+msgstr "Opties opslaan en strings opnieuw scannen"
+
+#: menu/theme-localization-ui.php:183
+#@ wpml-string-translation
+msgid "Scan the selected plugins for strings"
+msgstr "De geselecteerde plug-ins scannen op strings"
+
+#: menu/theme-localization-ui.php:72
+#@ wpml-string-translation
+msgid "Scan the theme for strings"
+msgstr "Het thema scannen op strings"
+
+#: inc/functions.php:1467
+#: inc/functions.php:1552
+#: inc/functions.php:1565
+#, php-format
+#@ wpml-string-translation
+msgid "Scanning file: %s"
+msgstr "Scannen bestand: %s"
+
+#: inc/functions.php:1453
+#, php-format
+#@ wpml-string-translation
+msgid "Scanning theme folder: %s"
+msgstr "Themamap aan het scannen: %s"
+
+#: menu/string-translation.php:172
+#@ wpml-string-translation
+msgid "Search"
+msgstr "Zoeken"
+
+#: menu/string-translation.php:163
+#@ wpml-string-translation
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: menu/string-translation.php:708
+#@ wpml-string-translation
+msgid "Select context:"
+msgstr "Context selecteren:"
+
+#: menu/auto-download-mo-config.php:5
+#@ wpml-string-translation
+msgid "Select how to get translations for WordPress core"
+msgstr "Selecteren hoe je vertalingen kunt ontvangen voor de basis van WordPress"
+
+#: menu/string-translation.php:150
+#@ wpml-string-translation
+msgid "Select strings within context:"
+msgstr "Selecteren van strings binnen de context:"
+
+#: menu/string-translation.php:674
+#@ wpml-string-translation
+msgid "Select what the strings are for:"
+msgstr "Selecteer waarvoor de strings moeten dienen:"
+
+#: menu/string-translation.php:130
+#@ wpml-string-translation
+msgid "Select which strings to display:"
+msgstr "Selecteer de strings die weergegeven moeten worden:"
+
+#: menu/string-translation.php:637
+#@ wpml-string-translation
+msgid "Settings saved"
+msgstr "Instellingen opgeslagen"
+
+#: menu/string-translation.php:177
+#, php-format
+#@ wpml-string-translation
+msgid "Showing only strings that contain %s"
+msgstr "Enkel strings weergeven die %s bevatten"
+
+#: inc/functions.php:1471
+#: inc/functions.php:1569
+#, php-format
+#@ wpml-string-translation
+msgid "Skipping file: %s"
+msgstr "Overslaan bestand: %s"
+
+#: inc/functions.php:2360
+#@ wpml-string-translation
+msgid "Some strings were not sent to translation."
+msgstr "sommige strings zijn niet verzonden om te vertalen."
+
+#: menu/string-translation.php:192
+#: menu/string-translation.php:202
+#@ wpml-string-translation
+msgid "Status"
+msgstr "Status"
+
+#: menu/auto-download-mo.php:118
+#: menu/auto-download-mo.php:150
+#: menu/auto-download-mo.php:164
+#: menu/auto-download-mo.php:182
+#: menu/string-translation.php:96
+#: menu/string-translation.php:102
+#: menu/string-translation.php:191
+#: menu/string-translation.php:201
+#@ wpml-string-translation
+msgid "String"
+msgstr "String"
+
+#: inc/wpml-string-translation.class.php:207
+#: inc/wpml-string-translation.class.php:212
+#: inc/wpml-string-translation.class.php:213
+#@ wpml-string-translation
+msgid "String Translation"
+msgstr "Stringvertaling"
+
+#: inc/wpml-string-translation.class.php:324
+#: menu/string-translation-translate-options.php:6
+#: menu/string-translation.php:76
+#@ wpml-string-translation
+msgid "String translation"
+msgstr "Stringvertaling"
+
+#: inc/wpml-string-translation.class.php:326
+#@ wpml-string-translation
+msgid "String translation allows you to enter translation for texts such as the site's title, tagline, widgets and other text not contained in posts and pages."
+msgstr "Met stringvertaling kunt u vertalingen invoeren voor teksten zoals de titel van de site, een tagline, widgets en andere tekst die niet opgenomen is in posts of pagina's."
+
+#: menu/string-translation.php:625
+#@ wpml-string-translation
+msgid "Strings Language"
+msgstr "Taal van de strings"
+
+#: menu/theme-localization-ui.php:79
+#@ wpml-string-translation
+msgid "Strings in the plugins"
+msgstr "Strings in de plug-ins"
+
+#: menu/theme-localization-ui.php:2
+#@ wpml-string-translation
+msgid "Strings in the theme"
+msgstr "Strings in het thema"
+
+#: menu/string-translation.php:409
+#@ wpml-string-translation
+msgid "Strings per page:"
+msgstr "Strings per pagina:"
+
+#: menu/string-translation.php:697
+#: menu/string-translation.php:725
+#@ wpml-string-translation
+msgid "Submit"
+msgstr "Insturen"
+
+#: menu/auto-download-mo.php:73
+#@ wpml-string-translation
+msgid "Success!"
+msgstr "Succes!"
+
+#: inc/functions.php:75
+#@ wpml-string-translation
+msgid "Tagline"
+msgstr "Tagline"
+
+#: menu/string-translation-translate-options.php:11
+#, php-format
+#@ wpml-string-translation
+msgid "The fields with <span%s>cyan</span> background are text fields and the fields with <span%s>gray</span> background are numeric."
+msgstr "De velden met een<span%s>blauwe</span> achtergrond zijn tekstvelden en de velden met een<span%s>grijze</span> achtergrond zijn numerieke velden."
+
+#: inc/functions.php:1488
+#@ wpml-string-translation
+msgid "The following files were processed:"
+msgstr "De volgende bestanden werden verwerkt:"
+
+#: menu/theme-localization-ui.php:11
+#@ wpml-string-translation
+msgid "The following strings were found in your theme."
+msgstr "De volgende strings werden in uw thema gevonden."
+
+#: menu/string-translation-translate-options.php:28
+#, php-format
+#@ wpml-string-translation
+msgid "The selected strings can now be translated using the <a%s>string translation</a> screen"
+msgstr "De geselecteerde strings kunnen nu vertaald worden met behulp van het scherm <a%s>stringvertaling</a>"
+
+#: inc/functions.php:2365
+#@ wpml-string-translation
+msgid "The string was sent to translation."
+msgstr "De string werd verzonden om te vertalen."
+
+#: inc/wpml-string-translation.class.php:333
+#, php-format
+#@ wpml-string-translation
+msgid "There are <a href=\"%s\"><b>%s</b> strings</a> that need to be updated or translated. "
+msgstr "Er zijn <a href=\"%s\"><b>%s</b> strings</a> die geüpdatet of vertaald moeten worden."
+
+#: inc/wpml-string-translation.class.php:331
+#, php-format
+#@ wpml-string-translation
+msgid "There is <a href=\"%s\"><b>1</b> string</a> that needs to be updated or translated. "
+msgstr "Er is <a href=\"%s\"><b>1</b> string</a> die geüpdatet of vertaald moet worden."
+
+#: menu/auto-download-mo.php:202
+#@ wpml-string-translation
+msgid "There is nothing to be updated or to be added."
+msgstr "Er is niets om te updaten of toe te voegen."
+
+#: menu/string-translation-translate-options.php:10
+#@ wpml-string-translation
+msgid "This table shows all the admin texts that WPML  found."
+msgstr "Deze tabel geeft alle adminteksten weer die WPML gevonden heeft."
+
+#: menu/auto-download-mo.php:98
+#, php-format
+#@ wpml-string-translation
+msgid "This update includes %d new strings and %d updated strings. You can review the strings below. Then, go to the <a%s>bottom of this page</a> and click on the Proceed button."
+msgstr "Deze update bevat %d nieuwe strings en %d strings die geüpdatet zijn. Je kunt de strings hieronder nakijken. Daarna moet je klikken op de knop Verdergaan <a%s>onderaaan deze pagina</a>."
+
+#: inc/widget-text.php:23
+#: inc/widget-text.php:33
+#@ sitepress
+msgid "This widget is converted to multilingual"
+msgstr "Deze widget is naar meerdere talen geconverteerd"
+
+#: inc/widget-text.php:190
+#@ default
+msgid "Title:"
+msgstr "Titel:"
+
+#: menu/theme-localization-ui.php:60
+#@ wpml-string-translation
+msgid "To translate your theme's texts, click on the button below. WPML will scan your theme for texts and let you enter translations."
+msgstr "Om de teksten van uw thema te vertalen, moet u op de onderstaande knop klikken. WPML zal uw thema scannen op teksten en u zult vertalingen kunnen invoeren."
+
+#: menu/theme-localization-ui.php:43
+#: menu/theme-localization-ui.php:51
+#: menu/theme-localization-ui.php:157
+#@ wpml-string-translation
+msgid "Total"
+msgstr "Totaal"
+
+#: menu/string-translation.php:531
+#@ wpml-string-translation
+msgid "Track where string appear on the site"
+msgstr "Bijhouden waar de strings verschijnen op de site"
+
+#: menu/string-translation.php:543
+#@ wpml-string-translation
+msgid "Track where strings appear on the site"
+msgstr "Bijhouden waar strings op de site verschijnen"
+
+#: inc/wpml-string-translation.class.php:339
+#: menu/string-translation.php:499
+#@ wpml-string-translation
+#@ wpml-translation-management
+msgid "Translate strings"
+msgstr "Strings vertalen"
+
+#: menu/string-translation.php:802
+#@ wpml-string-translation
+msgid "Translate texts in admin screens &raquo;"
+msgstr "Teksten in adminschermen vertalen &raquo;"
+
+#: menu/string-translation.php:478
+#, php-format
+#@ wpml-string-translation
+msgid "Translate to %s"
+msgstr "Vertalen naar %s"
+
+#: menu/string-translation.php:325
+#, php-format
+#@ wpml-string-translation
+msgid "Translated by %s on %s"
+msgstr "Vertaald door by %s op %s"
+
+#: menu/string-translation.php:767
+#, php-format
+#@ wpml-string-translation
+msgid "Translating users of types: %s"
+msgstr "Gebruikers van deze types worden vertaald: %s"
+
+#: menu/auto-download-mo.php:165
+#: menu/auto-download-mo.php:183
+#@ wpml-string-translation
+msgid "Translation"
+msgstr "Vertaling"
+
+#: inc/functions.php:4
+#: inc/functions.php:2537
+#@ wpml-string-translation
+msgid "Translation complete"
+msgstr "Vertaling voltooid"
+
+#: menu/string-translation.php:349
+#@ wpml-string-translation
+msgid "Translation is complete"
+msgstr "Vertaling is voltooid"
+
+#: menu/string-translation.php:141
+#@ wpml-string-translation
+msgid "Translation needed"
+msgstr "Vertaling nodig"
+
+#: inc/functions.php:6
+#@ wpml-string-translation
+msgid "Translation needs update"
+msgstr "Vertaling moet worden geüpdatet"
+
+#: menu/string-translation.php:465
+#@ wpml-string-translation
+msgid "Translation options"
+msgstr "Vertaalopties"
+
+#: inc/functions.php:2536
+#@ wpml-string-translation
+msgid "Translation received"
+msgstr "Vertaling ontvangen"
+
+#: menu/theme-localization-ui.php:16
+#: menu/theme-localization-ui.php:99
+#: menu/theme-localization-ui.php:109
+#@ wpml-string-translation
+msgid "Translation status"
+msgstr "Vertaalstatus"
+
+#: menu/auto-download-mo.php:112
+#, php-format
+#@ wpml-string-translation
+msgid "Updated translations (%d)"
+msgstr "Geüpdatete vertalingen (%d)"
+
+#: menu/string-translation.php:483
+#@ wpml-string-translation
+msgid "Use local translators"
+msgstr "Lokale vertalers gebruiken"
+
+#: menu/string-translation.php:481
+#@ wpml-string-translation
+msgid "Use translators from ICanLocalize"
+msgstr "Vertalers van ICanLocalize gebruiken"
+
+#: menu/string-translation.php:190
+#: menu/string-translation.php:200
+#@ wpml-string-translation
+msgid "View"
+msgstr "Bekijken"
+
+#: menu/theme-localization-ui.php:164
+#@ wpml-string-translation
+msgid "View all the plugin's texts"
+msgstr "Alle teksten van de plug-in bekijken"
+
+#: menu/theme-localization-ui.php:32
+#@ wpml-string-translation
+msgid "View all the theme's texts"
+msgstr "Alle teksten van het thema bekijken"
+
+#: menu/theme-localization-ui.php:34
+#: menu/theme-localization-ui.php:166
+#@ wpml-string-translation
+msgid "View strings that need translation"
+msgstr "Strings bekijken die vertaald moeten worden"
+
+#: inc/wpml-string-translation.class.php:91
+#, php-format
+#@ wpml-string-translation
+msgid "WPML String Translation is enabled but not effective. It is not compatible with  <a href=\"%s\">WPML</a> versions prior 2.0.5."
+msgstr "WPML-stringvertaling is geactiveerd maar wordt niet uitgevoerd. Deze optie is niet compatibel met <a href=\"%s\">WPML</a>-versies die ouder zijn dan 2.0.5."
+
+#: inc/wpml-string-translation.class.php:84
+#, php-format
+#@ wpml-string-translation
+msgid "WPML String Translation is enabled but not effective. It requires <a href=\"%s\">WPML</a> in order to work."
+msgstr "WPML-stringvertaling is geactiveerd maar wordt niet uitgevoerd. Deze optie vereist <a href=\"%s\">WPML</a> om te kunnen functioneren."
+
+#: menu/string-translation.php:576
+#@ wpml-string-translation
+msgid "WPML can automatically register strings for translation. This allows you to translate user-generated content with minimal PHP code."
+msgstr "WPML kan automatisch strings registreren om te vertalen. Zo kunt u een user-generated content creëren met een minimale PHP-code."
+
+#: menu/string-translation.php:534
+#@ wpml-string-translation
+msgid "WPML can keep track of where strings are used on the public pages. Activating this feature will enable the 'view in page' functionality and make translation easier."
+msgstr "WPML kan bijhouden waar strings gebruikt worden op openbare pagina's. Door deze optie te activeren wordt de functie 'bekijken op pagina' mogelijk en kunnen de strings makkelijker vertaald worden."
+
+#: inc/functions.php:1490
+#: inc/functions.php:1598
+#, php-format
+#@ wpml-string-translation
+msgid "WPML found %s strings. They were added to the string translation table."
+msgstr "WPML heeft %s strings gevonden. Ze werden toegevoegd aan de tabel met stringvertalingen."
+
+#: menu/auto-download-mo-config.php:12
+#@ wpml-string-translation
+msgid "WPML will automatically download translations for WordPress"
+msgstr "WPML zal automatisch vertalingen downloaden voor WordPress"
+
+#: menu/string-translation.php:316
+#@ wpml-string-translation
+msgid "Waiting for a local translator."
+msgstr "Wachten op een lokale vertaler."
+
+#: inc/functions.php:8
+#: inc/functions.php:2534
+#: menu/string-translation.php:142
+#@ wpml-string-translation
+msgid "Waiting for translator"
+msgstr "Wachten op vertaler"
+
+#: inc/widget-text.php:83
+#@ sitepress
+msgid "Widget is already converted"
+msgstr "Widget is al geconverteerd"
+
+#: menu/theme-localization-ui.php:130
+#@ wpml-string-translation
+msgid "Yes"
+msgstr "Ja"
+
+#: menu/string-translation-translate-options.php:29
+#@ wpml-string-translation
+msgid "You have removed some of the texts that are translated already. The translations will be lost."
+msgstr "U hebt sommige teksten verwijderd die al vertaald waren. De vertalingen zijn verloren gegaan."
+
+#: menu/string-translation.php:508
+#, php-format
+#@ wpml-string-translation
+msgid "Your balance with ICanLocalize is %s. Visit your %sICanLocalize finance%s page to deposit additional funds."
+msgstr "Uw saldo bij ICanLocalize bedraagt %s. Bezoek uw pagina met %sICanLocalize-financiën%s om extra kapitaal te storten."
+
+#: menu/theme-localization-ui.php:169
+#@ wpml-string-translation
+msgid "create PO file"
+msgstr "PO-bestand creëren"
+
+#: menu/string-translation.php:764
+#@ wpml-string-translation
+msgid "edit"
+msgstr "bewerken"
+
+#: menu/theme-localization-ui.php:125
+#@ wpml-string-translation
+msgid "n/a"
+msgstr "niet beschikbaar"
+
+#: menu/string-translation.php:685
+#@ wpml-string-translation
+msgid "new"
+msgstr "nieuw"
+
+#: menu/theme-localization-ui.php:28
+#@ wpml-string-translation
+msgid "no domain"
+msgstr "geen domein"
+
+#: menu/string-translation.php:761
+#@ wpml-string-translation
+msgid "none"
+msgstr "geen"
+
+#: menu/string-translation.php:691
+#@ wpml-string-translation
+msgid "select from existing"
+msgstr "selecteren uit de bestaande"
+
+#: menu/string-translation.php:235
+#@ wpml-string-translation
+msgid "translations"
+msgstr "vertalingen"
+
+#: menu/string-translation.php:221
+#: menu/string-translation.php:224
+#: menu/string-translation.php:227
+#@ wpml-string-translation
+msgid "view in page"
+msgstr "op pagina bekijken"
+
+#: menu/string-translation.php:218
+#@ wpml-string-translation
+msgid "view in source"
+msgstr "bekijken in bron"
+
+#: inc/auto-download-locales.php:129
+#, php-format
+#@ wpml-string-translation
+msgid "Updated %s translation is available"
+msgstr ""
+
+#: inc/auto-download-locales.php:143
+#@ wpml-string-translation
+msgid "No updates found."
+msgstr ""
+
+#: menu/_slug-translation-options.php:6
+#@ wpml-string-translation
+msgid "Custom posts slug translation options"
+msgstr ""
+
+#: menu/_slug-translation-options.php:15
+#@ wpml-string-translation
+msgid "Translate custom posts slugs (via WPML String Translation)."
+msgstr ""
+
+#: menu/_slug-translation-options.php:19
+#@ wpml-string-translation
+msgid "Slug translation is a new and experimental feature, which may not work in all permalink settings."
+msgstr ""
+
+#: menu/auto-download-mo.php:20
+#, php-format
+#@ wpml-string-translation
+msgid "%d new translation was added."
+msgid_plural "%d new translations were added."
+msgstr[0] ""
+msgstr[1] ""
+
+#: menu/auto-download-mo.php:36
+#, php-format
+#@ wpml-string-translation
+msgid "%d translation was updated."
+msgid_plural "%d translations were updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: menu/string-translation.php:82
+#, php-format
+#@ wpml-string-translation
+msgid "These are the strings that we found in your .po file. Please carefully review them. Then, click on the 'add' or 'cancel' buttons at the %sbottom of this screen%s. You can exclude individual strings by clearing the check boxes next to them."
+msgstr ""
+
+#: menu/string-translation.php:544
+#: menu/string-translation.php:598
+#@ wpml-string-translation
+msgid "Performance considerations"
+msgstr ""
+

@@ -1,0 +1,226 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: belvue v0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-11-19 13:29:11+0000\n"
+"Last-Translator: virtualsushi <jwa@virtualsushi.be>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:5
+#@ belvue
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:6
+#@ belvue
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: archive.php:24
+#, php-format
+#@ belvue
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:32
+#, php-format
+#@ belvue
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:35
+#, php-format
+#@ belvue
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:38
+#, php-format
+#@ belvue
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:41
+#@ belvue
+msgid "Asides"
+msgstr ""
+
+#: archive.php:44
+#@ belvue
+msgid "Images"
+msgstr ""
+
+#: archive.php:47
+#@ belvue
+msgid "Videos"
+msgstr ""
+
+#: archive.php:50
+#@ belvue
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:53
+#@ belvue
+msgid "Links"
+msgstr ""
+
+#: archive.php:56
+#: sidebar.php:7
+#@ belvue
+msgid "Archives"
+msgstr ""
+
+#: footer.php:6
+#@ belvue
+msgid "about Belvue"
+msgstr "Over Belvue"
+
+#: footer.php:10
+#@ belvue
+msgid "more"
+msgstr "Meer"
+
+#: footer.php:21
+#@ belvue
+msgid "The email is not correct"
+msgstr "De email is niet correct"
+
+#: footer.php:25
+#@ belvue
+msgid "You must accept the privacy statement"
+msgstr ""
+
+#: footer.php:35
+#@ belvue
+msgid "Get discounts, news and some (very) special treats"
+msgstr ""
+
+#: footer.php:37
+#@ belvue
+msgctxt "submit button"
+msgid "Sign me up"
+msgstr ""
+
+#: footer.php:42
+#@ belvue
+msgid "Belvue social"
+msgstr ""
+
+#: footer.php:53
+#@ belvue
+msgid ">share this page on"
+msgstr "> Delen op"
+
+#: footer.php:71
+#@ belvue
+msgid "Book a room"
+msgstr "Boek een kamer"
+
+#: front-page.php:156
+#@ belvue
+msgid "address"
+msgstr "Adres"
+
+#: front-page.php:160
+#@ belvue
+msgid "contacts"
+msgstr ""
+
+#: front-page.php:260
+#@ belvue
+msgid "Belvue FAQ"
+msgstr ""
+
+#: functions.php:50
+#@ belvue
+msgid "Main menu"
+msgstr ""
+
+#: functions.php:51
+#@ belvue
+msgid "User menu"
+msgstr ""
+
+#: functions.php:52
+#@ belvue
+msgid "Membership menu"
+msgstr ""
+
+#: functions.php:77
+#: functions.php:83
+#@ belvue
+msgid "Logo"
+msgstr ""
+
+#: header.php:58
+#@ belvue
+msgid "book a room"
+msgstr "Boek een kamer"
+
+#: index.php:10
+#@ belvue
+msgid "No posts to display"
+msgstr ""
+
+#: index.php:11
+#, php-format
+#@ belvue
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: index.php:13
+#: search.php:16
+#@ belvue
+msgid "Nothing Found"
+msgstr "Er werd niets gevonden"
+
+#: index.php:14
+#: search.php:17
+#@ belvue
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr ""
+
+#: search.php:6
+#, php-format
+#@ belvue
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:2
+#@ belvue
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:2
+#@ belvue
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:3
+#@ belvue
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:13
+#@ belvue
+msgid "Meta"
+msgstr ""
+
