@@ -11,7 +11,7 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'membership', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
                 </div>
                 <div class="grid-span-2 snip">
-                    <h3>Subscribe</h3>
+                    <h3><?php _e( '', 'belvue' ); ?><Subscribe</h3>
                     <script type="text/javascript">
                         //<![CDATA[
                         if (typeof newsletter_check !== "function") {
@@ -33,33 +33,33 @@
                     <div class="newsletter newsletter-subscription">
                         <form method="post" action="<?php echo plugins_url();?>/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
                             <label><?php _e('Get discounts, news and some (very) special treats','belvue')?></label>
-                            <input class="newsletter-email" type="email" name="ne" size="30"  placeholder="Enter your email"  required>
-                            <button class="newsletter-submit be" type="submit"><span><?php echo esc_attr_x( 'Sign me up', 'submit button', 'belvue' ); ?></span><i class="fa fa-angle-right"></i></button>
+                            <input class="newsletter-email" type="email" name="ne" size="30"  placeholder="<?php _e( 'Enter your email', 'belvue' ); ?>"  required>
+                            <button class="newsletter-submit be" type="submit"><span><?php _e( 'Sign me up', 'belvue' ); ?></span><i class="fa fa-angle-right"></i></button>
                         </form>
                     </div>
                 </div>
                 <div class="grid-span-2 snip">
                     <h3><?php _e('Belvue social','belvue')?></h3>
                         <ul class="list-inline banner-social-buttons">
-                            <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                            <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-                            <li><a href="<?php the_field('four', 7); ?>" target="_blank"><i class="fa fa-foursquare"></i> Fourquare</a></li>
-                            <li><a href="<?php the_field('yt', 7); ?>" target="_blank"><i class="fa fa-youtube"></i> Youtube</a></li>
-                            <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> Google +</a></li>
+                            <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></a></li>
+                            <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></a></li>
+                            <li><a href="<?php the_field('four', 7); ?>" target="_blank"><i class="fa fa-foursquare"></i> <?php _e( 'Fourquare', 'belvue' ); ?></a></li>
+                            <li><a href="<?php the_field('yt', 7); ?>" target="_blank"><i class="fa fa-youtube"></i> <?php _e( 'Youtube', 'belvue' ); ?></a></li>
+                            <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +<', 'belvue' ); ?></a></li>
                         </ul>
                 </div>
                 <div class="grid-span-2 snip">
-                    <h3>like us on</h3>
-                    <h3><?php _e('>share this page on','belvue')?></h3>
+                    <h3><?php _e( 'ike us on', 'belvue' ); ?>l</h3>
+                    <h3><?php _e('share this page on','belvue')?></h3>
                     <ul class="list-inline banner-social-buttons">
-                        <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                        <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-                        <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> Google +</a></li>
+                        <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></a></li>
+                        <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></a></li>
+                        <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +', 'belvue' ); ?></a></li>
                     </ul>
                 </div>
             </div>
             <div class="flex">
-                <p class="grid-span-10">© HOTEL BELVUE 2014</p>
+                <p class="grid-span-10"><?php _e( '© HOTEL BELVUE 2014', 'belvue' ); ?></p>
             </div>
         </div>
     </footer>
@@ -67,11 +67,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only"><?php _e( 'Close', 'belvue' ); ?></span></button>
                     <h4 class="modal-title" id="myModalLabel"><?php _e('Book a room','belvue');?></h4>
                 </div>
                 <div class="modal-body">
-                    <p>Sample modal text</p>
+                    <p><?php _e( 'Sample modal text', 'belvue' ); ?></p>
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@
                     <?php endif; ?>
                     <div class="review grid-span-2 snip be">
                         <i class="fa fa-pencil-square-o"></i>
-                        <a href="" target="_blank">“Amazing room for a great price!”</a>
+                        <a href="" target="_blank">“<?php _e('Amazing room for a great price!','belvue')?>”</a>
                     </div>
                 </div>
             </div>
@@ -51,8 +51,8 @@
                             <?php if (get_sub_field('desc', 35)): ?>
                                 <div class="grid-span-5 desc">
                                     <?php the_sub_field('desc', 35); ?>
-                                    <a class="btn green trigger trigger_e" ><span>explore</span> <i class="fa fa-angle-down"></i></a>
-                                    <a class="btn green trigger trigger_c" ><span>Room à la carte</span> <i class="fa fa-angle-down"></i></a>
+                                    <a class="btn green trigger trigger_e" ><span><?php _e('explore','belvue')?></span> <i class="fa fa-angle-down"></i></a>
+                                    <a class="btn green trigger trigger_c" ><span><?php _e('Room à la carte','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('photo', 35)): ?>
@@ -114,7 +114,7 @@
                             <?php if (get_sub_field('desc')): ?>
                                 <div class="grid-span-5 desc">
                                     <?php the_sub_field('desc'); ?>
-                                    <a class="btn green trigger trigger_e" ><span>explore</span> <i class="fa fa-angle-down"></i></a>
+                                    <a class="btn green trigger trigger_e" ><span><?php _e('explore','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('photo')): ?>
@@ -174,8 +174,8 @@
                             <?php if (get_sub_field('desc', 85)): ?>
                                 <div class="grid-span-5 desc">
                                     <?php the_sub_field('desc', 85); ?>
-                                    <a class="btn green trigger trigger_e" ><span>explore</span> <i class="fa fa-angle-down"></i></a>
-                                    <a class="btn green trigger trigger_c" ><span>Room à la carte</span> <i class="fa fa-angle-down"></i></a>
+                                    <a class="btn green trigger trigger_e" ><span><?php _e('explore','belvue')?></span> <i class="fa fa-angle-down"></i></a>
+                                    <a class="btn green trigger trigger_c" ><span><?php _e('Room à la carte','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('photo', 85)): ?>

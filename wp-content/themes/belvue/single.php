@@ -5,7 +5,7 @@
         <div class="row">
             <article class="col-xs-12">
                 <h1><?php the_title(); ?></h1>
-                <p><time><?php the_time('F j/Y') ?></time> - By: <?php echo get_the_author(); ?></p>
+                <p><time><?php the_time('F j/Y') ?></time> - <?php _e('By','belvue')?>: <?php echo get_the_author(); ?></p>
                 <?php the_content(); ?>
             </article>
         </div>
