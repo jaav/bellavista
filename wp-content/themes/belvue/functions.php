@@ -1,4 +1,6 @@
 <?php
+
+load_theme_textdomain( 'belvue', TEMPLATEPATH . '/languages' );
 /*
  * Custom styles
  *
