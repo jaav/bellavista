@@ -45,7 +45,7 @@
                             <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></a></li>
                             <li><a href="<?php the_field('four', 7); ?>" target="_blank"><i class="fa fa-foursquare"></i> <?php _e( 'Fourquare', 'belvue' ); ?></a></li>
                             <li><a href="<?php the_field('yt', 7); ?>" target="_blank"><i class="fa fa-youtube"></i> <?php _e( 'Youtube', 'belvue' ); ?></a></li>
-                            <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +<', 'belvue' ); ?></a></li>
+                            <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +', 'belvue' ); ?></a></li>
                         </ul>
                 </div>
                 <div class="grid-span-2 snip">

@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Home
+ */
+get_header(); ?>
     <?php while ( have_posts() ) : the_post(); ?>
         <section class="top">
            <div class="container">
@@ -45,19 +49,19 @@
     <section class="room">
         <div class="container">
             <div class="row">
-                <?php if( have_rows('description', 35) ): ?>
-                    <?php while ( have_rows('description', 35) ) : the_row(); ?>
+                <?php if( have_rows('description_r') ): ?>
+                    <?php while ( have_rows('description_r') ) : the_row(); ?>
                         <div class="flex">
-                            <?php if (get_sub_field('desc', 35)): ?>
+                            <?php if (get_sub_field('desc')): ?>
                                 <div class="grid-span-5 desc">
-                                    <?php the_sub_field('desc', 35); ?>
+                                    <?php the_sub_field('desc'); ?>
                                     <a class="btn green trigger trigger_e" ><span><?php _e('explore','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                     <a class="btn green trigger trigger_c" ><span><?php _e('Room à la carte','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
-                            <?php if (get_sub_field('photo', 35)): ?>
+                            <?php if (get_sub_field('photo')): ?>
                                 <div class="grid-span-5 photo">
-                                    <?php $photo = get_sub_field('photo',35) ?>
+                                    <?php $photo = get_sub_field('photo') ?>
                                     <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
                                 </div>
                             <?php endif; ?>
@@ -65,16 +69,16 @@
                         <!--<a class="btn green" href="">explore</a>-->
                     <?php endwhile; ?>
                 <?php endif; ?>
-                <?php if( have_rows('explore', 35) ): ?>
+                <?php if( have_rows('explore_r') ): ?>
                     <div class="explore wrap">
-                    <?php while ( have_rows('explore', 35) ) : the_row(); ?>
+                    <?php while ( have_rows('explore_r') ) : the_row(); ?>
                        <?php get_template_part('partials/carousel'); ?>
                     <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
-                <?php if( have_rows('carte',35) ): ?>
+                <?php if( have_rows('carte_r') ): ?>
                     <div class="carte wrap">
-                    <?php while ( have_rows('carte',35) ) : the_row(); ?>
+                    <?php while ( have_rows('carte_r') ) : the_row(); ?>
                         <?php get_template_part('partials/carousel'); ?>
                     <?php endwhile; ?>
                     </div>
@@ -154,12 +158,12 @@
                     </div>
                     <div class="grid-span-2 snip be xxl">
                         <h2><?php _e('address','belvue')?></h2>
-                        <p><?php echo the_field('address', 7); ?></p>
+                        <p><?php echo the_field('address'); ?></p>
                     </div>
                     <div class="grid-span-2 snip be xxl">
                         <h2><?php _e('contacts','belvue')?></h2>
-                        <p><a href="mailto:"><?php echo the_field('email', 7); ?></a>
-                            <?php echo the_field('phone', 7); ?></p>
+                        <p><a href="mailto:"><?php echo the_field('email'); ?></a>
+                            <?php echo the_field('phone'); ?></p>
                     </div>
                 </div>
             </div>
@@ -168,35 +172,35 @@
     <section class="events">
         <div class="container">
             <div class="row">
-                <?php if( have_rows('description', 85) ): ?>
-                    <?php while ( have_rows('description', 85) ) : the_row(); ?>
+                <?php if( have_rows('description_e') ): ?>
+                    <?php while ( have_rows('description_e') ) : the_row(); ?>
                         <div class="flex">
-                            <?php if (get_sub_field('desc', 85)): ?>
+                            <?php if (get_sub_field('desc_e')): ?>
                                 <div class="grid-span-5 desc">
-                                    <?php the_sub_field('desc', 85); ?>
+                                    <?php the_sub_field('desc_e'); ?>
                                     <a class="btn green trigger trigger_e" ><span><?php _e('explore','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                     <a class="btn green trigger trigger_c" ><span><?php _e('Room à la carte','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
-                            <?php if (get_sub_field('photo', 85)): ?>
+                            <?php if (get_sub_field('photo_e')): ?>
                                 <div class="grid-span-5 photo">
-                                    <?php $photo = get_sub_field('photo',85) ?>
+                                    <?php $photo = get_sub_field('photo_e') ?>
                                     <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
                                 </div>
                             <?php endif; ?>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-                <?php if( have_rows('explore', 85) ): ?>
+                <?php if( have_rows('explore') ): ?>
                     <div class="explore wrap">
-                        <?php while ( have_rows('explore', 85) ) : the_row(); ?>
+                        <?php while ( have_rows('explore') ) : the_row(); ?>
                             <?php get_template_part('partials/carousel'); ?>
                         <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
-                <?php if( have_rows('carte',85) ): ?>
+                <?php if( have_rows('carte') ): ?>
                     <div class="carte wrap">
-                        <?php while ( have_rows('carte',85) ) : the_row(); ?>
+                        <?php while ( have_rows('carte') ) : the_row(); ?>
                             <?php get_template_part('partials/carousel'); ?>
                         <?php endwhile; ?>
                     </div>
