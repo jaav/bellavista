@@ -59,5 +59,6 @@
             </ul>
         </div>
     </div>
+    <div class="white-spacer"></div>
 </header>
 <main>

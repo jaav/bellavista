@@ -36,7 +36,7 @@ $ff: 'Arvo', serif;
 $ffh: 'Cabin', sans-serif;
 
 // main width variables - if you want to modify values go to _variables.scss
-// $screen-xs - 480px
+// $screen-xs - px
 // $screen-sm - 768px
 // $screen-md - 992px
 // $screen-lg - 1200px
@@ -342,7 +342,7 @@ header {
     height: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
-    #menu-user-menu {
+    #menu-user-menu, #menu-user-menu-german, #menu-user-menu-dutch, #menu-user-menu-french {
       float: right ;
       margin: 0;
       position: relative;
@@ -445,6 +445,13 @@ header {
       }
     }
   }
+  .white-spacer{
+    height: 2px;
+    width: 100%;
+    background: #FFF;
+    border-left: 1px solid $r;
+    border-right: 1px solid $r;
+  }
 }
 // main container
 main {
@@ -452,10 +459,10 @@ main {
   border-left: 1px solid #be141b;
   border-right: 1px solid #be141b;
   @media (max-width: $screen-sm) {
-    padding-top: 175px;
+    padding-top: 132px;
   }
   @media (max-width: $screen-xs) {
-    padding-top: 146px;
+    padding-top: 102px;
   }
   background: lighten($dg, 12%);
   .container {
@@ -596,6 +603,12 @@ main {
       bottom: 0;
       align-self: flex-start;
     }
+    @media (max-width: $screen-sm) {
+      position: static;
+      .grid-span-4, .grid-span-5 {
+        flex-basis: 100%;
+      }
+    }
   }
 }
 .snip {
@@ -733,6 +746,9 @@ main {
   left: 100%;
   width: 100px;
   bottom: 10px;
+  @media (max-width: $screen-sm) {
+    position: static;
+  }
   .owl-buttons {
     width: 100px;
     display: block;

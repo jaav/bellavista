@@ -1,0 +1,2986 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-11-19 13:26:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: no"
+
+#@ sitepress
+msgid ""
+"\n"
+"View the original document in %s here: %s\n"
+msgstr ""
+"\n"
+"Het oorspronkelijke document in het %s hier bekijken: %s\n"
+
+#@ sitepress
+msgid "%d items"
+msgstr "%d items"
+
+#@ sitepress
+msgid "%d job(s) sent to ICanLocalize."
+msgstr "%d opdracht(en) verzonden naar ICanLocalize."
+
+#@ sitepress
+msgid "%s Reminders"
+msgstr "%s herinneringen"
+
+#@ sitepress
+msgid "%s are currently hidden to visitors."
+msgstr "%s zijn momenteel verborgen voor bezoekers."
+
+#@ sitepress
+msgid "%s has been added as a translator for this site."
+msgstr "%s is toegevoegd als een vertaler voor deze site."
+
+#@ sitepress
+msgid "%s has been removed as a translator for this site."
+msgstr "%s is verwijderd als vertaler voor deze site."
+
+#@ sitepress
+msgid "%s is currently hidden to visitors."
+msgstr "%s is momenteel verborgen voor bezoekers."
+
+#@ sitepress
+msgid "%s is defined in your theme. The language switcher can only be customized using the theme's CSS."
+msgstr "%s wordt in uw thema gedefinieerd. De taalwisselaar kan enkel aangepast worden met behulp van de CSS van het thema."
+
+#@ sitepress
+msgid "%s is not translated. %sClick here to make this post type translatable.%s"
+msgstr "%s is niet vertaald. %sKlik hier om dit posttype vertaalbaar te maken.%s"
+
+#@ sitepress
+msgid "%s is translated via WPML. %sClick here to change translation options.%s"
+msgstr "%s wordt vertaald via WPML. %sKlik hier om de vertaalopties te wijzigen.%s"
+
+#@ sitepress
+msgid "(original)"
+msgstr "(origineel)"
+
+#@ sitepress
+msgid "(the language name as it's written in that language)"
+msgstr "(de naam van de taal zoals die in die taal geschreven wordt)"
+
+#@ sitepress
+msgid "(the language name as it's written in the currently displayed language)"
+msgstr "(de naam van de taal zoals die geschreven wordt in de taal die momenteel weergegeven wordt)"
+
+#@ sitepress
+msgid "- (No translators available - %scheck progress%s)"
+msgstr "- (Geen vertalers beschikbaar - %svoortgang bekijken%s)"
+
+#@ sitepress
+msgid "- (No translators available - please %sprovide more information about your site%s)"
+msgstr "- (Geen vertalers beschikbaar - gelieve %swat meer informatie over uw site te verschaffen%s)"
+
+#@ sitepress
+msgid "--None--"
+msgstr "--Geen--"
+
+#@ sitepress
+msgid "--select--"
+msgstr "--selecteren--"
+
+#@ sitepress
+msgid "1. Language for existing contents"
+msgstr "1. Taal voor bestaande inhoud"
+
+#@ sitepress
+msgid "2. Select languages"
+msgstr "2. Talen selecteren"
+
+#@ sitepress
+msgid "3. Add a language switcher"
+msgstr "3. Een taalwisselaar toevoegen"
+
+#@ sitepress
+msgid "<a href=\"%s\"%s>Multilingual WordPress</a> by <a href=\"%s\" rel=\"nofollow\">ICanLocalize</a>"
+msgstr "<a href=\"%s\"%s>Meertalige WordPress</a> door <a href=\"%s\" rel=\"nofollow\">ICanLocalize</a>"
+
+#@ sitepress
+msgid "<i>%s</i> integration"
+msgstr "<i>%s</i> integratie"
+
+#@ sitepress
+msgid "<p>In order to enable ICanLocalize translation, your site needs to be on a public server (not localhost). Please <a%s>contact us</a> for support. </p><p>Show <a%s>debug information</a>.</p>"
+msgstr "<p>Om ICanLocalize-vertalingen te activeren, moet uw site op een openbare server staan (geen localhost). <a%s>Contacteer ons</a> aub voor ondersteuning.  </p><p> <a%s>Debug-informatie</a> weergeven.</p>"
+
+#@ sitepress
+msgid "<strong>WPML notice:</strong> Upgrades to this version are only supported from versions %s and above. To upgrade from version %s, first, download <a%s>2.0.4</a>, do the DB upgrade and then go to this version."
+msgstr "<strong>Opmerking voor WPML:</strong> Upgrades naar deze versie worden enkel ondersteund vanaf versies %s en hoger. Om te upgraden van versie %s, moet u eerst <a%s>2.0.4</a> downloaden, de DB-upgrade uitvoeren en daarna naar deze versie gaan."
+
+#@ sitepress
+msgid "A different domain per language"
+msgstr "Een ander domein per taal"
+
+#@ sitepress
+msgid "A page"
+msgstr "Een pagina"
+
+#@ sitepress
+msgid "A project on ICanLocalize has been created."
+msgstr "Er is een project gecreëerd op ICanLocalize."
+
+#@ sitepress
+msgid "A translation for this post already exists"
+msgstr "Er bestaat reeds een vertaling voor deze post"
+
+#@ sitepress
+msgid "A translation in this language already exists"
+msgstr "Er bestaat reeds een vertaling in deze taal"
+
+#@ sitepress
+msgid "AJAX Error:"
+msgstr "AJAX-fout:"
+
+#@ sitepress
+msgid "Above post"
+msgstr "Bovenstaande post"
+
+#@ sitepress
+msgid "Action"
+msgstr "Actie"
+
+#@ sitepress
+msgid "Activate"
+msgstr "Activeren"
+
+#@ sitepress
+msgid "Active"
+msgstr "Actief"
+
+#@ sitepress
+msgid "Add %s"
+msgstr "%s toevoegen"
+
+#@ sitepress
+msgid "Add / Remove languages"
+msgstr "Talen toevoegen / verwijderen"
+
+#@ sitepress
+msgid "Add Language"
+msgstr "Taal toevoegen"
+
+#@ sitepress
+msgid "Add links to the original content with rel=\"canonical\" attributes."
+msgstr "Links toevoegen aan de originele inhoud met rel=\"canonical\" attributen."
+
+#@ sitepress
+msgid "Add menu translation:  %s"
+msgstr "Menuvertaling toevoegen: %s"
+
+#@ sitepress
+msgid "Add translation to %s"
+msgstr "Vertaling toevoegen aan %s"
+
+#@ sitepress
+msgid "Added languages editing and translation for admin-texts"
+msgstr "Bewerken en vertalen naar toegevoegde talen voor adminteksten"
+
+#@ sitepress
+msgid "Adding language failed."
+msgstr "Toevoegen van taal mislukt."
+
+#@ sitepress
+msgid "Adding translation for: %s."
+msgstr "Vertaling toevoegen voor: %s."
+
+#@ sitepress
+msgid "Additional CSS (optional)"
+msgstr "Bijkomende CSS (optioneel)"
+
+#@ sitepress
+msgid "Adds language information to posts and taxonomies that are missing this information."
+msgstr "Voegt taalinformatie toe aan posts en taxonomieën waar deze informatie ontbreekt."
+
+#@ sitepress
+msgid "Adjust IDs for multilingual functionality"
+msgstr "ID's aanpassen voor meertalige functionaliteit"
+
+#@ sitepress
+msgid "Admin language"
+msgstr "Admintaal"
+
+#@ sitepress
+msgid "Affiliate"
+msgstr "Affiliate"
+
+#@ sitepress
+msgid "Affiliate ID"
+msgstr "Affiliate ID"
+
+#@ sitepress
+msgid "Affiliate ID not defined in the theme"
+msgstr "Affiliate ID niet gedefinieerd in het thema"
+
+#@ sitepress
+msgid "Affiliate KEY not defined in the theme"
+msgstr "Affiliate SLEUTEL niet gedefinieerd in het thema"
+
+#@ sitepress
+msgid "Affiliate Key"
+msgstr "Affiliate sleutel"
+
+#@ sitepress
+msgid "Affiliate information check"
+msgstr "Controle van affiliate informatie"
+
+#@ sitepress
+msgid "Affiliate test"
+msgstr "Affiliate test"
+
+#@ sitepress
+msgid "Affiliates"
+msgstr "Affiliates"
+
+#@ sitepress
+msgid "All %s have the same %s assignments."
+msgstr "Alle %s hebben dezelfde %staken."
+
+#@ sitepress
+msgid "All languages"
+msgstr "Alle talen"
+
+#@ sitepress
+msgid "All languages are currently displayed."
+msgstr "Momenteel worden alle talen weergegeven."
+
+#@ sitepress
+msgid "All languages are currently displayed. Choose what to do when site languages are hidden."
+msgstr "Alle talen worden momenteel weergegeven. Selecteer wat er moet gebeuren wanneer er talen op de site verborgen zijn."
+
+#@ sitepress
+msgid "All posts (display translation if it exists or posts in default language otherwise)."
+msgstr "Alle posts (vertaling weergeven indien die bestaat of zoniet, de posts weergeven in de standaardtaal)"
+
+#@ sitepress
+msgid "All translations you have sent to ICanLocalize will be lost if you reset WPML's data. They cannot be recovered later."
+msgstr "Alle vertalingen die u naar ICanLocalize verzonden hebt, zullen verloren gaan als u de WPML-gegevens verwijdert. Ze kunnen later niet hersteld worden."
+
+#@ sitepress
+msgid "Allows linking existing translations after changing custom posts definition (name) "
+msgstr "Zo kunt u bestaande vertalingen linken nadat de definitie (naam) van de specifieke posts gewijzigd werd"
+
+#@ sitepress
+msgid "Allows linking existing translations after changing custom taxonomies definition (name) "
+msgstr "Zo kunt u bestaande vertalingen linken nadat de definitie (naam) van de specifieke taxonomieën gewijzigd werd."
+
+#@ sitepress
+msgid "Always redirect visitors based on browser language (redirect to home page if translations are missing)"
+msgstr "Bezoekers steeds doorsturen op basis van hun browsertaal (doorverwijzen naar startpagina indien vertalingen ontbreken)"
+
+#@ sitepress
+msgid "An unknown error has occurred when communicating with the ICanLocalize server. Please try again."
+msgstr "Er is een onbekende fout opgetreden bij de communicatie met de ICanLocalize-server. Gelieve opnieuw te proberen."
+
+#@ sitepress
+msgid "Apply"
+msgstr "Toepassen"
+
+#@ sitepress
+msgid "Apply changes"
+msgstr "Wijzigingen toepassen"
+
+#@ sitepress
+msgid "Archive"
+msgstr "Archiveren"
+
+#@ sitepress
+msgid "Archived"
+msgstr "Gearchiveerd"
+
+#@ sitepress
+msgid "Are you sure you want to delete this language?%sALL the data associated with this language will be ERASED!"
+msgstr "Weet je zeker dat je deze taal wilt verwijderen?%sALLE gegevens die met deze taal geassocieerd zijn, zullen worden VERWIJDERD!"
+
+#@ sitepress
+msgid "Are you sure you want to remove this button?"
+msgstr "Weet je zeker dat je deze knop wilt verwijderen?"
+
+#@ sitepress
+msgid "Are you sure you want to reset all languages data? This operation cannot be reversed."
+msgstr "Bent u zeker dat u alle taalgegevens opnieuw wilt instellen? Deze bewerking kan niet ongedaan gemaakt worden."
+
+#@ sitepress
+msgid "Are you sure you want to reset the PRO translation configuration?"
+msgstr "Weet je zeker dat je de PRO-vertaalconfiguratie wilt wissen?"
+
+#@ sitepress
+msgid "Are you sure you want to reset to the default settings?"
+msgstr "Bent u zeker dat u de standaardinstellingen wilt herstellen?"
+
+#@ sitepress
+msgid "Assign translation status to duplicated content"
+msgstr "Vertaalstatus aan gekopieerde inhoud toekennen"
+
+#@ sitepress
+msgid "At least one of the language switcher style options needs to be checked"
+msgstr "Ten minste een van de stijlopties voor de taalwisselaar moet worden aangevinkt"
+
+#@ sitepress
+msgid "Author"
+msgstr "Auteur"
+
+#@ sitepress
+msgid "Auto-generated title. Edit to change."
+msgstr "Automatisch gegenereerde titel. Bewerk om te wijzigen."
+
+#@ sitepress
+msgid "Automatically clear the cache when strings are translated"
+msgstr "Automatisch het cache-geheugen leegmaken wanneer de strings vertaald zijn"
+
+#@ sitepress
+msgid "Automatically load the theme's .mo file using 'load_theme_textdomain'."
+msgstr "Automatisch het .mo-bestand van het thema laden met behulp van de functie 'thema_tekstdomein_laden'."
+
+#@ sitepress
+msgid "Back"
+msgstr "Terug"
+
+#@ sitepress
+msgid "Back to languages"
+msgstr "Terug naar talen"
+
+#@ sitepress
+msgid "Back to translated version"
+msgstr "Terug naar de vertaalde versie"
+
+#@ sitepress
+msgid "Background"
+msgstr "Achtergrond"
+
+#@ sitepress
+msgid "Before adding other languages, please select the language existing contents are written in:"
+msgstr "Vooraleer u andere talen toevoegt, gelieve de taal te selecteren waarin de bestaande commentaren geschreven zijn:"
+
+#@ sitepress
+msgid "Before you can start using WPML, it needs to be set up"
+msgstr "Vooraleer u WPML kunt gebruiken, moet het programma geconfigureerd worden"
+
+#@ sitepress
+msgid "Below post"
+msgstr "Onderstaande post"
+
+#@ sitepress
+msgid "Blog posts to display"
+msgstr "Blogposts die weergegeven moeten worden"
+
+#@ sitepress
+msgid "Blue"
+msgstr "Blauw"
+
+#@ sitepress
+msgid "Border"
+msgstr "Grens"
+
+#@ sitepress
+msgid "Browser language redirect"
+msgstr "Doorsturen op basis van browsertaal"
+
+#@ sitepress
+msgid "Bug fixes and stability improvements"
+msgstr "Fouten zijn hersteld en de stabiliteit is verbeterd"
+
+#@ sitepress
+msgid "CMS ID fix"
+msgstr "CMS-ID herstellen"
+
+#@ sitepress
+msgid "Can't create a duplicate. A translation is in progress."
+msgstr "Kan geen kopie creëren. Er is een vertaling in voortgang."
+
+#@ sitepress
+msgid "Can't create a duplicate. The parent of this post is not translated."
+msgstr "Kan geen kopie creëren. De ouder van deze post is niet vertaald."
+
+#@ sitepress
+msgid "Cancel"
+msgstr "Annuleren"
+
+#@ sitepress
+msgid "Categories"
+msgstr "Categorieën"
+
+#@ sitepress
+msgid "Change default language"
+msgstr "Standaardtaal wijzigen"
+
+#@ sitepress
+msgid "Change menu order for %s"
+msgstr "Menuvolgorde voor %s wijzigen"
+
+#@ sitepress
+msgid "Chat with translator"
+msgstr "Chatten met vertaler"
+
+#@ sitepress
+msgid "Check cancelled jobs on ICanLocalize"
+msgstr "Geannuleerde jobs op ICanLocalize nakijken"
+
+#@ sitepress
+msgid "Choose how to determine which language visitors see contents in"
+msgstr "Selecteer hoe u moet bepalen in welke taal de bezoekers de inhoud te zien krijgen"
+
+#@ sitepress
+msgid "Choose what to do when translating content with this field:"
+msgstr "Actie selecteren indien de inhoud van dit type veld vertaald wordt:"
+
+#@ sitepress
+msgid "Classic"
+msgstr "Klassiek"
+
+#@ sitepress
+msgid "Clean up"
+msgstr "Opschonen"
+
+#@ sitepress
+msgid "Clear cache now"
+msgstr "Cache-geheugen nu leegmaken"
+
+#@ sitepress
+msgid ""
+"Click OK to confirm.\n"
+"You can enable them back from Translation Management / Multilingual Content setup."
+msgstr ""
+"Klik op OK om te bevestigen.\n"
+"Je kunt ze weer activeren vanuit Vertaalbeheer / configuratie van Meertalige Inhoud."
+
+#@ sitepress
+msgid "Close"
+msgstr "Afsluiten"
+
+#@ sitepress
+msgid "Code"
+msgstr "Code"
+
+#@ sitepress
+msgid "Collapse reminders"
+msgstr "Herinneringen samenvouwen"
+
+#@ sitepress
+msgid "Comment in %s"
+msgstr "Commentaar in %s"
+
+#@ sitepress
+msgid "Comments translation"
+msgstr "Commentaren op vertaling"
+
+#@ sitepress
+msgid "Commercial support"
+msgstr "Commerciële ondersteuning"
+
+#@ sitepress
+msgid "Communicate with %s"
+msgstr "Communiceren met %s"
+
+#@ sitepress
+msgid "Communicate with ICanLocalize using HTTP instead of HTTPS"
+msgstr "Communiceer met ICanLocalize via HTTP in plaats van HTTPS"
+
+#@ sitepress
+msgid "Compatibility packages"
+msgstr "Compatibiliteitspakketten"
+
+#@ sitepress
+msgid "Complete"
+msgstr "Voltooien"
+
+#@ sitepress
+msgid "Configure"
+msgstr "Configureren"
+
+#@ sitepress
+msgid "Congratulations! Your affiliate information is correct."
+msgstr "Gefeliciteerd! Uw affiliate informatie is correct."
+
+#@ sitepress
+msgid "Connect"
+msgstr "Verbinden"
+
+#@ sitepress
+msgid "Content Types"
+msgstr "Inhoudstypes"
+
+#@ sitepress
+msgid "Continue"
+msgstr "Doorgaan"
+
+#@ sitepress
+msgid "Copy"
+msgstr "Kopiëren"
+
+#@ sitepress
+msgid "Copy content from %s"
+msgstr "Inhoud kopiëren van %s"
+
+#@ sitepress
+msgid "Copy from original"
+msgstr "Kopiëren van het origineel"
+
+#@ sitepress
+msgid "Copy publishing date to translations"
+msgstr "Datum van publicatie kopiëren naar de vertalingen"
+
+#@ sitepress
+msgid "Copy taxonomy to translations"
+msgstr "Taxonomie kopiëren naar vertalingen"
+
+#@ sitepress
+msgid "Correct terms count in case something went wrong with translated contents."
+msgstr "Aantal termen herstellen mocht er iets verkeerd lopen met de vertaalde inhoud."
+
+#@ sitepress
+msgid "Create root page."
+msgstr "Root-pagina creëren."
+
+#@ sitepress
+msgid "Creating new tables..."
+msgstr "Nieuwe tabellen creëren..."
+
+#@ sitepress
+msgid "Current configuration"
+msgstr "Huidige configuratie"
+
+#@ sitepress
+msgid "Current content language"
+msgstr "Huidige taal van de inhoud"
+
+#@ sitepress
+msgid "Current language background color"
+msgstr "Achtergrondkleur van de huidige taal"
+
+#@ sitepress
+msgid "Current language font color"
+msgstr "Tekstkleur van de huidige taal"
+
+#@ sitepress
+msgid "Current page"
+msgstr "Huidige pagina"
+
+#@ sitepress
+msgid "Custom fields"
+msgstr "Specifieke velden"
+
+#@ sitepress
+msgid "Custom language switcher creation guide"
+msgstr "Gids om specifieke taalwisselaars te creëren"
+
+#@ sitepress
+msgid "Custom post types"
+msgstr "Specifieke posttypes"
+
+#@ sitepress
+msgid "Custom posts"
+msgstr "Specifieke posts"
+
+#@ sitepress
+msgid "Custom taxonomies"
+msgstr "Standaardtaxonomieën"
+
+#@ sitepress
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#@ sitepress
+msgid "Data"
+msgstr "Gegevens"
+
+#@ sitepress
+msgid "Data saved"
+msgstr "Gegevens opgeslagen"
+
+#@ sitepress
+msgid "Deactivate"
+msgstr "Deactiveren"
+
+#@ sitepress
+msgid "Default admin language (currently %s)"
+msgstr "Standaard admintaal (momenteel %s)"
+
+#@ sitepress
+msgid "Default admin language: "
+msgstr "Standaard admintaal:"
+
+#@ sitepress
+msgid "Default language (currently %s)"
+msgstr "Standaardtaal (momenteel %s)"
+
+#@ sitepress
+msgid "Default locale"
+msgstr "Standaard lokale parameters"
+
+#@ sitepress
+msgid "Default settings have been loaded"
+msgstr "De standaardinstellingen zijn geladen"
+
+#@ sitepress
+msgid "Delete"
+msgstr "Verwijderen"
+
+#@ sitepress
+msgid "Deleted"
+msgstr "Verwijderd"
+
+#@ sitepress
+msgid "Deposit payment"
+msgstr "Betaling storten"
+
+#@ sitepress
+msgid "Description"
+msgstr "Beschrijving"
+
+#@ sitepress
+msgid "Different languages in directories"
+msgstr "Verschillende talen in bestandsmappen"
+
+#@ sitepress
+msgid "Disable browser language redirect"
+msgstr "Deactivatie van het doorsturen op basis van de browsertaal"
+
+#@ sitepress
+msgid "Dismiss"
+msgstr "Verwijderen"
+
+#@ sitepress
+msgid "Display 'Languages' as the widget title"
+msgstr "'Talen' weergeven als de widget-titel"
+
+#@ sitepress
+msgid "Display 'Languages' as the widget's title"
+msgstr "'Talen' weergeven als de widget-titel"
+
+#@ sitepress
+msgid "Display alternative languages in the HEAD section."
+msgstr "Alternatieve talen in het onderdeel HOOFD weergeven."
+
+#@ sitepress
+msgid "Display hidden languages"
+msgstr "Verborgen talen weergeven"
+
+#@ sitepress
+msgid "Display the language switcher in the WP Menu"
+msgstr "De taalwisselaar in het WP-menu weergeven"
+
+#@ sitepress
+msgid "Do nothing"
+msgstr "Niets ondernemen"
+
+#@ sitepress
+msgid "Don't translate"
+msgstr "Niet vertalen"
+
+#@ sitepress
+msgid "Done"
+msgstr "Voltooid"
+
+#@ sitepress
+msgid "Download"
+msgstr "Downloaden"
+
+#@ sitepress
+msgid "Download Installer"
+msgstr "Installer downloaden"
+
+#@ sitepress
+msgid "Drag the languages to change their order"
+msgstr "Sleep de talen naar boven of beneden om de volgorde te wijzigen"
+
+#@ sitepress
+msgid "Drop-down menu"
+msgstr "Dropdown-menu"
+
+#@ sitepress
+msgid "Duplicate"
+msgstr "Kopie"
+
+#@ sitepress
+msgid "Each user can choose the admin language. You can edit your language preferences by visiting your <a href=\"%s\">profile page</a>."
+msgstr "Elke gebruiker kan de admintaal kiezen. U kunt uw taalvoorkeuren wijzigen door uw <a href=\"%s\">profielpagina</a> te bezoeken."
+
+#@ sitepress
+msgid "Edit"
+msgstr "Bewerken"
+
+#@ sitepress
+msgid "Edit Languages"
+msgstr "Talen bewerken"
+
+#@ sitepress
+msgid "Edit root page."
+msgstr "Root-pagina bewerken"
+
+#@ sitepress
+msgid "Edit the %s translation"
+msgstr "De %s vertaling bewerken"
+
+#@ sitepress
+msgid "Edit the footer language switcher colors"
+msgstr "De kleuren van de taalwisselaar in de voettekst bewerken"
+
+#@ sitepress
+msgid "Edit the language switcher widget colors"
+msgstr "Kleuren van de taalwisselaar bewerken"
+
+#@ sitepress
+msgid "Edit the original document"
+msgstr "Het originele document bewerken"
+
+#@ sitepress
+msgid "Edit this page to add translations"
+msgstr "Deze pagina bewerken om vertalingen toe te voegen"
+
+#@ sitepress
+msgid "Encode URLs"
+msgstr "URL's coderen"
+
+#@ sitepress
+msgid "Enter textdomain value:"
+msgstr "Waarde voor tekstdomein invoeren:"
+
+#@ sitepress
+msgid "Error adding flag."
+msgstr "Fout bij het toevoegen van de vlag."
+
+#@ sitepress
+msgid "Error adding native name."
+msgstr "Fout bij het toevoegen van de naam in de moedertaal."
+
+#@ sitepress
+msgid "Error adding translation %s for %s."
+msgstr "Fout bij het toevoegen van de vertaling %s voor %s."
+
+#@ sitepress
+msgid "Error uploading flag file."
+msgstr "Fout bij het uploaden van het vlagbestand."
+
+#@ sitepress
+msgid "Error:"
+msgstr "Fout:"
+
+#@ sitepress
+msgid "Error: Language not found."
+msgstr "Fout: Taal niet gevonden."
+
+#@ sitepress
+msgid "Error: No custom field"
+msgstr "Fout: geen specifiek veld"
+
+#@ sitepress
+msgid "Error: Please activate WPML Translation Management plugin"
+msgstr "Fout: Gelieve de plug-in voor WPML-vertaalbeheer te activeren"
+
+#@ sitepress
+msgid "Error: Please provide translation action"
+msgstr "Fout: Gelieve een vertaalactie op te geven"
+
+#@ sitepress
+msgid "Error: Something is wrong with field value. Translation preferences can not be set."
+msgstr "Fout: De veldwaarde klopt niet. De vertaalvoorkeuren kunnen niet worden ingesteld."
+
+#@ sitepress
+msgid "Error: This is a built in language. You can't delete it."
+msgstr "Fout: Dit is een ingebouwde taal. Je kunt deze niet verwijderen."
+
+#@ sitepress
+msgid "Error: WPML Translation Management plugin not initiated"
+msgstr "Fout: Plug-in voor WPML-vertaalbeheer niet geïnitialiseerd"
+
+#@ sitepress
+msgid "Error: data not saved"
+msgstr "Fout: gegevens niet opgeslagen"
+
+#@ sitepress
+msgid "Expand reminders"
+msgstr "Herinneringen uitvouwen"
+
+#@ sitepress
+msgid "Experimental"
+msgstr "Experimenteel"
+
+#@ sitepress
+msgid "Fetched %d translations."
+msgstr "%d vertalingen opgehaald."
+
+#@ sitepress
+msgid "File exists."
+msgstr "Bestand bestaat."
+
+#@ sitepress
+msgid "File extension not allowed."
+msgstr "Bestandsextensie niet toegelaten."
+
+#@ sitepress
+msgid "File not found!"
+msgstr "Bestand niet gevonden!"
+
+#@ sitepress
+msgid "Finalizing upgrade..."
+msgstr "Upgrade afronden..."
+
+#@ sitepress
+msgid "Finish"
+msgstr "Voltooien"
+
+#@ sitepress
+msgid "First available"
+msgstr "Eerst beschikbaar"
+
+#@ sitepress
+msgid "Fix terms count"
+msgstr "Aantal termen herstellen"
+
+#@ sitepress
+msgid "Fixes links between translation entries in the database and ICanLocalize."
+msgstr "Herstelt links tussen vertaalde items in de database en ICanLocalize."
+
+#@ sitepress
+msgid "Flag"
+msgstr "Vlag"
+
+#@ sitepress
+msgid "Footer language switcher preview"
+msgstr "Preview van taalwisselaar in voettekst"
+
+#@ sitepress
+msgid "Footer language switcher style"
+msgstr "Stijl van de taalwisselaar in de voettekst"
+
+#@ sitepress
+msgid "For advanced access or to completely uninstall WPML and remove all language information, use the <a href=\"%s\">troubleshooting</a> page."
+msgstr "Voor een geavanceerde toegang of om WPML en al de taalinformatie volledig te verwijderen, gebruik de pagina <a href=\"%s\">probleemoplossing</a>."
+
+#@ sitepress
+msgid "General clean up"
+msgstr "Algemene opschoning"
+
+#@ sitepress
+msgid "Get %s translators"
+msgstr "%s vertalers zoeken"
+
+#@ sitepress
+msgid "Get completed translations"
+msgstr "Voltooide vertalingen ophalen"
+
+#@ sitepress
+msgid "Get help"
+msgstr "Hulp vragen"
+
+#@ sitepress
+msgid "Go to WPML Network settings."
+msgstr "Ga naar de WPML-netwerkinstellingen."
+
+#@ sitepress
+msgid "Go to the first page"
+msgstr "Ga naar de eerste pagina"
+
+#@ sitepress
+msgid "Go to the last page"
+msgstr "Ga naar de laatste pagina"
+
+#@ sitepress
+msgid "Go to the next page"
+msgstr "Ga naar de volgende pagina"
+
+#@ sitepress
+msgid "Go to the previous page"
+msgstr "Ga naar de vorige pagina"
+
+#@ sitepress
+msgid "Gray"
+msgstr "Grijs"
+
+#@ sitepress
+msgid "HTML file"
+msgstr "HTML-bestand"
+
+#@ sitepress
+msgid "HTTP code: %s (%s)"
+msgstr "HTTP-code: %s (%s)"
+
+#@ sitepress
+msgid "Help"
+msgstr "Help"
+
+#@ sitepress
+msgid "Help resources"
+msgstr "Hulpbronnen"
+
+#@ sitepress
+msgid "Hi %s,"
+msgstr "Hallo %s,"
+
+#@ sitepress
+msgid "Hidden languages:"
+msgstr "Verborgen talen:"
+
+#@ sitepress
+msgid "Hide language switchers on the root page"
+msgstr "Taalwisselaars op de root-pagina verbergen"
+
+#@ sitepress
+msgid "Hide languages"
+msgstr "Talen verbergen"
+
+#@ sitepress
+msgid "Hide reminders"
+msgstr "Herinneringen verbergen"
+
+#@ sitepress
+msgid "Home-page link automatically adjusts per language"
+msgstr "Link naar startpagina wordt per taal automatisch aangepast"
+
+#@ sitepress
+msgid "Horizontal"
+msgstr "Horizontaal"
+
+#@ sitepress
+msgid "Hover"
+msgstr "De muisaanwijzer bewegen over"
+
+#@ sitepress
+msgid "How to fix"
+msgstr "Hoe herstellen"
+
+#@ sitepress
+msgid "How to handle languages without translation"
+msgstr "Hoe talen verwerken zonder vertaling"
+
+#@ sitepress
+msgid "How to translate"
+msgstr "Hoe vertalen"
+
+#@ sitepress
+msgid "I am about to reset all language data."
+msgstr "Ik sta op het punt om alle taalgegevens te verwijderen."
+
+#@ sitepress
+msgid "I am about to reset the ICanLocalize project setting."
+msgstr "Ik sta op het punt om de ICanLocalize-projectinstellingen te verwijderen."
+
+#@ sitepress
+msgid "I need translation from"
+msgstr "Ik heb een vertaling nodig van"
+
+#@ sitepress
+msgid "I will clear the cache manually after translating strings"
+msgstr "Ik zal het cache-geheugen manueel leegmaken nadat de strings vertaald zijn"
+
+#@ sitepress
+msgid "ICanLocalize connection test"
+msgstr "ICanLocalize-verbindingstest"
+
+#@ sitepress
+msgid "ICanLocalize, the makers of WPML, offers excellent<br /> human service done by expert translators, for only $0.09 per word."
+msgstr "ICanLocalize, de maker van WPML, biedt uitstekende <br /> menselijke dienstverlening door deskundige vertalers, voor slechts $0.09 per woord."
+
+#@ sitepress
+msgid "If your theme's texts are wrapped in gettext calls, WPML can help you display it multilingual."
+msgstr "Als de teksten van je thema opgenomen zijn in Gettext-functies, kan WPML je helpen om ze in meerdere talen weer te geven."
+
+#@ sitepress
+msgid "In order to edit or delete these you need to activate the corresponding language first"
+msgstr "Om deze te bewerken of te verwijderen, moet u eerst de corresponderende taal activeren"
+
+#@ sitepress
+msgid "In progress"
+msgstr "In uitvoering"
+
+#@ sitepress
+msgid "In progress (by a different translator). <a%s>Learn more</a>."
+msgstr "In voortgang (door een andere vertaler). <a%s>Meer lezen</a>."
+
+#@ sitepress
+msgid "Inactive"
+msgstr "Inactief"
+
+#@ sitepress
+msgid "Inactive content"
+msgstr "Inactieve inhoud"
+
+#@ sitepress
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+#@ sitepress
+msgid "Instructions"
+msgstr "Instructies"
+
+#@ sitepress
+msgid "Invalid language code"
+msgstr "Ongeldige taalcode"
+
+#@ sitepress
+msgid "Invalid object id"
+msgstr "Ongeldig object-id"
+
+#@ sitepress
+msgid "Invalid object kind: %s"
+msgstr "Ongeldige objectsoort: %s"
+
+#@ sitepress
+msgid "Invalid taxonomy %s"
+msgstr "Ongeldige taxonomie %s"
+
+#@ sitepress
+msgid "It looks like languages per directories will not function."
+msgstr "Het ziet ernaar uit dat talen per bestandsmap niet zullen functioneren."
+
+#@ sitepress
+msgid "Item cannot be added (parent not translated)"
+msgstr "Item kan niet worden toegevoegd (ouder niet vertaald)"
+
+#@ sitepress
+msgid "Item changed position"
+msgstr "Item staat op een andere plaats"
+
+#@ sitepress
+msgid "Item will be added"
+msgstr "Item zal worden toegevoegd"
+
+#@ sitepress
+msgid "Item will be copied"
+msgstr "Item zal worden gekopieerd"
+
+#@ sitepress
+msgid "Item will be removed"
+msgstr "Item zal worden verwijderd"
+
+#@ sitepress
+msgid "Job removed"
+msgstr "Opdracht verwijderd"
+
+#@ sitepress
+msgid "Language"
+msgstr "Taal"
+
+#@ sitepress
+msgid "Language Selector"
+msgstr "Taalselectie"
+
+#@ sitepress
+msgid "Language URL format"
+msgstr "Taal URL-formaat"
+
+#@ sitepress
+msgid "Language code exists"
+msgstr "Taalcode bestaat"
+
+#@ sitepress
+msgid "Language locale settings"
+msgstr "Lokale taalparameters"
+
+#@ sitepress
+msgid "Language name"
+msgstr "Taalnaam"
+
+#@ sitepress
+msgid "Language name added as a parameter"
+msgstr "Naam van de taal toegevoegd als een parameter"
+
+#@ sitepress
+msgid "Language name in display language"
+msgstr "Naam van de taal in de weergavetaal"
+
+#@ sitepress
+msgid "Language of this %s"
+msgstr "Taal van dit %s"
+
+#@ sitepress
+msgid "Language pairs for %s have been edited."
+msgstr "Taalcombinaties voor %s zijn bewerkt."
+
+#@ sitepress
+msgid "Language switcher in the WP Menu"
+msgstr "Taalwisselaar in het WP-menu"
+
+#@ sitepress
+msgid "Language switcher options"
+msgstr "Opties voor taalwisselaar"
+
+#@ sitepress
+msgid "Language switcher style"
+msgstr "Stijl taalwisselaar"
+
+#@ sitepress
+msgid "Language switcher widget"
+msgstr "Taalwisselaar"
+
+#@ sitepress
+msgid "Language switcher widget preview"
+msgstr "Preview van de taalwisselaar"
+
+#@ sitepress
+msgid "Language tag"
+msgstr "Taal-tag"
+
+#@ sitepress
+msgid "Languages"
+msgstr "Talen"
+
+#@ sitepress
+msgid "Languages order"
+msgstr "Volgorde van de talen"
+
+#@ sitepress
+msgid "Languages order updated"
+msgstr "Volgorde van de talen is geüpdatet"
+
+#@ sitepress
+msgid "Last time translations were picked up: %s"
+msgstr "Laatste keer dat de vertalingen opgehaald werden: %s"
+
+#@ sitepress
+msgid "Learn more"
+msgstr "Meer lezen"
+
+#@ sitepress
+msgid "Link to home of language for missing translations"
+msgstr "Link naar startpagina van de taal voor ontbrekende vertalingen."
+
+#@ sitepress
+msgid "List of languages"
+msgstr "Lijst met talen"
+
+#@ sitepress
+msgid "Local"
+msgstr "Lokaal"
+
+#@ sitepress
+msgid "Locale file name"
+msgstr "Lokale bestandsnaam"
+
+#@ sitepress
+msgid "Looking for a quality translation service?"
+msgstr "Op zoek naar een kwalitatieve vertaaldienst?"
+
+#@ sitepress
+msgid "MO file in %s"
+msgstr "MO-bestand in %s"
+
+#@ sitepress
+msgid "Machine translation failed. <a%s>retry</a>"
+msgstr "Machinevertaling mislukt. <a%s>opnieuw proberen</a>"
+
+#@ sitepress
+msgid "Main Page (no parent)"
+msgstr "Startpagina (geen hoofd)"
+
+#@ sitepress
+msgid "Make '%s' translatable"
+msgstr "Maak '%s' vertaalbaar"
+
+#@ sitepress
+msgid "Make themes work multilingual"
+msgstr "Instellen dat de thema's meertalig functioneren"
+
+#@ sitepress
+msgid "Manage theme and plugins localization"
+msgstr "Thema en lokalisatie van plug-ins beheren"
+
+#@ sitepress
+msgid "Manual pick up is disabled."
+msgstr "Manuele ophaling is gedeactiveerd."
+
+#@ sitepress
+msgid "Mature"
+msgstr "Volwassen"
+
+#@ sitepress
+msgid "Menu(s) syncing complete."
+msgstr "Synchronisatie menu('s) voltooid."
+
+#@ sitepress
+msgid "Minor edit - don't update translation"
+msgstr "Kleine bewerking - vertaling niet updaten"
+
+#@ sitepress
+msgid "Missing post ID"
+msgstr "Ontbrekende post-ID"
+
+#@ sitepress
+msgid "Missing step"
+msgstr "Ontbrekende stap"
+
+#@ sitepress
+msgid "Mobile friendly always"
+msgstr "Altijd mobiele vrienden"
+
+#@ sitepress
+msgid "Mobile friendly for mobile agents only"
+msgstr "Gebruiksvriendelijk voor mobiele toestellen en mobile agents."
+
+#@ sitepress
+msgid "More options"
+msgstr "Meer opties"
+
+#@ sitepress
+msgid "Multi-language | WPML %s"
+msgstr "Meertalig | WPML %s"
+
+#@ sitepress
+msgid "Multilingual Content Setup"
+msgstr "Meertalige inhoud configureren"
+
+#@ sitepress
+msgid "Multilingual menus bug fixes and improved translation interface"
+msgstr "De fouten in de meertalige menu's zijn hersteld en de vertaalinterface is verbeterd"
+
+#@ sitepress
+msgid "Multiple options"
+msgstr "Meerdere opties"
+
+#@ sitepress
+msgid "Name"
+msgstr "Naam"
+
+#@ sitepress
+msgid "Native language name"
+msgstr "Naam van de moedertaal"
+
+#@ sitepress
+msgid "Needs update"
+msgstr "Moet worden geüpdatet"
+
+#@ sitepress
+msgid "Network settings"
+msgstr "Netwerkinstellingen"
+
+#@ sitepress
+msgid "Never show this."
+msgstr "Nooit meer weergeven."
+
+#@ sitepress
+msgid "New - side-by-site translation editor: <a href=\"%s\">try it</a> | <a href=\"#cancel\">no thanks</a>."
+msgstr "Nieuw - zij-aan-zij vertaling: <a href=\"%s\">proberen</a> | <a href=\"#cancel\">nee, dank u</a>."
+
+#@ sitepress
+msgid "New Translator role and full translation management workflow"
+msgstr "Nieuwe vertaalrol en volledige workflow voor het vertaalbeheer"
+
+#@ sitepress
+msgid "New in WPML %s: <b>%s</b>"
+msgstr "Nieuw in WPML %s: <b>%s</b>"
+
+#@ sitepress
+msgid "New in WPML 2.6.0"
+msgstr "Nieuw in WPML 2.6.0"
+
+#@ sitepress
+msgid ""
+"New job available from %s to %s.\n"
+"%s\n"
+"Start editing: %s"
+msgstr ""
+"Nieuwe opdracht beschikbaar van het %s naar het %s.\n"
+"%s\n"
+"Begin te bewerken: %s"
+
+#@ sitepress
+msgid "New translation job from %s"
+msgstr "Nieuwe vertaalopdracht van %s"
+
+#@ sitepress
+msgid "Next"
+msgstr "Volgende"
+
+#@ sitepress
+msgid "No"
+msgstr "Nee"
+
+#@ sitepress
+msgid "No documents were sent to translation. Make sure that translations are not currently in progress or already translated for the selected language(s)."
+msgstr "Er werden geen documenten verzonden om te vertalen. Gelieve ervoor te zorgen dat er momenteel geen vertalingen uitgevoerd worden of reeds vertaald zijn voor de geselecteerde ta(a)l(en)."
+
+#@ sitepress
+msgid "No localization"
+msgstr "Geen lokalisatie"
+
+#@ sitepress
+msgid "No matches"
+msgstr "Geen overeenkomsten"
+
+#@ sitepress
+msgid "No menus found"
+msgstr "Geen menu's gevonden"
+
+#@ sitepress
+msgid "No packages found"
+msgstr "Geen pakketten gevonden"
+
+#@ sitepress
+msgid "No such post for ID = %d"
+msgstr "Geen zulke post voor ID = %d"
+
+#@ sitepress
+msgid "No terms found"
+msgstr "Geen termen gevonden"
+
+#@ sitepress
+msgid "No thanks, I will configure myself"
+msgstr "Nee bedankt, ik zal zelf configureren"
+
+#@ sitepress
+msgid "Normal"
+msgstr "Normaal"
+
+#@ sitepress
+msgid "Not Spam"
+msgstr "Geen spam"
+
+#@ sitepress
+msgid "Not installed"
+msgstr "Niet geïnstalleerd"
+
+#@ sitepress
+msgid "Not marked as 'complete'. Press 'Save' to enable."
+msgstr "Niet gemarkeerd als 'voltooid'. Druk op 'Opslaan' om te activeren."
+
+#@ sitepress
+msgid "Not translated"
+msgstr "Niet vertaald"
+
+#@ sitepress
+msgid "Note:"
+msgstr "Opmerking:"
+
+#@ sitepress
+msgid "Note: Custom taxonomies and custom fields are shared across different post types."
+msgstr "Opmerking: Specifieke taxonomieën en specifieke velden worden gedeeld over verschillende posttypes."
+
+#@ sitepress
+msgid "Note: auto-adjust IDs will increase the number of database queries for your site."
+msgstr "Opmerking: automatisch aanpassen van ID's zal het aantal database-queries voor uw site verhogen."
+
+#@ sitepress
+msgid "Note: if you edited the custom post declaration you may need to re-configure WPML to mark it as translatable."
+msgstr "Opmerking: als u de bepaling van specifieke posts bewerkt heeft, moet u misschien WPML opnieuw configureren om hen als vertaalbaar te markeren."
+
+#@ sitepress
+msgid "Note: if you edited the custom taxonomy declaration you may need to re-configure WPML to mark it as translatable."
+msgstr "Opmerking: als u de bepaling van een specifieke taxonomie bewerkt heeft, moet u misschien WPML opnieuw configureren om haar als vertaalbaar te markeren."
+
+#@ sitepress
+msgid "Nothing Sync"
+msgstr "Niets synch"
+
+#@ sitepress
+msgid "Nothing to configure."
+msgstr "Niets om te configureren."
+
+#@ sitepress
+msgid "Nothing to sync."
+msgstr "Niets om te synch."
+
+#@ sitepress
+msgid "Number of items"
+msgstr "Aantal items"
+
+#@ sitepress
+msgid "Number of words"
+msgstr "Aantal woorden"
+
+#@ sitepress
+msgid "Ok"
+msgstr "Ok"
+
+#@ sitepress
+msgid "Only translated posts."
+msgstr "Enkel vertaalde posts."
+
+#@ sitepress
+msgid "Original language: %s"
+msgstr "Originele taal: %s"
+
+#@ sitepress
+msgid "Other languages background color"
+msgstr "Achtergrondkleur voor andere talen"
+
+#@ sitepress
+msgid "Other languages font color"
+msgstr "Tekstkleur van andere talen"
+
+#@ sitepress
+msgid "Overwrite with %s content."
+msgstr "Overschrijven met %s inhoud."
+
+#@ sitepress
+msgid "PRO translation was reset."
+msgstr "PRO-vertaling werd verwijderd."
+
+#@ sitepress
+msgid "Package name"
+msgstr "Pakketnaam"
+
+#@ sitepress
+msgid "Packages list updated"
+msgstr "Pakketlijst geüpdatet"
+
+#@ sitepress
+msgid "Pages"
+msgstr "Pagina's"
+
+#@ sitepress
+msgid "Partially done"
+msgstr "Gedeeltelijk voltooid"
+
+#@ sitepress
+msgid "Partially done."
+msgstr "Gedeeltelijk voltooid."
+
+#@ sitepress
+msgid "Please enter a value for the textdomain."
+msgstr "Gelieve een waarde voor het tekstdomein in te voeren."
+
+#@ sitepress
+msgid "Please fill in all fields!"
+msgstr "Gelieve alle velden in te vullen!"
+
+#@ sitepress
+msgid "Please go to the <a href=\"%s\">Plugins</a> page and enable the WPML Multilingual CMS plugin before trying to configure the plugin."
+msgstr "Gelieve de pagina met<a href=\"%s\">Plug-ins</a> te bezoeken en de WPML meertalige CMS-plugin te activeren vooraleer u de plug-in probeert te configureren."
+
+#@ sitepress
+msgid "Please make backup of your database before using this."
+msgstr "Gelieve eerst een back-up van uw database te maken vooraleer u dit gebruikt."
+
+#@ sitepress
+msgid "Please note: language codes cannot be changed after adding languages. Make sure you enter the correct code."
+msgstr "Gelieve er rekening mee te houden dat taalcodes niet gewijzigd kunnen worden nadat de talen toegevoegd zijn. Zorg ervoor dat u de correcte code invoert."
+
+#@ sitepress
+msgid "Please provide a short description of the website so that translators know what background is required from them."
+msgstr "Gelieve een korte beschrijving van de website toe te voegen zodat vertalers weten welke achtergrondkennis van hen verwacht wordt."
+
+#@ sitepress
+msgid "Please save the settings first by clicking Save."
+msgstr "Gelieve de instellingen op te slaan vooraleer u op Opslaan klikt."
+
+#@ sitepress
+msgid "Please select at least one document to translate."
+msgstr "Gelieve ten minste een document te selecteren om te vertalen."
+
+#@ sitepress
+msgid "Please select at least one language to translate into."
+msgstr "Gelieve ten minste een taal te selecteren om naar te vertalen."
+
+#@ sitepress
+msgid "Please select what to show for the root url."
+msgstr "Gelieve te selecteren wat er moet worden weergegeven als root-url."
+
+#@ sitepress
+msgid "Please, enter required data."
+msgstr "Gelieve de vereiste gegevens in te voeren."
+
+#@ sitepress
+msgid "Please, enter valid data."
+msgstr "Gelieve een geldige datum in te voeren."
+
+#@ sitepress
+msgid "Plugin Name"
+msgstr "Plug-innaam"
+
+#@ sitepress
+msgid "Plural"
+msgstr "Meervoud"
+
+#@ sitepress
+msgid "Position"
+msgstr "Positie"
+
+#@ sitepress
+msgid "Possible login hack attempt"
+msgstr "Mogelijke poging om login te hacken"
+
+#@ sitepress
+msgid "Post not found"
+msgstr "Post niet gevonden"
+
+#@ sitepress
+msgid "Post not found!"
+msgstr "Post niet gevonden!"
+
+#@ sitepress
+msgid "Posts"
+msgstr "Posts"
+
+#@ sitepress
+msgid "Posts and pages synchronization"
+msgstr "Synchronisatie van posts en pagina's"
+
+#@ sitepress
+msgid "Preferences saved."
+msgstr "Voorkeuren opgeslagen."
+
+#@ sitepress
+msgid "Preserve url parameters"
+msgstr "URL-parameters bewaren"
+
+#@ sitepress
+msgid "Presets:"
+msgstr "Vooraf ingestelde kleuren:"
+
+#@ sitepress
+msgid "Private"
+msgstr "Privé"
+
+#@ sitepress
+msgid "Processing translations..."
+msgstr "Vertalingen verwerken..."
+
+#@ sitepress
+msgid "Produce Quote"
+msgstr "Offerte berekenen"
+
+#@ sitepress
+msgid "Professional translation not enabled"
+msgstr "Professionele vertaling niet geactiveerd"
+
+#@ sitepress
+msgid "Project added"
+msgstr "Project toegevoegd"
+
+#@ sitepress
+msgid "Raise mysql errors on XML-RPC calls"
+msgstr "mysql-fouten oplossen in XML-RPC-functies"
+
+#@ sitepress
+msgid "Redirect visitors based on browser language only if translations exist"
+msgstr "Bezoekers doorsturen op basis van de browsertaal enkel indien er vertalingen bestaan"
+
+#@ sitepress
+msgid "Remember visitors' language preference for %s hours (please enter 24 or multiples of it)."
+msgstr "Onthoud de taalvoorkeur van bezoekers gedurende %s uur (gelieve 24 of meervouden ervan in te voeren)."
+
+#@ sitepress
+msgid "Remove %s"
+msgstr "%s verwijderen"
+
+#@ sitepress
+msgid "Remove ghost entries from the translation tables"
+msgstr "Lege items uit de vertaaltabellen verwijderen"
+
+#@ sitepress
+msgid "Removed from translation job on %s"
+msgstr "Verwijderd van de vertaalopdracht op %s"
+
+#@ sitepress
+msgid "Removes entries from the WPML tables that are not linked properly. Cleans the table off entries left over upgrades, bug fixes or undetermined factors."
+msgstr "Verwijdert items uit de WPML-tabellen die niet correct gelinkt zijn. De tabel wordt zo opgeschoond van resterende upgrades, bugfixes of onbepaalde factoren."
+
+#@ sitepress
+msgid "Rename label to %s"
+msgstr "Label opnieuw benoemen als %s"
+
+#@ sitepress
+msgid "Reset"
+msgstr "Opnieuw instellen"
+
+#@ sitepress
+msgid "Reset PRO translation configuration"
+msgstr "Configuratie van PRO-vertaling opnieuw instellen"
+
+#@ sitepress
+msgid "Reset all language data and deactivate WPML"
+msgstr "Alle taalgegevens opnieuw instellen en WPML deactiveren"
+
+#@ sitepress
+msgid "Reset languages"
+msgstr "Talen verwijderen"
+
+#@ sitepress
+msgid "Resetting your ICanLocalize account will interrupt any translation jobs that you have in progress. Only use this function if your ICanLocalize account doesn't include any jobs, or if the account was deleted."
+msgstr "Door uw ICanLocalize-account opnieuw in te stellen, zult u alle lopende vertaalopdrachten onderbreken. Gebruik deze functie enkel indien uw ICanLocalize-account geen opdrachten bevat of indien de account verwijderd werd."
+
+#@ sitepress
+msgid "Response"
+msgstr "Antwoord"
+
+#@ sitepress
+msgid "Restore default"
+msgstr "Standaardinstellingen herstellen"
+
+#@ sitepress
+msgid "Resume Upgrade Process"
+msgstr "Upgrade-proces hervatten"
+
+#@ sitepress
+msgid "Review changes and update"
+msgstr "Wijzigingen nakijken en updaten"
+
+#@ sitepress
+msgid "Run Upgrade Process"
+msgstr "Upgrade-proces uitvoeren"
+
+#@ sitepress
+msgid "SEO Options"
+msgstr "SEO-opties"
+
+#@ sitepress
+msgid "Save"
+msgstr "Opslaan"
+
+#@ sitepress
+msgid "Save for later"
+msgstr "Opslaan voor later"
+
+#@ sitepress
+msgid "Search"
+msgstr "Zoeken"
+
+#@ sitepress
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Zoekresultaten voor &#8220;%s&#8221;"
+
+#@ sitepress
+msgid "Select Language"
+msgstr "Taal selecteren"
+
+#@ sitepress
+msgid "Select how to localize the theme"
+msgstr "Selecteer hoe u het thema wilt lokaliseren"
+
+#@ sitepress
+msgid "Select taxonomy to translate"
+msgstr "Selecteer de taxonomie die vertaald moet worden"
+
+#@ sitepress
+msgid "Select the languages to enable for your site (you can also add and remove languages later)."
+msgstr "Selecteer de talen die geactiveerd moeten worden voor uw site (u kunt ook later talen toevoegen en verwijderen)."
+
+#@ sitepress
+msgid "Select the locale to use for each language. The locale for the default language is set in your wp_config.php file."
+msgstr "De lokale parameters voor elke taal selecteren. De lokale parameters voor de standaardtaal zijn ingesteld in uw wp_config.php-bestand."
+
+#@ sitepress
+msgid "Select translators"
+msgstr "Vertalers selecteren"
+
+#@ sitepress
+msgid "Select your language:"
+msgstr "Uw taal selecteren:"
+
+#@ sitepress
+msgid "Selected document(s) sent to translation."
+msgstr "Geselecteerd(e) document(en) is/zijn verzonden om te vertalen."
+
+#@ sitepress
+msgid "Send documents to translation"
+msgstr "Documenten verzenden om te vertalen"
+
+#@ sitepress
+msgid "Set admin language as editing language."
+msgstr "Admintaal instellen als taal om tekst te bewerken."
+
+#@ sitepress
+msgid "Set language information"
+msgstr "Taalinformatie instellen"
+
+#@ sitepress
+msgid "Set page parent for translation according to page parent of the original language"
+msgstr "Hoofdpagina voor vertaling instellen volgens hoofdpagina van de originele taal"
+
+#@ sitepress
+msgid "Sets source language to NULL in the icl_translations table."
+msgstr "Stelt de brontaal in als NULL in de tabel van icl_translations."
+
+#@ sitepress
+msgid "Settings saved"
+msgstr "Instellingen opgeslagen"
+
+#@ sitepress
+msgid "Settings updated"
+msgstr "Instellingen geüpdatet"
+
+#@ sitepress
+msgid "Setup WPML"
+msgstr "WPML configureren"
+
+#@ sitepress
+msgid "Setup check list"
+msgstr "Checklist voor configuratie"
+
+#@ sitepress
+msgid "Setup languages"
+msgstr "Talen configureren"
+
+#@ sitepress
+msgid "Show"
+msgstr "Weergeven"
+
+#@ sitepress
+msgid "Show %d reminders"
+msgstr "%d herinneringen weergeven"
+
+#@ sitepress
+msgid "Show 1 reminder"
+msgstr "1 herinnering weergeven"
+
+#@ sitepress
+msgid "Show content in:"
+msgstr "Inhoud weergeven in:"
+
+#@ sitepress
+msgid "Show language switcher in footer"
+msgstr "Taalwisselaar in voettekst weergeven"
+
+#@ sitepress
+msgid "Show post translation links"
+msgstr "Links naar de vertaling van de post weergeven"
+
+#@ sitepress
+msgid "Showing content in:"
+msgstr "Inhoud weergeven in:"
+
+#@ sitepress
+msgid "Singular"
+msgstr "Enkelvoud"
+
+#@ sitepress
+msgid "Site"
+msgstr "Site"
+
+#@ sitepress
+msgid "Site Languages"
+msgstr "Talen voor de site"
+
+#@ sitepress
+msgid "Site languages:"
+msgstr "Talen van de site:"
+
+#@ sitepress
+msgid "Skip language"
+msgstr "Taal overslaan"
+
+#@ sitepress
+msgid "Slug"
+msgstr "Slug"
+
+#@ sitepress
+msgid "Slug translation is currently disabled in WPML. %sClick here to enable.%s"
+msgstr "De vertaling van slugs is momenteel gedeactiveerd in WPML. %sKlik hier om deze optie te activeren.%s"
+
+#@ sitepress
+msgid "Slugs are currently not translated."
+msgstr "Slugs worden momenteel niet vertaald."
+
+#@ sitepress
+msgid "Slugs are currently translated. Click the link above to edit the translations."
+msgstr "Slugs worden momenteel vertaald. Klik op de bovenstaande link om de vertalingen te bewerken."
+
+#@ sitepress
+msgid "Some documents were <i>not</i> sent to translation. Make sure that translations are not currently in progress for the selected language(s)."
+msgstr "Sommige documenten werden <i>not</i> niet verzonden om te vertalen. Gelieve ervoor te zorgen dat er momenteel geen vertalingen uitgevoerd worden voor de geselecteerde ta(a)l(en)."
+
+#@ sitepress
+msgid "Some documents were sent to translation."
+msgstr "Sommige documenten zijn verzonden om te vertalen."
+
+#@ sitepress
+msgid "Some pages or posts may not be translated to all languages. Select how the language selector should behave in case translation is missing."
+msgstr "Sommige pagina's of posts kunnen niet naar alle talen vertaald worden. Selecteer hoe de taalselectie moet reageren indien de vertaling ontbreekt."
+
+#@ sitepress
+msgid "Some translated %s have different %s assignments."
+msgstr "Sommige vertaalde %s hebben verschillende %s taken."
+
+#@ sitepress
+msgid "Sorry, the affiliate information did not validate."
+msgstr "Sorry, de affiliate informatie was niet geldig."
+
+#@ sitepress
+msgid "Spam"
+msgstr "Spam"
+
+#@ sitepress
+msgid "Starting the upgrade process..."
+msgstr "Het upgrade-proces starten..."
+
+#@ sitepress
+msgid "Status"
+msgstr "Status"
+
+#@ sitepress
+msgid "Sticky"
+msgstr "Sticky"
+
+#@ sitepress
+msgid "Stop showing this message"
+msgstr "Dit bericht niet meer weergeven"
+
+#@ sitepress
+msgid "Strings for menus will be updated"
+msgstr "Strings voor menu's zullen worden geüpdatet"
+
+#@ sitepress
+msgid "Successfully updated %s for all translated %s."
+msgstr "%s succesvol geüpdatet voor alle vertaalde %s."
+
+#@ sitepress
+msgid "Summary"
+msgstr "Samenvatting"
+
+#@ sitepress
+msgid "Support"
+msgstr "Support"
+
+#@ sitepress
+msgid "Supports custom post types"
+msgstr "Ondersteunt specifieke posttypes"
+
+#@ sitepress
+msgid "Supports custom taxonomies and lots of bug fixes for tags and categories"
+msgstr "Ondersteunt standaardtaxonomieën en veel fouten in tags en categorieën zijn hersteld"
+
+#@ sitepress
+msgid "Supports multilingual menus"
+msgstr "Ondersteunt meertalige menu's"
+
+#@ sitepress
+msgid "Sync"
+msgstr "Synch"
+
+#@ sitepress
+msgid "Sync taxonomy (e.g. category) parents "
+msgstr "Hoofden van taxonomie (bijv. categorie) synchroniseren"
+
+#@ sitepress
+msgid "Synchronize %s assignment in content"
+msgstr "%staak in inhoud synchroniseren"
+
+#@ sitepress
+msgid "Synchronize comment status"
+msgstr "Commentaarstatus synchroniseren"
+
+#@ sitepress
+msgid "Synchronize comments on duplicate content"
+msgstr "Commentaar op dubbele inhoud synchroniseren"
+
+#@ sitepress
+msgid "Synchronize menus between languages."
+msgstr "Menu's tussen talen synchroniseren."
+
+#@ sitepress
+msgid "Synchronize page order for translations"
+msgstr "Paginavolgorde synchroniseren voor vertalingen"
+
+#@ sitepress
+msgid "Synchronize page template"
+msgstr "Paginatemplate synchroniseren"
+
+#@ sitepress
+msgid "Synchronize ping status"
+msgstr "Ping-status synchroniseren"
+
+#@ sitepress
+msgid "Synchronize posts format"
+msgstr "Postformaat synchroniseren"
+
+#@ sitepress
+msgid "Synchronize private flag"
+msgstr "Privé-vlag synchroniseren"
+
+#@ sitepress
+msgid "Synchronize sticky flag"
+msgstr "Sticky vlag synchroniseren"
+
+#@ sitepress
+msgid "Synchronize translation jobs with ICanLocalize"
+msgstr "Vertaalopdrachten synchroniseren met ICanLocalize"
+
+#@ sitepress
+msgid "Tags"
+msgstr "Tags"
+
+#@ sitepress
+msgid "Taxonomy Translation"
+msgstr "Vertaling van de taxonomie"
+
+#@ sitepress
+msgid "Tell the world your site is running multilingual with WPML (places a message in your site's footer) - <a href=\"%s\">read more</a>"
+msgstr "Laat iedereen weten dat uw site meertalig functioneert met WPML (er wordt een bericht geplaatst in de voettekst van uw site) - <a href=\"%s\">lees meer</a>"
+
+#@ sitepress
+msgid "Test"
+msgstr "Test"
+
+#@ sitepress
+msgid "Text for alternative languages for posts"
+msgstr "Tekst voor alternatieve talen voor posts"
+
+#@ sitepress
+msgid "The WPML Multilingual CMS plugin is not currently enabled."
+msgstr "De WPML Meertalige CMS plug-in is momenteel niet geactiveerd."
+
+#@ sitepress
+msgid "The current content of this %s will be permanently lost. WPML will copy the %s content and replace the current content."
+msgstr "De huidige inhoud van dit / deze %s zal definitief verloren gaan. WPML zal de %s inhoud kopiëren en de huidige inhoud vervangen."
+
+#@ sitepress
+msgid "The drop-down language switcher can be added to your theme by inserting this PHP code: %s or as a widget"
+msgstr "De dropdown-taalwisselaar kan aan uw thema toegevoegd worden door deze PHP-code in te voeren: %s of als een widget"
+
+#@ sitepress
+msgid "The expected value is: %s"
+msgstr "De verwachte waarde is: %s"
+
+#@ sitepress
+msgid "The language %s was deleted."
+msgstr "De taal %s werd verwijderd."
+
+#@ sitepress
+msgid "The original has been deleted!"
+msgstr "Het origineel is verwijderd!"
+
+#@ sitepress
+msgid "The recommended way to install WPML on new sites and upgrade WPML on this site is by using our Installer plugin."
+msgstr "De aanbevolen manier om WPML op nieuwe sites te installeren en WPML op deze site te upgraden is door onze Installer plug-in te gebruiken."
+
+#@ sitepress
+msgid "The selected strings can now be translated using the <a%s>string translation</a> screen"
+msgstr "De geselecteerde strings kunnen nu vertaald worden met behulp van het scherm <a%s>stringvertaling</a>"
+
+#@ sitepress
+msgid "The strings on the first column are in %s (the strings language)"
+msgstr "De strings in de eerste kolom staan in het %s (de stringtaal)"
+
+#@ sitepress
+msgid "The translation preference for this field are being controlled by a language configuration XML file. If you want to control it manually, remove the entry from the configuration file."
+msgstr "De vertaalvoorkeuren voor dit veld worden gecontroleerd door een XML-bestand in de taalconfiguratie. Als je het manueel wilt bedienen, verwijder het item dan uit het configuratiebestand."
+
+#@ sitepress
+msgid "The web server cannot write to the .htaccess file"
+msgstr "De webserver kan niet schrijven naar het .htaccess-bestand"
+
+#@ sitepress
+msgid "Theme and plugins localization"
+msgstr "Lokalisatie van thema en plug-ins"
+
+#@ sitepress
+msgid "Theme localization instructions"
+msgstr "Instructies om thema te lokaliseren"
+
+#@ sitepress
+msgid "There is no translator for this language pair. <a href=\"%s\">Details</a>."
+msgstr "Er is geen vertaler voor deze taalcombinatie. <a href=\"%s\">Details</a>."
+
+#@ sitepress
+msgid "There might be more content to fix: please repeat the process."
+msgstr "Er is misschien nog meer inhoud die hersteld moet worden: gelieve het proces te herhalen."
+
+#@ sitepress
+msgid "There was a problem connecting to ICanLocalize. Please close this window and try again. If the problem persists please <a%s>contact us</a>."
+msgstr "Er is een probleem opgetreden bij het verbinden met ICanLocalize. Gelieve dit venster te sluiten en het opnieuw te proberen. Indien het probleem blijft optreden, gelieve <a%s>ons te contacteren</a>."
+
+#@ sitepress
+msgid "There was an error uploading the file, please try again!"
+msgstr "Er is een fout opgetreden bij het uploaden van het bestand, gelieve het opnieuw te proberen!"
+
+#@ sitepress
+msgid "These languages are enabled for this site:"
+msgstr "Deze talen zijn geactiveerd voor deze site:"
+
+#@ sitepress
+msgid "These plugins are known to have compatibiliy issues with WPML:"
+msgstr "Deze plug-ins zijn bekend om hun compatibiliteitsproblemen met WPML:"
+
+#@ sitepress
+msgid "These url parameters will be copied to the translated urls in the language switcher. Enter parameters separated by commas."
+msgstr "Deze url-parameters zullen worden gekopieerd naar de vertaalde url's in de taalwisselaar. Voer de parameters in, gescheiden door komma's."
+
+#@ sitepress
+msgid "This action lets you automatically apply the %s taxonomy to your content in different  languages. It will scan the original content and apply the same taxonomy to translated content."
+msgstr "Met deze actie kunt u automatisch de %s-taxonomie op uw inhoud in verschillende talen toepassen. De originele inhoud wordt gescand en dezelfde taxonomie zal op de vertaalde inhoud toegepast worden."
+
+#@ sitepress
+msgid "This can be a result of either:"
+msgstr "Dit kan een resultaat zijn van:"
+
+#@ sitepress
+msgid "This document is a duplicate of %s and it is maintained by WPML."
+msgstr "Dit document is een kopie van %s en wordt onderhouden door WPML."
+
+#@ sitepress
+msgid "This feature turns themes into multilingual, without having to edit their PHP files."
+msgstr "Deze optie maakt thema's meertalig, zonder dat u hun PHP-bestanden hoeft te bewerken."
+
+#@ sitepress
+msgid "This feature uses Javascript. Make sure that your site doesn't have JS errors."
+msgstr "Deze optie gebruikt Javascript. Gelieve ervoor te zorgen dat uw site geen JS-fouten bevat."
+
+#@ sitepress
+msgid "This function is available through the Network Admin section."
+msgstr "Deze functie is beschikbaar via het onderdeel Netwerk-Admin."
+
+#@ sitepress
+msgid "This is a translation of"
+msgstr "Dit is een vertaling van"
+
+#@ sitepress
+msgid "This language selector determines which content to display. You can choose items in a specific language or in all languages. To change the language of the WordPress Admin interface, go to <a%s>your profile</a>."
+msgstr "Deze taalselectie bepaalt welke inhoud er wordt weergegeven. U kunt items in een specifieke taal of in alle talen selecteren. Ga naar <a%s>uw profiel</a> om de taal van de WordPress Admin-interface te wijzigen."
+
+#@ sitepress
+msgid ""
+"This message was automatically sent by Translation Management running on %s. To stop receiving these notifications contact the system administrator at %s.\n"
+"\n"
+"This email is not monitored for replies."
+msgstr ""
+"Dit bericht werd automatisch verzonden door het Vertaalbeheer, actief op %s. Om deze meldingen niet meer te ontvangen, ga naar de Meldingsinstellingen, of contacteer de systeemadministrator op %s.\n"
+"\n"
+"Dit e-mailadres wordt niet nagekeken voor eventuele antwoorden."
+
+#@ sitepress
+msgid ""
+"This message was automatically sent by Translation Management running on %s. To stop receiving these notifications, go to Notification Settings, or contact the system administrator at %s.\n"
+"\n"
+"This email is not monitored for replies."
+msgstr ""
+"Dit bericht werd automatisch verzonden door het Vertaalbeheer, actief op %s. Om deze meldingen niet meer te ontvangen, ga naar de Meldingsinstellingen, of contacteer de systeemadministrator op %s.\n"
+"\n"
+"Dit e-mailadres wordt niet nagekeken voor eventuele antwoorden."
+
+#@ sitepress
+msgid "This normally takes a few seconds, but may last up to several minutes of very large databases."
+msgstr "Dit duurt normaal gezien slechts enkele seconden, maar kan tot verschillende minuten duren voor heel grote databases."
+
+#@ sitepress
+msgid "This operation copies the content from the original language onto this translation. It's meant for when you want to start with the original content, but keep translating in this language. This button is only enabled when there's no content in the editor."
+msgstr "Deze bewerking kopieert de inhoud van de originele taal naar deze vertaling. Dat is handig als u wilt starten met de originele inhoud, maar wilt vertalen naar deze taal. Deze knop is enkel geactiveerd als er geen inhoud in het bewerkingsveld staat."
+
+#@ sitepress
+msgid "This operation will synchronize this translation with the original language. When you edit the original, this translation will update immediately. It's meant when you want the content in this language to always be the same as the content in the original language."
+msgstr "Deze bewerking zal de vertaling met de originele taal synchroniseren. Als u het origineel bewerkt, zal deze vertaling onmiddellijk geüpdatet worden. Dat is handig als u wenst dat de inhoud in deze taal altijd dezelfde is als die in de originele taal."
+
+#@ sitepress
+msgid "This option is not yet available for Multisite installs"
+msgstr "Deze optie is nog niet beschikbaar voor installatie op meerdere sites"
+
+#@ sitepress
+msgid "This page does not have a language since it's the site's root page."
+msgstr "Deze pagina heeft geen taal aangezien ze de root-pagina van de site is."
+
+#@ sitepress
+msgid "This post is also available in: "
+msgstr "Deze post is ook beschikbaar in:"
+
+#@ sitepress
+msgid "This post is also available in: %s"
+msgstr "Deze post is ook beschikbaar in: %s"
+
+#@ sitepress
+msgid "This screen contains the language settings for your site."
+msgstr "Dit scherm bevat de taalinstellingen voor uw site."
+
+#@ sitepress
+msgid "This table lets you translate the labels for taxonomy %s. These translations will appear in the WordPress admin in different languages"
+msgstr "Met deze tabel kunt u de labels voor de taxonomie van %s vertalen. Deze vertalingen zullen in verschillende talen verschijnen in de WordPress-admin."
+
+#@ sitepress
+msgid "This table summarizes all the terms for taxonomy %s and their translations. Click on any cell to translate."
+msgstr "Deze tabel bevat alle termen van de taxonomie over %s en hun vertalingen. Klik op gelijk welke cel om te vertalen."
+
+#@ sitepress
+msgid "This translation is currently in the trash. You need to either <a href=\"%s\">delete it permanently</a> or <a href=\"%s\">restore</a> it in order to continue."
+msgstr "Deze vertaling bevindt zich momenteel in de prullenbak. Ofwel moet u<a href=\"%s\">de vertaling definitief verwijderen</a> ofwel <a href=\"%s\">moet u de vertaling opnieuw opslaan</a> om door te gaan."
+
+#@ sitepress
+msgid "To add categories that already exist in other languages go to the <a%s>category management page</a>"
+msgstr "Om categorieën toe te voegen die al bestaan in andere talen, moet u gaan naar de <a%s>pagina categoriebeheer</a>"
+
+#@ sitepress
+msgid "To check for new versions, please visit your site's plugins section."
+msgstr "Om te controleren of er nieuwe versies zijn, gelieve het onderdeel Plug-ins van je site te raadplegen."
+
+#@ sitepress
+msgid "To synchronize values for translations, you need to enable WPML's Translation Management module."
+msgstr "Om waardes voor vertalingen te synchroniseren, moet je de module WPML Vertaalbeheer activeren."
+
+#@ sitepress
+msgid "To translate your replies, you need to enable <a href=\"%s\">professional translation</a>."
+msgstr "Om uw antwoorden te vertalen, moet u de optie <a href=\"%s\">professionele vertaling</a> activeren."
+
+#@ sitepress
+msgid "Total"
+msgstr "Totaal"
+
+#@ sitepress
+msgid "Translatable custom posts linking"
+msgstr "Vertaalbare specifieke posts worden gelinkt"
+
+#@ sitepress
+msgid "Translatable taxonomies linking"
+msgstr "Vertaalbare taxonomieën worden gelinkt"
+
+#@ sitepress
+msgid "Translate"
+msgstr "Vertalen"
+
+#@ sitepress
+msgid "Translate %s"
+msgstr "%s vertalen"
+
+#@ sitepress
+msgid "Translate %s in %s"
+msgstr "%s vertalen naar het %s"
+
+#@ sitepress
+msgid "Translate by WPML"
+msgstr "Vertalen door WPML"
+
+#@ sitepress
+msgid "Translate by WPML."
+msgstr "Vertalen door WPML."
+
+#@ sitepress
+msgid "Translate comments by visitors"
+msgstr "Commentaren van bezoekers vertalen"
+
+#@ sitepress
+msgid "Translate from %s"
+msgstr "Vertalen uit %s"
+
+#@ sitepress
+msgid "Translate from %s into %s"
+msgstr "Vertalen uit het %s naar het %s"
+
+#@ sitepress
+msgid "Translate independently"
+msgstr "Afzonderlijk vertalen"
+
+#@ sitepress
+msgid "Translate replies"
+msgstr "Antwoorden vertalen"
+
+#@ sitepress
+msgid "Translate the %s labels"
+msgstr "De %s labels vertalen"
+
+#@ sitepress
+msgid "Translate using .mo files."
+msgstr "Vertaal met behulp van .mo-bestanden."
+
+#@ sitepress
+msgid "Translate yourself"
+msgstr "Zelf vertalen"
+
+#@ sitepress
+msgid "Translation"
+msgstr "Vertaling"
+
+#@ sitepress
+msgid "Translation (incomplete) saved."
+msgstr "Vertaling (onvolledig) opgeslagen."
+
+#@ sitepress
+msgid "Translation (new)"
+msgstr "Vertaling (nieuw)"
+
+#@ sitepress
+msgid "Translation Languages"
+msgstr "Vertaaltalen"
+
+#@ sitepress
+msgid "Translation added: "
+msgstr "Vertaling toegevoegd:"
+
+#@ sitepress
+msgid "Translation complete"
+msgstr "Vertaling voltooid"
+
+#@ sitepress
+msgid "Translation entry not found for: %d"
+msgstr "Vertaling niet gevonden voor: %d"
+
+#@ sitepress
+msgid "Translation in progress"
+msgstr "Vertaling in uitvoering"
+
+#@ sitepress
+msgid "Translation is in progress"
+msgstr "Vertaling is in uitvoering"
+
+#@ sitepress
+msgid "Translation of:"
+msgstr "Vertaling van:"
+
+#@ sitepress
+msgid "Translation options"
+msgstr "Vertaalopties"
+
+#@ sitepress
+msgid "Translation preferences"
+msgstr "Voorkeuren voor vertaling"
+
+#@ sitepress
+msgid "Translation requests cancelled."
+msgstr "Vertaalverzoeken geannuleerd."
+
+#@ sitepress
+msgid "Translation to %s is in progress"
+msgstr "Vertaling naar %s is in uitvoering"
+
+#@ sitepress
+msgid "Translation to %s is in progress (by a different translator)"
+msgstr "Vertaling naar %s is in uitvoering (door een andere vertaler)"
+
+#@ sitepress
+msgid "Translation to %s is maintained by a different translator"
+msgstr "Vertaling naar %s wordt uitgevoerd door een andere vertaler"
+
+#@ sitepress
+msgid "Translation updated: "
+msgstr "Vertaling geüpdatet:"
+
+#@ sitepress
+msgid "Translations"
+msgstr "Vertalingen"
+
+#@ sitepress
+msgid "Translations will be returned to your site"
+msgstr "Vertalingen zullen naar uw site teruggestuurd worden"
+
+#@ sitepress
+msgid "Translations:"
+msgstr "Vertalingen:"
+
+#@ sitepress
+msgid "Translator %s has resigned from the translation job \"%s\" for %s to %s.%sView translation jobs: %s"
+msgstr "Vertaler %s heeft de vertaalopdracht \"%s\" van het %s naar het %s opgegeven.%sVertaalopdrachten bekijken: %s"
+
+#@ sitepress
+msgid ""
+"Translator (%s) has completed translation of job \"%s\" for %s to %s.\n"
+"%s\n"
+"\n"
+"View translation jobs: %s"
+msgstr ""
+"Vertaler (%s) heeft de vertaling van opdracht \"%s\" van het %s naar het %s voltooid.\n"
+"%s\n"
+"\n"
+"Vertaalopdrachten bekijken: %s"
+
+#@ sitepress
+msgid ""
+"Translator (%s) has updated translation of job \"%s\" for %s to %s.\n"
+"%s\n"
+"\n"
+"View translation jobs: %s"
+msgstr ""
+"Vertaler (%s) heeft de vertaling van opdracht \"%s\" van het %s naar het %s geüpdatet.\n"
+"%s\n"
+"\n"
+"Vertaalopdrachten bekijken: %s"
+
+#@ sitepress
+msgid "Translator has completed translation job for %s"
+msgstr "De vertaler heeft de vertaalopdracht voor %s voltooid"
+
+#@ sitepress
+msgid "Translator has resigned from job on %s"
+msgstr "Vertaler heeft opdracht voor %s opgegeven"
+
+#@ sitepress
+msgid "Translator has updated translation job for %s"
+msgstr "Vertaler heeft vertaalopdracht voor %s geüpdatet"
+
+#@ sitepress
+msgid "Troubleshooting"
+msgstr "Probleemoplossing"
+
+#@ sitepress
+msgid "Type"
+msgstr "Type"
+
+#@ sitepress
+msgid "URL rewriting is not enabled in your web server."
+msgstr "De optie URL's opnieuw schrijven is niet geactiveerd in uw webserver."
+
+#@ sitepress
+msgid "URLs for menus will be updated"
+msgstr "URL's voor menu's zullen worden geüpdatet"
+
+#@ sitepress
+msgid "Unarchive"
+msgstr "Verwijderen uit archief"
+
+#@ sitepress
+msgid "Uncategorized"
+msgstr "Geen onderdeel van een categorie"
+
+#@ sitepress
+msgid "Unknown taxonomy: %s"
+msgstr "Onbekende taxonomie: %s"
+
+#@ sitepress
+msgid "Untranslated URL %s"
+msgstr "Onvertaalde URL %s"
+
+#@ sitepress
+msgid "Untranslated URLs for menus"
+msgstr "Onvertaalde URL's voor menu's"
+
+#@ sitepress
+msgid "Untranslated string %s"
+msgstr "Onvertaalde string %s"
+
+#@ sitepress
+msgid "Untranslated strings for menus"
+msgstr "Onvertaalde strings voor menu's"
+
+#@ sitepress
+msgid "Up to date"
+msgstr "Up-to-date"
+
+#@ sitepress
+msgid "Update"
+msgstr "Update"
+
+#@ sitepress
+msgid "Update %s for all translated %s"
+msgstr "Update %s voor alle vertaalde %s"
+
+#@ sitepress
+msgid "Update %s menu option"
+msgstr "Menuoptie in het %s updaten"
+
+#@ sitepress
+msgid "Update %s translation"
+msgstr "%s vertaling updaten"
+
+#@ sitepress
+msgid "Update URL to %s"
+msgstr "URL updaten naar %s"
+
+#@ sitepress
+msgid "Update translation"
+msgstr "Vertaling updaten"
+
+#@ sitepress
+msgid "Updates available"
+msgstr "Updates beschikbaar"
+
+#@ sitepress
+msgid "Updates translation in progress with new style identifiers for documents. The new identifiers depend on the document being translated and the languages so it's not possible to get out of sync when translations are being deleted locally."
+msgstr "Updatet vertalingen in uitvoering met nieuwe stijlvariabelen voor documenten. De nieuwe variabelen hangen af van het document dat vertaald wordt en de taal dus het is niet mogelijk om de synchronisatie te omzeilen als de vertalingen lokaal verwijderd worden."
+
+#@ sitepress
+msgid "Upload dir is not writable"
+msgstr "Er kan niet geschreven worden naar de bestandsmap voor uploads."
+
+#@ sitepress
+msgid "Upload directory cannot be created. Check your permissions."
+msgstr "Bestandsmap voor uploads kan niet worden gecreëerd. Gelieve uw rechten na te kijken."
+
+#@ sitepress
+msgid "Upload flag"
+msgstr "Vlag uploaden"
+
+#@ sitepress
+msgid "Use different slugs in different languages for %s."
+msgstr "Verschillende slugs gebruiken in verschillende talen voor %s."
+
+#@ sitepress
+msgid "Use directory for default language"
+msgstr "Bestandsmap gebruiken voor standaard taal"
+
+#@ sitepress
+msgid "Use flag from WPML"
+msgstr "Vlag van WPML gebruiken"
+
+#@ sitepress
+msgid "Used for plugin"
+msgstr "Gebruikt voor plug-in"
+
+#@ sitepress
+msgid "Used for theme"
+msgstr "Gebruikt voor thema"
+
+#@ sitepress
+msgid "User login"
+msgstr "Gebruikerslogin"
+
+#@ sitepress
+msgid "Using a .mo file in the theme directory"
+msgstr "Een .mo-bestand in de bestandsmap van het thema gebruiken"
+
+#@ sitepress
+msgid "Validate on save"
+msgstr "Valideren bij het opslaan"
+
+#@ sitepress
+msgid "Version"
+msgstr "Versie"
+
+#@ sitepress
+msgid "Vertical"
+msgstr "Verticaal"
+
+#@ sitepress
+msgid "View"
+msgstr "Bekijken"
+
+#@ sitepress
+msgid "Visit"
+msgstr "Bezoeken"
+
+#@ sitepress
+msgid "Visitor comments can be translated to and from each user’s language. Different users can choose their language preferences in their profile pages."
+msgstr "Commentaren van bezoekers kunnen vertaald worden uit en naar de taal van elke gebruiker. Verschillende gebruikers kunnen hun taalvoorkeuren selecteren op hun profielpagina."
+
+#@ sitepress
+msgid "WP Menus Sync"
+msgstr "Synch van WP-menu's"
+
+#@ sitepress
+msgid "WP Translation"
+msgstr "WP-vertaling"
+
+#@ sitepress
+msgid "WPML"
+msgstr "WPML"
+
+#@ sitepress
+msgid "WPML Network Setup"
+msgstr "WPML-netwerk instellen"
+
+#@ sitepress
+msgid "WPML Settings"
+msgstr "WPML-instellingen"
+
+#@ sitepress
+msgid "WPML adapts to any WordPress theme"
+msgstr "WPML past zich aan aan elk WordPress-thema"
+
+#@ sitepress
+msgid "WPML admin screens require JavaScript in order to display. JavaScript is currently off in your browser."
+msgstr "WPML-adminschermen hebben JavaScript nodig om informatie weer te geven. JavaScript is momenteel uitschakeld in uw browser."
+
+#@ sitepress
+msgid "WPML can automatically download translations for WordPress."
+msgstr "WPML kan automatisch vertalingen voor WordPress downloaden."
+
+#@ sitepress
+msgid "WPML can automatically download translations for WordPress. %sEnable now%s"
+msgstr "WPML kan automatisch vertalingen downloaden voor WordPress. %sNu activeren%s"
+
+#@ sitepress
+msgid "WPML can automatically redirect visitors according to browser language."
+msgstr "WPML kan automatisch bezoekers doorsturen volgens hun browsertaal."
+
+#@ sitepress
+msgid "WPML can now translate other plugins"
+msgstr "WPML kan nu andere plug-ins vertalen"
+
+#@ sitepress
+msgid "WPML can't run normally. There is an installation or server configuration problem. %sShow details%s"
+msgstr "WPML kan niet normaal uitgevoerd worden. Er is een probleem opgetreden bij de installatie of serverconfiguratie. %sDetails weergeven%s"
+
+#@ sitepress
+msgid "WPML cannot be activated because your version of PHP is too old. To run correctly, you must have PHP5 installed.<br /> We recommend that you contact your hosting company and request them to switch you to PHP5."
+msgstr "WPML kan niet geactiveerd worden omdat uw versie van PHP te oud is. Om het programma correct uit te voeren, moet u PHP5 installeren.<br /> We raden u aan om uw hostingbedrijf te contacteren en hen te vragen om uw website te converteren naar PHP5."
+
+#@ sitepress
+msgid "WPML cannot be activated together with these older plugins:"
+msgstr "WPML kan niet geactiveerd worden samen met deze oudere plug-ins:"
+
+#@ sitepress
+msgid ""
+"WPML cannot connect to <a%s>www.icanlocalize.com</a>. Please make sure that outgoing communication on port 80 (or 443) is enabled.\n"
+"<a%s>www.icanlocalize.com</a> is found on IP - %s. You can open all ports to and from that IP."
+msgstr ""
+"WPML kan niet verbinden met  <a%s>www.icanlocalize.com</a>. Gelieve ervoor te zorgen dat uitgaande communicatie op poort 80 (of 443) geactiveerd is.\n"
+"<a%s>www.icanlocalize.com</a> is gevonden op IP - %s. U kunt alle poorten naar en van dat IP-adres openen."
+
+#@ sitepress
+msgid "WPML cannot create the database tables! Make sure that your mysql user has the CREATE privilege"
+msgstr "WPML kan de database-tabellen niet creëren! Gelieve ervoor te zorgen dat uw mysql-gebruiker over het privilege CREËREN beschikt"
+
+#@ sitepress
+msgid "WPML compatibility packages will soon be obsolete and removed. Please use other means to make your site multilingual-ready."
+msgstr "De WPML-compatibiliteitspakketten zullen binnenkort overbodig zijn en verwijderd worden. Gelieve andere middelen te gebruiken om uw site voor te bereiden op meertalig gebruik."
+
+#@ sitepress
+msgid "WPML has been activated for the selected site."
+msgstr "WPML is geactiveerd voor de geselecteerde site."
+
+#@ sitepress
+msgid "WPML has been deactivated for the selected site."
+msgstr "WPML is gedeactiveerd voor de geselecteerde site."
+
+#@ sitepress
+msgid "WPML has been reset for the selected site."
+msgstr "WPML is verwijderd voor de geselecteerde site."
+
+#@ sitepress
+msgid "WPML has never checked for WordPress translations. <a%s>Check now.</a>"
+msgstr "WPML heeft nooit gecontroleerd of er WordPress-vertalingen zijn. <a%s>Nu controleren.</a>"
+
+#@ sitepress
+msgid "WPML home page"
+msgstr "WPML-startpagina"
+
+#@ sitepress
+msgid "WPML is a powerful plugin with many features. Would you like to see a quick overview?"
+msgstr "WPML is een krachtige plug-in met veel opties. Wilt u een snel overzicht zien?"
+
+#@ sitepress
+msgid "WPML language settings"
+msgstr "WPML-taalinstellingen"
+
+#@ sitepress
+msgid "WPML last checked for WordPress translations %s (manual). <a%s>Check now.</a>"
+msgstr "WPML heeft voor het laatst op %s (manueel) gecontroleerd of er WordPress-vertalingen zijn. <a%s>Nu controleren.</a>"
+
+#@ sitepress
+msgid "WPML last checked for WordPress translations %s when WordPress version updated. <a%s>Check now.</a>"
+msgstr "WPML heeft voor het laatst gecontroleerd of er WordPress-vertalingen zijn %s toen de WordPress-versie geüpdatet werd. <a%s>Nu controleren.</a>"
+
+#@ sitepress
+msgid "WPML love"
+msgstr "WPML is cool"
+
+#@ sitepress
+msgid "WPML news"
+msgstr "WPML-nieuws"
+
+#@ sitepress
+msgid "WPML requires database upgrade"
+msgstr "WPML vereist een upgrade van de database"
+
+#@ sitepress
+msgid "WPML settings"
+msgstr "WPML-instellingen"
+
+#@ sitepress
+msgid "WPML will be deactivated"
+msgstr "WPML zal worden gedeactiveerd"
+
+#@ sitepress
+msgid "WPML will copy %s from %s when you save this post."
+msgstr "WPML zal %s van %s kopiëren als je deze post opslaat."
+
+#@ sitepress
+msgid "WPML will copy this field from %s when you save this post."
+msgstr "WPML zal dit veld van %s kopiëren wanneer je deze post opslaat."
+
+#@ sitepress
+msgid "WPML will no longer synchronize this %s with the original content."
+msgstr "WPML zal dit / deze %s niet meer synchroniseren met de originele inhoud."
+
+#@ sitepress
+msgid "WPML will reset all language information to its default values. Any languages that you added or edited will be lost."
+msgstr "WPML zal voor alle taalinformatie opnieuw de standaardwaarden instellen. Alle talen die u hebt toegevoegd of bewerkt, zullen verloren gaan."
+
+#@ sitepress
+msgid "WPML's String Translation module lets you translate the theme, plugins and admin texts. To install it, go to your WPML account, click on Downloads and get WPML String Translation."
+msgstr "Met de module Stringvertaling van WPML kun je het thema, de plug-ins en adminteksten vertalen. Om de module te installeren, moet je gaan naar je WPML-account, op Downloads klikken en WPML Stringvertaling downloaden."
+
+#@ sitepress
+msgid "Waiting for translator"
+msgstr "Wachten op vertaler"
+
+#@ sitepress
+msgid "What to include in the language switcher"
+msgstr "Wat moet er in de taalwisselaar opgenomen worden"
+
+#@ sitepress
+msgid "What to show for the root url:"
+msgstr "Wat moet er weergegeven worden als root-url:"
+
+#@ sitepress
+msgid "When WPML accesses <a target=\"_blank\" href=\"%s\">%s</a> it gets:"
+msgstr "Wanneer WPML <a target=\"_blank\" href=\"%s\">%s</a> raadpleegt, dan verkrijgt men dit resultaat:"
+
+#@ sitepress
+msgid "When deleting a post, delete translations as well"
+msgstr "Als een post verwijderd wordt, moeten de vertalingen ook verwijderd worden"
+
+#@ sitepress
+msgid "When deleting a taxonomy (category, tag or custom), delete translations as well"
+msgstr "Als u een taxonomie (categorie, tag of iets specifieks) verwijdert, verwijder dan ook de vertalingen"
+
+#@ sitepress
+msgid "When using the translation pickup mode cancelled jobs on ICanLocalize need to be synced manually."
+msgstr "Als u de ophaalmodus voor vertalingen gebruikt, dan moeten geannuleerde opdrachten op ICanLocalize manueel gesynchroniseerd worden."
+
+#@ sitepress
+msgid "White"
+msgstr "Wit"
+
+#@ sitepress
+msgid "WordPress is installed in a directory (not root) and you're using default links."
+msgstr "WordPress is geïnstalleerd in een bestandsmap (geen root) en u gebruikt standaardlinks."
+
+#@ sitepress
+msgid "WordPress language file (.mo) is missing. Keeping existing display language."
+msgstr "WordPress-vertaalbestand (.mo) ontbreekt. Huidige weergavetaal wordt behouden."
+
+#@ sitepress
+msgid "Works with WordPress 3"
+msgstr "Werkt met WordPress 3"
+
+#@ sitepress
+msgid "Yes"
+msgstr "Ja"
+
+#@ sitepress
+msgid "You are about to activate the site %s"
+msgstr "U staat op het punt de site %s te activeren."
+
+#@ sitepress
+msgid "You are about to archive the site %s."
+msgstr "U staat op het punt de site %s te archiveren."
+
+#@ sitepress
+msgid "You are about to deactivate WPML on the site %s."
+msgstr "U staat op het punt om WPML te deactiveren op de site %s."
+
+#@ sitepress
+msgid "You are about to deactivate the site %s"
+msgstr "U staat op het punt om de site %s te deactiveren"
+
+#@ sitepress
+msgid "You are about to delete the site %s."
+msgstr "U staat op het punt de site %s te verwijderen."
+
+#@ sitepress
+msgid "You are about to mark the site %s as spam."
+msgstr "U staat op het punt de site %s als spam te markeren."
+
+#@ sitepress
+msgid "You are about to reset WPML for this site: %s."
+msgstr "U staat op het punt om WPML voor deze site te verwijderen: %s."
+
+#@ sitepress
+msgid "You are about to unarchive the site %s."
+msgstr "U staat op het punt de site %s uit het archief te verwijderen."
+
+#@ sitepress
+msgid "You are about to unspam the site %s."
+msgstr "U staat op het punt om de site %s te markeren als geen spam."
+
+#@ sitepress
+msgid "You are not allowed to manage the WPML Network settings."
+msgstr "U hebt geen toestemming om de WPML-netwerkinstellingen te beheren."
+
+#@ sitepress
+msgid "You are not the translator of this document. <a%s>Learn more</a>."
+msgstr "Je bent niet de vertaler van dit document. <a%s>Meer lezen</a>."
+
+#@ sitepress
+msgid "You are using a caching plugin. When you translate strings, the cache needs to be cleared in order for the translation to display."
+msgstr "U gebruikt een plug-in die dingen opslaat in het cache-geheugen. Als u strings vertaalt, dan moet het cache-geheugen leeggemaakt worden opdat de vertalingen weergegeven kunnen worden."
+
+#@ sitepress
+msgid "You are using plugins that are incompatible with WPML - <a href=\"%s\">see details</a>."
+msgstr "U gebruikt plug-ins die niet compatibel zijn met WPML - <a href=\"%s\">zie details</a>."
+
+#@ sitepress
+msgid "You can also create custom language switchers, such as a list of languages or country flags."
+msgstr "U kunt ook standaard taalwisselaars creëren, zoals een lijst met talen of met de landsvlaggen."
+
+#@ sitepress
+msgid "You can check again in %s minutes."
+msgstr "U kunt opnieuw controleren over %s minuten."
+
+#@ sitepress
+msgid "You can completely hide content in specific languages from visitors and search engines, but still view it yourself. This allows reviewing translations that are in progress."
+msgstr "U kunt de inhoud in specifieke talen volledig verbergen voor bezoekers en zoekmachines, maar hem nog altijd zelf bekijken. Dat laat u toe om vertalingen na te kijken die in uitvoering zijn."
+
+#@ sitepress
+msgid "You can enable its/their display for yourself, in your <a href=\"%s\">profile page</a>."
+msgstr "U kunt zijn/hun weergave zelf activeren op uw<a href=\"%s\">profielpagina</a>."
+
+#@ sitepress
+msgid "You can view your other translation jobs here: %s"
+msgstr "U kunt uw andere vertaalopdrachten hier bekijken: %s"
+
+#@ sitepress
+msgid "You can't add this translation because you're not a %s translator. <a%s>Learn more.</a>"
+msgstr "Je kunt geen vertaling toevoegen omdat je geen %s vertaler <a%s> bent. Meer lezen.</a>"
+
+#@ sitepress
+msgid "You can't edit the original document using the translation editor"
+msgstr "Je kunt het originele document niet bewerken met de vertaalbewerking"
+
+#@ sitepress
+msgid "You can't edit this translation because you're not a %s translator. <a%s>Learn more.</a>"
+msgstr "Je kunt deze vertaling niet bewerken omdat je geen %s vertaler <a%s> bent.Meer lezen.</a>"
+
+#@ sitepress
+msgid "You can't edit this translation because you're not the translator. <a%s>Learn more.</a>"
+msgstr "Je kunt deze vertaling niet bewerken omdat je de vertaler niet bent. <a%s>Meer lezen.</a>"
+
+#@ sitepress
+msgid "You can't translate this document. It's assigned to a different translator.<br /> Document: <strong>%s</strong> (ID = %d)."
+msgstr "Je kunt dit document niet vertalen. Het is toegewezen aan een andere vertaler.<br /> Document: <strong>%s</strong> (ID = %d)."
+
+#@ sitepress
+msgid "You don't have enough funds in your ICanLocalize account - [b]Funds required - $%s[/b]"
+msgstr "U hebt niet genoeg kapitaal op uw ICanLocalize-account - [b]Kapitaal nodig - USD%s[/b]"
+
+#@ sitepress
+msgid ""
+"You have been assigned to new translation job from %s to %s.\n"
+"%s\n"
+"Start editing: %s"
+msgstr ""
+"De nieuwe vertaalopdracht uit het %s naar het %s werd aan je toegewezen.\n"
+"%s\n"
+"Begin te bewerken: %s"
+
+#@ sitepress
+msgid "You have been removed from the translation job \"%s\" for %s to %s."
+msgstr "U bent verwijderd voor de vertaalopdracht \"%s\" van het %s naar het %s."
+
+#@ sitepress
+msgid "You have selected the following content:"
+msgstr "U hebt de volgende inhoud geselecteerd:"
+
+#@ sitepress
+msgid "You haven't set your <a %s>synchronization preferences</a> for these custom posts: %s. Default value was selected."
+msgstr "U hebt uw <a %s>synchronisatievoorkeuren </a> voor deze specifieke posts niet ingesteld: %s. De standaardwaarde werd geselecteerd."
+
+#@ sitepress
+msgid "You haven't set your <a %s>synchronization preferences</a> for these taxonomies: %s. Default value was selected."
+msgstr "U hebt uw <a %s>synchronisatievoorkeuren</a> voor deze taxonomieën niet ingesteld: %s. De standaardwaarde werd geselecteerd."
+
+#@ sitepress
+msgid "You haven't set your synchronization preferences for these custom posts: %s. Default value was selected."
+msgstr "U hebt uw synchronisatievoorkeuren niet ingesteld voor deze specifieke posts: %s. De standaardwaarde werd geselecteerd."
+
+#@ sitepress
+msgid "You haven't set your synchronization preferences for these taxonomies: %s. Default value was selected."
+msgstr "U hebt uw synchronisatievoorkeuren voor deze taxonomieën niet ingesteld: %s. De standaardwaarde werd geselecteerd."
+
+#@ sitepress
+msgid "Your blog page does not exist or its translation is not published in %s."
+msgstr "Uw blogpagina bestaat niet of de vertaling ervan is niet gepubliceerd in %s."
+
+#@ sitepress
+msgid "Your browser doesn't seem to be allowing cookies to be set."
+msgstr "Uw browser laat blijkbaar niet toe dat er cookies gebruikt worden."
+
+#@ sitepress
+msgid "Your current admin language is %s. You can change it in your <a href=\"%s\">profile page</a>."
+msgstr "Uw huidige admintaal is %s. U kunt deze op uw <a href=\"%s\">profielpagina</a> wijzigen."
+
+#@ sitepress
+msgid "Your home page does not exist or its translation is not published in %s."
+msgstr "Uw startpagina bestaat niet of de vertaling ervan is niet gepubliceerd in %s."
+
+#@ sitepress
+msgid "Your site includes different kinds of content items. Choose which types to include in the quote. <br /><br />To get the word count of specific documents, use the %sTranslation Dashboard%s."
+msgstr "Uw site bevat verschillende items qua inhoud. Selecteer welke types u wilt opnemen in de offerte. <br /><br />Om het aantal woorden van specifieke documenten te tellen, kunt u het %sVertaaldashboard%s gebruiken."
+
+#@ sitepress
+msgid "add"
+msgstr "toevoegen"
+
+#@ sitepress
+msgid "add translation"
+msgstr "vertaling toevoegen"
+
+#@ sitepress
+msgid "all %s"
+msgstr "alle %s"
+
+#@ sitepress
+msgid "any language"
+msgstr "gelijk welke taal"
+
+#@ sitepress
+msgid "bugs fixed and new support for Headspace2 SEO plugin"
+msgstr "fouten hersteld en nieuwe support voor Headspace2 SEO plug-in"
+
+#@ sitepress
+msgid "cancel"
+msgstr "annuleren"
+
+#@ sitepress
+msgid "clear"
+msgstr "verwijderen"
+
+#@ sitepress
+msgid "clear search"
+msgstr "zoekopdracht verwijderen"
+
+#@ sitepress
+msgid "copy from original"
+msgstr "kopiëren van origineel"
+
+#@ sitepress
+msgid "create duplicate"
+msgstr "kopie creëren"
+
+#@ sitepress
+msgid "default"
+msgstr "standaard"
+
+#@ sitepress
+msgid "duplicate"
+msgstr "kopie"
+
+#@ sitepress
+msgid "edit"
+msgstr "bewerken"
+
+#@ sitepress
+msgid "edit translation"
+msgstr "vertaling bewerken"
+
+#@ sitepress
+msgid "fixing %s/%d"
+msgstr "%s/%d aan het herstellen"
+
+#@ sitepress
+msgid "help"
+msgstr "help"
+
+#@ sitepress
+msgid "hidden"
+msgstr "verborgen"
+
+#@ sitepress
+msgid "hide"
+msgstr "verbergen"
+
+#@ sitepress
+msgid "hide this"
+msgstr "dit verbergen"
+
+#@ sitepress
+msgid "huge speed improvements and the ability to prevent loading WPML's CSS and JS files"
+msgstr "enorme verbeteringen qua snelheid en de mogelijkheid om te verhinderen dat de CSS- en JS-bestanden van WPML geladen worden"
+
+#@ sitepress
+msgid "in"
+msgstr "in"
+
+#@ sitepress
+msgid "in progress"
+msgstr "in uitvoering"
+
+#@ sitepress
+msgid "linked to: "
+msgstr "gelinkt met:"
+
+#@ sitepress
+msgid "many bugs fixed and an easy way to show your love for WPML"
+msgstr "veel fouten hersteld en een eenvoudige manier om uw appreciatie voor WPML te tonen"
+
+#@ sitepress
+msgid "n/a"
+msgstr "niet beschikbaar"
+
+#@ sitepress
+msgid "never"
+msgstr "nooit"
+
+#@ sitepress
+msgid "no menus defined"
+msgstr "geen menu's gedefinieerd"
+
+#@ sitepress
+msgid "none"
+msgstr "geen"
+
+#@ sitepress
+msgid "not available"
+msgstr "niet beschikbaar"
+
+#@ sitepress
+msgid "not translated in current language"
+msgstr "niet vertaald naar de huidige taal"
+
+#@ sitepress
+msgid "of"
+msgstr "van"
+
+#@ sitepress
+msgid "or, translate manually:"
+msgstr "of manueel vertalen:"
+
+#@ sitepress
+msgid "please enter path: absolute or relative to the WordPress installation folder"
+msgstr "gelieve de locatie in te voeren: absoluut of relatief naar de Wordpress-installatiemap"
+
+#@ sitepress
+msgid "search"
+msgstr "zoeken"
+
+#@ sitepress
+msgid "select"
+msgstr "selecteren"
+
+#@ sitepress
+msgid "select parent"
+msgstr "ouder selecteren"
+
+#@ sitepress
+msgid "show"
+msgstr "weergeven"
+
+#@ sitepress
+msgid "simplified operation for basic usage and for getting professional translation"
+msgstr "vereenvoudigde operatie voor basisgebruik en voor een professionele vertaling"
+
+#@ sitepress
+msgid "some strings might be not registered"
+msgstr "sommige strings zijn misschien niet geregistreerd"
+
+#@ sitepress
+msgid "string not registered"
+msgstr "string niet geregistreerd"
+
+#@ sitepress
+msgid "the default language"
+msgstr "de standaardtaal"
+
+#@ sitepress
+msgid "theme compatibility packages, design for language switcher and language fall-back for posts"
+msgstr "compatibiliteitspakketten voor thema's, ontwerp voor taalwisselaar en vertalingen van posts indien nodig"
+
+#@ sitepress
+msgid "this will be your admin language and will also be used for translating comments."
+msgstr "dit zal uw admintaal zijn die ook gebruikt zal worden om commentaren te vertalen."
+
+#@ sitepress
+msgid "to these languages:"
+msgstr "naar deze talen:"
+
+#@ sitepress
+msgid "translate"
+msgstr "vertalen"
+
+#@ sitepress
+msgid "translation controls on posts and pages lists"
+msgstr "vertaalbediening in posts en paginalijsten"
+
+#@ sitepress
+msgid "translation jobs updated"
+msgstr "vertaalopdrachten geüpdatet"
+
+#@ sitepress
+msgid "untranslated %s"
+msgstr "onvertaalde %s"
+
+#@ sitepress
+msgid "you can configure the position and contents of the posts page in the top navigation"
+msgstr "u kunt de positie en inhoud van de pagina met posts configureren in de bovenste navigatiebalk"
+
