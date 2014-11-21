@@ -2484,16 +2484,16 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
     height: 42px;
     line-height: 42px; }
   .btn.green {
-    background: #be141b;
-    color: #feefea; }
+    background: #be1fff;
+    color: #FFF; }
     .btn.green:hover {
       background: #000;
-      color: #feefea; }
+      color: #FFF; }
 
 a {
   color: #000; }
   a:hover {
-    color: #be141b;
+    color: #192c56;
     text-decoration: none; }
 
 img {
@@ -2509,45 +2509,45 @@ body {
 .tooltip {
   position: relative;
   padding: 25px 20px;
-  background: rgba(190, 20, 27, 0.8); }
+  background: rgba(25, 44, 86, 0.8); }
   .tooltip:after {
     position: absolute;
     bottom: -36px;
     right: 36px;
     content: '';
     border: 18px solid;
-    border-color: rgba(190, 20, 27, 0.8) rgba(190, 20, 27, 0.8) transparent transparent; }
+    border-color: rgba(25, 44, 86, 0.8) rgba(25, 44, 86, 0.8) transparent transparent; }
   .rt .tooltip:after {
     right: initial;
     left: 36px;
-    border-color: rgba(253, 220, 210, 0.8) transparent transparent rgba(253, 220, 210, 0.8); }
+    border-color: rgba(242, 242, 242, 0.8) transparent transparent rgba(242, 242, 242, 0.8); }
   .rb .tooltip:after {
     bottom: 36px;
     rigt: initial;
     left: 100%;
-    border-color: transparent transparent rgba(253, 220, 210, 0.8) rgba(253, 220, 210, 0.8); }
+    border-color: transparent transparent rgba(242, 242, 242, 0.8) rgba(242, 242, 242, 0.8); }
   .tooltip.red:after {
-    border-color: #be141b #be141b transparent transparent; }
+    border-color: #192c56 #192c56 transparent transparent; }
   .tooltip.red.tr:after {
     bottom: initial;
     left: 100%;
     right: initial;
     top: 36px;
-    border-color: #be141b transparent transparent #be141b; }
+    border-color: #192c56 transparent transparent #192c56; }
   .tooltip.br:after {
     bottom: initial;
     right: initial;
     left: 36px;
     top: -36px;
-    border-color: transparent transparent rgba(253, 220, 210, 0.8) rgba(253, 220, 210, 0.8); }
+    border-color: transparent transparent rgba(242, 242, 242, 0.8) rgba(242, 242, 242, 0.8); }
   .tooltip.bl:after {
     bottom: auto;
     right: 36px;
     top: -36px;
-    border-color: transparent rgba(190, 20, 27, 0.8) rgba(190, 20, 27, 0.8) transparent; }
+    border-color: transparent rgba(25, 44, 86, 0.8) rgba(25, 44, 86, 0.8) transparent; }
   .tooltip h2 {
     font-size: 25px;
-    color: #feefea;
+    color: #FFF;
     line-height: 28px; }
     .tooltip h2 em {
       font-style: normal;
@@ -2557,14 +2557,13 @@ header {
   border: 0 !important;
   max-width: 1200px;
   margin: 0 auto;
-  background: #be141b; }
+  background: #192c56; }
   header .top {
-    border-left: 1px solid #be141b;
-    border-right: 1px solid #be141b;
+    border: 1px solid #192c56;
     -webkit-transition: margin-top 0.4s linear;
     -o-transition: margin-top 0.4s linear;
     transition: margin-top 0.4s linear;
-    padding-bottom: 25px; }
+    border-bottom: 0px; }
   header.top-nav-collapse .top {
     margin-top: -135px; }
   header ul {
@@ -2580,13 +2579,18 @@ header {
     position: absolute;
     z-index: 999;
     width: 100%;
-    text-align: center;
-    left: 0; }
+    left: 0;
+    top: 8px;
+    color: #FFF;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 52px; }
     @media (max-width: 768px) {
       header .navbar-brand {
         padding-left: 0;
         width: auto;
-        top: 35px; } }
+        top: 35px;
+        font-size: 32px;
+        text-align: center; } }
     header .navbar-brand img {
       max-height: 30px;
       -webkit-transition: all 0.5s ease-in-out;
@@ -2633,7 +2637,8 @@ header {
         overflow: hidden; } }
     header .navbar-collapse .navbar-nav {
       width: 100%;
-      padding: 0; }
+      padding: 0;
+      margin-top: 12px; }
       header .navbar-collapse .navbar-nav li {
         float: left;
         margin-top: 10px;
@@ -2648,9 +2653,9 @@ header {
           font-size: 18px;
           line-height: 20px;
           font-weight: 700;
-          height: 65px;
-          padding: 40px 10px 5px 10px;
-          color: #feefea;
+          height: 45px;
+          padding: 20px 10px 5px 10px;
+          color: #FFF;
           border-left: 1px dotted white; }
           @media (max-width: 768px) {
             header .navbar-collapse .navbar-nav li a {
@@ -2665,6 +2670,41 @@ header {
         @media (max-width: 768px) {
           header .navbar-collapse .navbar-nav li:first-child a {
             border: 0; } }
+  header ul.book-button {
+    float: right;
+    margin: -26px -16px 0 0;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #192c56; }
+    header ul.book-button li {
+      float: left;
+      width: 200px;
+      margin-left: 1px; }
+      @media (max-width: 480px) {
+        header ul.book-button li {
+          width: auto; } }
+      header ul.book-button li a {
+        display: block;
+        height: 60px;
+        padding: 0 20px;
+        line-height: 60px;
+        font-size: 16px;
+        background: #192c56;
+        color: #FFF;
+        position: relative; }
+        @media (max-width: 480px) {
+          header ul.book-button li a {
+            height: 30px;
+            line-height: 30px; } }
+        header ul.book-button li a:hover {
+          background: #000; }
+        header ul.book-button li a:after {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          content: '';
+          border: 10px solid;
+          border-color: transparent white white transparent; }
   header .tools {
     height: 40px;
     padding-top: 8px;
@@ -2694,7 +2734,7 @@ header {
     line-height: 60px;
     border-left: 1px solid #be141b;
     border-right: 1px solid #be141b;
-    background: #feefea;
+    background: #FFF;
     margin: 0;
     padding: 0;
     position: relative;
@@ -2720,55 +2760,23 @@ header {
       font-weight: 700;
       padding: 0;
       margin: 0;
-      color: #be141b;
+      color: #192c56;
       text-transform: uppercase;
       font-family: 'Allerta Stencil', sans-serif; }
       @media (max-width: 480px) {
         header .book h2 {
           display: none; } }
-    header .book ul {
-      float: right;
-      margin: 0; }
-      header .book ul li {
-        float: left;
-        width: 200px;
-        margin-left: 1px; }
-        @media (max-width: 480px) {
-          header .book ul li {
-            width: auto; } }
-        header .book ul li a {
-          display: block;
-          height: 60px;
-          padding: 0 20px;
-          line-height: 60px;
-          font-size: 16px;
-          background: #be141b;
-          color: #feefea;
-          position: relative; }
-          @media (max-width: 480px) {
-            header .book ul li a {
-              height: 30px;
-              line-height: 30px; } }
-          header .book ul li a:hover {
-            background: #000; }
-          header .book ul li a:after {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            content: '';
-            border: 10px solid;
-            border-color: transparent white white transparent; }
   header .white-spacer {
     height: 2px;
     width: 100%;
     background: #FFF;
-    border-left: 1px solid #be141b;
-    border-right: 1px solid #be141b; }
+    border-left: 1px solid #192c56;
+    border-right: 1px solid #192c56; }
 
 main {
   padding-top: 166px;
-  border-left: 1px solid #be141b;
-  border-right: 1px solid #be141b;
+  border-left: 1px solid #192c56;
+  border-right: 1px solid #192c56;
   background: white; }
   @media (max-width: 768px) {
     main {
@@ -2788,7 +2796,7 @@ main {
     color: #000; }
 
 footer {
-  background: #be141b; }
+  background: #192c56; }
   footer .container {
     padding: 0; }
   footer .snip {
@@ -2806,11 +2814,11 @@ footer {
     line-height: 1.3em;
     font-weight: 700;
     margin: 0 0 10px 0;
-    color: #feefea; }
+    color: #FFF; }
   footer .newsletter {
     margin: 0; }
     footer .newsletter p {
-      color: #feefea;
+      color: #FFF;
       font-weight: 400;
       font-size: 16px; }
   footer ul {
@@ -2821,7 +2829,7 @@ footer {
       line-height: 22px;
       font-weight: 700; }
       footer ul li a {
-        color: #feefea; }
+        color: #FFF; }
         footer ul li a:hover {
           color: #000; }
   footer .grid-span-10 {
@@ -2829,7 +2837,7 @@ footer {
     margin: 0;
     text-align: center;
     border-top: 1px dotted white;
-    color: #feefea;
+    color: #FFF;
     font-weight: 400;
     font-size: 13px; }
   footer .banner-social-buttons li {
@@ -2890,10 +2898,10 @@ main .row {
       font-size: 18px;
       color: #1a1a1a; }
       .snip.be p em {
-        color: #be141b;
+        color: #192c56;
         font-style: normal; }
   .snip .xl, .snip.xl h2 {
-    color: #feefea;
+    color: #FFF;
     font-size: 63px;
     line-height: 1.04762;
     font-weight: 800; }
@@ -2903,7 +2911,7 @@ main .row {
     line-height: 1.2;
     font-family: 'Allerta Stencil', sans-serif; }
     .snip .xxl.t-red, .snip.xxl h2.t-red {
-      color: #be141b; }
+      color: #192c56; }
   .snip.review {
     text-align: center; }
     .snip.review i {
@@ -2912,9 +2920,9 @@ main .row {
     .snip.review a {
       display: block;
       font-size: 20px;
-      color: #be141b; }
+      color: #192c56; }
       .snip.review a:hover {
-        color: #900f14; }
+        color: #0e182e; }
   .snip.xxl {
     text-align: left; }
     .snip.xxl h2 {
@@ -2923,11 +2931,11 @@ main .row {
     .snip.xxl p {
       font-size: 20px; }
     .snip.xxl a {
-      color: #be141b; }
+      color: #192c56; }
       .snip.xxl a:hover {
-        color: #900f14; }
+        color: #0e182e; }
   .snip p {
-    color: #feefea;
+    color: #FFF;
     margin: 10px 0;
     font-size: 25px;
     line-height: 27px;
@@ -2941,10 +2949,10 @@ main .row {
         border-top: 1px dotted gray; } }
 
 .t-red {
-  color: #be141b !important; }
+  color: #192c56 !important; }
 
 .red {
-  background: #be141b; }
+  background: #192c56; }
 
 .be {
   background: #feefea; }
@@ -2960,7 +2968,7 @@ main .row {
     line-height: 1;
     font-size: 40px; }
   .twitter a {
-    color: #be141b;
+    color: #192c56;
     font-size: 16px;
     text-decoration: underline; }
     .twitter a:hover {
@@ -2969,7 +2977,7 @@ main .row {
     max-width: 340px;
     margin: 0 auto; }
     .twitter .item a {
-      color: #be141b; }
+      color: #192c56; }
     .twitter .item h2 {
       margin-top: 0; }
       .twitter .item h2 a {
@@ -3001,14 +3009,14 @@ main .row {
       height: 40px !important;
       opacity: 1 !important;
       border-radius: 0 !important;
-      background: #be141b !important; }
+      background: #be1fff !important; }
       .owl-controls .owl-buttons div:hover {
-        color: #be141b !important;
+        color: #be1fff !important;
         background: #000 !important; }
       .owl-controls .owl-buttons div i {
         font-size: 32px; }
     .owl-controls .owl-buttons.active div {
-      color: #be141b !important;
+      color: #be1fff !important;
       background: #000 !important; }
 
 .newsletter {
@@ -3019,14 +3027,14 @@ main .row {
     font-weight: 700; }
     .newsletter h2 em {
       font-style: normal;
-      color: #fddcd2 !important; }
+      color: #f2f2f2 !important; }
   .newsletter label {
     margin: 15px 0;
-    color: #feefea; }
+    color: #FFF; }
   .newsletter input {
     width: 100%;
     height: 42px;
-    background: #feefea;
+    background: #FFF;
     bordeR: 0;
     margin-bottom: 10px;
     padding: 0 15px; }
@@ -3050,13 +3058,13 @@ main .row {
   font-size: 18px;
   line-height: 1.2; }
 .reviews a {
-  color: #be141b;
+  color: #192c56;
   text-decoration: underline; }
   .reviews a:hover {
     color: #000;
     text-decoration: none; }
 .reviews p {
-  color: #fddcd2;
+  color: #f2f2f2;
   height: 93px; }
 
 .home .room .row > div, .home .breakfast .row > div, .home .events .row > div {
@@ -3085,7 +3093,7 @@ main .row {
     padding: 0;
     margin: 0 0 40px; }
   .home .room .desc .tooltip h3, .home .breakfast .desc .tooltip h3, .home .events .desc .tooltip h3 {
-    color: #fddcd2; }
+    color: #f2f2f2; }
   .home .room .desc p, .home .breakfast .desc p, .home .events .desc p {
     font-size: 16px;
     line-height: 22px;
@@ -3185,7 +3193,7 @@ main .row {
     .faq .col-full h2 {
       font-size: 22px;
       padding: 0;
-      color: #be141b; }
+      color: #192c56; }
 
 .discoveries p, .discoveries .desc p, .slider p, .slider .desc p {
   font-size: 16px;
@@ -3196,7 +3204,7 @@ main .row {
   margin-top: 0; }
 
 .discoveries .tooltip p, .discoveries .desc .tooltip p, .slider .tooltip p, .slider .desc .tooltip p {
-  color: #feefea; }
+  color: #FFF; }
 
 .discoveries .owl-controls {
   left: -140px; }
@@ -3223,17 +3231,16 @@ main .row {
   list-style: none; }
   .links li a {
     font-size: 18px;
-    color: #be141b;
+    color: #192c56;
     line-height: 22px; }
     .links li a:hover {
       color: #000; }
 
 #lang_sel_list {
-  position: relative;
+  position: absolute;
   z-index: 1000;
-  float: left; }
-  #lang_sel_list img.iclflag {
-    border: 1px solid #FFF; }
+  top: 40px;
+  right: 0px; }
 
 .gallery {
   display: -ms-flexbox;
