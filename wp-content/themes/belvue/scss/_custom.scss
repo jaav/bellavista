@@ -224,7 +224,6 @@ header {
   }
   .navbar-brand {
     height: auto;
-    top: 0;
     padding-top: 0;
     padding-bottom: 5px;
     padding-left: 0;
@@ -232,7 +231,8 @@ header {
     z-index: 999;
     width: 100%;
     left: 0;
-    top: 8px;
+    top: 12px;
+    left: 12px;
     color: #FFF;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 52px;
@@ -297,7 +297,7 @@ header {
     .navbar-nav {
       width: 100%;
       padding: 0;
-      margin-top: 12px;
+      margin-top: 40px;
       li {
         float: left;
         margin-top: 10px;
@@ -340,7 +340,7 @@ header {
   }
   ul.book-button {
     float: right;
-    margin: -26px -16px 0 0;
+    margin: -62px -16px 0 0;
     border-top: 1px solid #FFF;
     border-left: 1px solid #FFF;
     border-right: 1px solid $r;
