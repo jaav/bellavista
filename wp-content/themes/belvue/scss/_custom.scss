@@ -774,7 +774,6 @@ main {
   width: 100px;
   bottom: 10px;
   @media (max-width: $screen-sm) {
-    position: static;
   }
   .owl-buttons {
     width: 100px;
@@ -1113,8 +1112,8 @@ main {
 }
 .slider {
   .flex {
+    background: #00B49B;
     .desc {
-      background: #00B49B;
       h2 {
         color: $b;
       }
@@ -1126,6 +1125,10 @@ main {
     left: -140px;
   }
   .flex {
+    background: #D49FC9;
+    &.fixed {
+      background: none;
+    }
     .tooltip {
       background: $pink;
       &:after {
@@ -1133,7 +1136,6 @@ main {
       }
     }
     .desc.snip {
-      background: #D49FC9;
       h2 {
         color: $b;
       }

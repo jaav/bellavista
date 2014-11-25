@@ -3864,11 +3864,6 @@ main .row {
   width: 100px;
   bottom: 10px;
 }
-@media (max-width: 769px) {
-  .owl-controls {
-    position: static;
-  }
-}
 .owl-controls .owl-buttons {
   width: 100px;
   display: block;
@@ -4180,7 +4175,7 @@ main .row {
   color: #FFF;
 }
 
-.slider .flex .desc {
+.slider .flex {
   background: #00B49B;
 }
 .slider .flex .desc h2 {
@@ -4190,14 +4185,17 @@ main .row {
 .discoveries .owl-controls {
   left: -140px;
 }
+.discoveries .flex {
+  background: #D49FC9;
+}
+.discoveries .flex.fixed {
+  background: none;
+}
 .discoveries .flex .tooltip {
   background: #df005d;
 }
 .discoveries .flex .tooltip:after {
   border-color: #df005d #df005d transparent transparent;
-}
-.discoveries .flex .desc.snip {
-  background: #D49FC9;
 }
 .discoveries .flex .desc.snip h2 {
   color: #FFF;
