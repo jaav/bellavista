@@ -24,16 +24,19 @@ $five: #be141b;
 $six: #f8a798;
 
 //custom variations
-$b: #feefea;
+$b: #FFF;
 $w: #000;
 $dg: darken($b,5%);
-$gr: #be141b;
-$r: #be141b;
+$gr: #be1fff;
+$r: #192c56;
 $be: #feefea;
 
 
 $ff: 'Arvo', serif;
 $ffh: 'Cabin', sans-serif;
+
+$pink: #df005d;
+$gray: #CCD8CC;
 
 // main width variables - if you want to modify values go to _variables.scss
 // $screen-xs - px
@@ -99,7 +102,7 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
     line-height: 42px;
   }
   &.green {
-    background: $gr;
+    background: $r;
     color: $b;
     &:hover {
       background: $w;
@@ -128,14 +131,14 @@ body {
 .tooltip {
   position: relative;
   padding: 25px 20px;
-  background: rgba($r, .8);
+  background: rgba($pink, .8);
   &:after {
     position: absolute;
     bottom: -36px;
     right: 36px;
     content: '';
     border: 18px solid;
-    border-color: rgba($r, .8) rgba($r, .8) transparent transparent;
+    border-color: rgba($pink, .8) rgba($pink, .8) transparent transparent;
   }
   .rt & {
     &:after {
@@ -180,7 +183,7 @@ body {
       bottom: auto;
       right: 36px;
       top: -36px;
-      border-color: transparent rgba($r, .8) rgba($r, .8) transparent;
+      border-color: transparent rgba($pink, .8) rgba($pink, .8) transparent;
     }
   }
   h2 {
@@ -200,10 +203,10 @@ body {
 header {
   border: 0 !important;
   .top {
-    border-left: 1px solid #be141b;
-    border-right: 1px solid #be141b;
+    border-right: 1px solid $pink;
+    border-left: 1px solid $pink;
     @include transition(margin-top .4s linear);
-    padding-bottom: 25px;
+    border-bottom: 0px;
   }
   &.top-nav-collapse {
     .top {
@@ -219,25 +222,29 @@ header {
   .navbar-header {
     button {
       .icon-bar {
-        background: $w;
+        background: $b;
       }
     }
   }
   .navbar-brand {
     height: auto;
-    top: 0;
-    padding-top: 0;
-    padding-bottom: 5px;
-    padding-left: 0;
+    padding: 0 15px 5px 0 ;
     position: absolute;
     z-index: 999;
-    width: 100%;
-    text-align: center;
-    left: 0;
+    top: 12px;
+    left: 12px;
+    color: #FFF;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 52px;
     @media(max-width:  $screen-sm) {
       padding-left: 0;
       width: auto;
       top: 35px;
+      font-size: 32px;
+      text-align: center;
+    }
+    @media (max-width: 360px) {
+      top: 10px;
     }
     img {
       max-height: 30px;
@@ -254,6 +261,12 @@ header {
     position: relative;
     margin: 0;
     z-index: 999;
+    @media (max-width: $screen-sm - 1) {
+      margin-right: 70px;
+    }
+    @media (max-width: 360px) {
+      display: none;
+    }
     input[type="search"] {
       background: $be;
       width: 100%;
@@ -293,6 +306,10 @@ header {
     .navbar-nav {
       width: 100%;
       padding: 0;
+      margin-top: 40px;
+      @media (max-width: $screen-sm) {
+        margin: 10px 0;
+      }
       li {
         float: left;
         margin-top: 10px;
@@ -307,8 +324,8 @@ header {
           font-size: 18px;
           line-height: 20px;
           font-weight: 700;
-          height: 65px;
-          padding: 40px 10px 5px 10px;
+          height: 45px;
+          padding: 20px 10px 5px 10px;
           color: $b;
           border-left: 1px dotted lighten($b, 50%);
           @media(max-width: $screen-sm) {
@@ -328,6 +345,54 @@ header {
             a {
               border: 0;
             }
+          }
+        }
+      }
+    }
+  }
+  ul.book-button {
+    position: absolute;
+    margin: 0;
+    bottom: 2px;
+    padding: 0;
+    right: 1px;
+    @media (max-width: $screen-sm - 1) {
+      margin-top: -30px;
+      top: 91px;
+      bottom: auto;
+    }
+    li {
+      float: left;
+      width: 200px;
+      margin-left: 1px;
+      @media (max-width: $screen-sm - 1) {
+        width: auto;
+      }
+      a {
+        display: block;
+        height: 60px;
+        padding: 0 20px;
+        line-height: 60px;
+        font-size: 16px;
+        background: $pink;
+        color: $b;
+        position: relative;
+        @media (max-width: $screen-sm - 1) {
+          height: 30px;
+          line-height: 30px;
+        }
+        &:hover {
+          background: darken($pink,10%);
+        }
+        &:after {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          content: '';
+          border: 10px solid;
+          border-color: transparent lighten($b,10%) lighten($b,10%) transparent ;
+          @media (max-width: $screen-sm - 1) {
+            border-width: 5px;
           }
         }
       }
@@ -407,43 +472,6 @@ header {
         display: none;
       }
     }
-    ul {
-      float: right;
-      margin: 0;
-      li {
-        float: left;
-        width: 200px;
-        margin-left: 1px;
-        @media (max-width: $screen-xs) {
-          width: auto;
-        }
-        a {
-          display: block;
-          height: 60px;
-          padding: 0 20px;
-          line-height: 60px;
-          font-size: 16px;
-          background: $r;
-          color: $b;
-          position: relative;
-          @media (max-width: $screen-xs) {
-            height: 30px;
-            line-height: 30px;
-          }
-          &:hover {
-            background: $w;
-          }
-          &:after {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            content: '';
-            border: 10px solid;
-            border-color: transparent lighten($b,10%) lighten($b,10%) transparent ;
-          }
-        }
-      }
-    }
   }
   .white-spacer{
     height: 2px;
@@ -455,14 +483,13 @@ header {
 }
 // main container
 main {
-  padding-top: 166px;
-  border-left: 1px solid #be141b;
-  border-right: 1px solid #be141b;
+  padding-top: 152px;
+  border-left: 1px solid $pink;
+  border-right: 1px solid $pink;
   @media (max-width: $screen-sm) {
-    padding-top: 132px;
+    padding-top: 93px
   }
   @media (max-width: $screen-xs) {
-    padding-top: 102px;
   }
   background: lighten($dg, 12%);
   .container {
@@ -764,9 +791,9 @@ main {
       height: 40px !important;
       opacity: 1 !important;
       border-radius: 0 !important;
-      background: $gr !important;
+      background: $r !important;
       &:hover {
-        color: $gr !important;
+        color: $b !important;
         background: $w !important;
       }
       i {
@@ -814,6 +841,7 @@ main {
     font-size: 13px;
     line-height: 42px;
     height: 42px;
+    color: $r;
       i {
         float: right;
         font-size: 40px;
@@ -949,11 +977,55 @@ main {
     }
   }
 }
+.room {
+  .flex {
+    background: #00B49B;
+    h3 {
+      color: $b;
+    }
+  }
+}
+.breakfast {
+  .flex {
+    background: #D49FC9;
+    h3 {
+      color: $b;
+    }
+  }
+}
+.events {
+  .owl-item {
+    .flex {
+      z-index: 999;
+    }
+  }
+  .flex {
+    background: #CDB807;
+    .desc {
+      h3 {
+        color: $b;
+      }
+    }
+  }
+}
 .contact {
   .map {
     width: 100%;
     padding: 0;
-    min-height: 240px;
+    min-height: 220px;
+    max-height: 220px;
+    img {
+      width: 100%;
+    }
+  }
+  .snip {
+    background: $gray;
+    a {
+      color: #BE143C;
+      &:hover {
+        color: darken(#BE143C, 20%);
+      }
+    }
   }
 }
 .advantages, .about {
@@ -976,8 +1048,13 @@ main {
     }
   }
 }
+.about {
+  .snip {
+    padding-bottom: 45px;
+  }
+}
 .faq {
-  background: $be;
+  background: $gray;
   .snip {
     + .snip {
       border-left: 1px dotted lighten($w, 50%);
@@ -1034,9 +1111,33 @@ main {
     color: $b;
   }
 }
+.slider {
+  .flex {
+    .desc {
+      background: #00B49B;
+      h2 {
+        color: $b;
+      }
+    }
+  }
+}
 .discoveries {
   .owl-controls {
     left: -140px;
+  }
+  .flex {
+    .tooltip {
+      background: $pink;
+      &:after {
+        border-color: $pink $pink transparent transparent;
+      }
+    }
+    .desc.snip {
+      background: #D49FC9;
+      h2 {
+        color: $b;
+      }
+    }
   }
 }
 .page {
@@ -1081,11 +1182,17 @@ main {
 }
 // lang switcher
 #lang_sel_list {
-  position: relative;
+  position: absolute;
   z-index: 1000;
-  float: left;
-  img.iclflag{
-    border: 1px solid #FFF;
+  top: 0px;
+  right: 290px;
+  height: 24px;
+  @media(max-width: $screen-sm) {
+    left: 15px;
+    width: 120px;
+  }
+  @media (max-width: 360px) {
+    top: 55px;
   }
 }
 .gallery {

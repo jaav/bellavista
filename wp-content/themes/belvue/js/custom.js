@@ -74,13 +74,13 @@
 })(jQuery);
 */
 
-jQuery(window).scroll(function() {
+/*jQuery(window).scroll(function() {
     if (jQuery('.navbar-fixed-top').offset().top > 195) {
         jQuery('.navbar-fixed-top').addClass('top-nav-collapse');
     } else {
         jQuery('.navbar-fixed-top').removeClass('top-nav-collapse');
     }
-});
+});*/
 
 $(document).ready(function() {
     $('.slider .photo, .discoveries .photo, .slider').owlCarousel({
@@ -140,8 +140,6 @@ $(document).ready(function() {
     });
 
     $('body').each(function(){
-        var width = $(this).width();
-        if(width <= 768) {
             $('.about .flex, .advantages .flex').owlCarousel({
                 pagination: false,
                 navigation: true,
@@ -153,7 +151,6 @@ $(document).ready(function() {
                 stopOnHover: true,
                 transitionStyle: "fade"
             })
-        }
     });
 });
 

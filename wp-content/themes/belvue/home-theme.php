@@ -115,16 +115,16 @@ get_header(); ?>
                 <?php if( have_rows('description_b', 39) ): ?>
                     <?php while ( have_rows('description_b',39) ) : the_row(); ?>
                         <div class="flex">
-                            <?php if (get_sub_field('desc')): ?>
-                                <div class="grid-span-5 desc">
-                                    <?php the_sub_field('desc'); ?>
-                                    <a class="btn green trigger trigger_e" ><span><?php _e('explore','belvue')?></span> <i class="fa fa-angle-down"></i></a>
-                                </div>
-                            <?php endif; ?>
                             <?php if (get_sub_field('photo')): ?>
                                 <div class="grid-span-5 photo">
                                     <?php $photo = get_sub_field('photo') ?>
                                     <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
+                                </div>
+                            <?php endif; ?>
+                            <?php if (get_sub_field('desc')): ?>
+                                <div class="grid-span-5 desc">
+                                    <?php the_sub_field('desc'); ?>
+                                    <a class="btn green trigger trigger_e" ><span><?php _e('explore','belvue')?></span> <i class="fa fa-angle-down"></i></a>
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -134,7 +134,21 @@ get_header(); ?>
                 <?php if( have_rows('explore_b',39) ): ?>
                     <div class="explore wrap">
                         <?php while ( have_rows('explore_b',39) ) : the_row(); ?>
-                            <?php get_template_part('partials/carousel'); ?>
+                            <div class="flex">
+                                <?php if (get_sub_field('photo')): ?>
+                                    <div class="grid-span-5 photo">
+                                        <?php $photo = get_sub_field('photo') ?>
+                                        <img src="<?php echo $photo['sizes']['slider'] ?>" alt="<?php echo $photo['alt'] ?>"/>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (get_sub_field('desc')): ?>
+                                    <div class="grid-span-5 desc">
+                                        <div class="tooltip red rb">
+                                            <?php the_sub_field('desc'); ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
                         <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
@@ -146,15 +160,7 @@ get_header(); ?>
             <div class="row">
                 <div class="flex be">
                     <div class="grid-span-6 snip map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1259.3678761071938!2d4.319498695703299!3d50.85457741557473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3f987841379%3A0x6ff843bf2a71cc4!2sRue+Pierre-J.+Demessemaeker+1%2C+1080+Molenbeek-Saint-Jean%2C+Belgia!5e0!3m2!1spl!2spl!4v1413192835280" width="100%" height="240" frameborder="0" style="border:0"></iframe>
-                        <!-- <?php
-                        /*                        $location = get_field('map');
-                                                if( !empty($location) ):
-                                                    */?>
-                            <div class="map">
-                                <div class="marker" data-lat="<?php /*echo $location['lat']; */?>" data-lng="<?php /*echo $location['lng']; */?>"></div>
-                            </div>
-                        --><?php /*endif; */?>
+                        <img src="<?php echo get_template_directory_uri()?>/img/map.jpg" alt="map"/>
                     </div>
                     <div class="grid-span-2 snip be xxl">
                         <h2><?php _e('address','belvue')?></h2>

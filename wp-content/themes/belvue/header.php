@@ -26,20 +26,16 @@
     <div class="top">
         <div class="container tools">
             <div class="row">
-                <?php do_action('icl_language_selector'); ?>
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                    <?php if ( get_theme_mod( 'belvue_logo' ) ) : ?>
-                        <img src='<?php echo esc_url( get_theme_mod( 'belvue_logo' ) ); ?>' alt='<?php bloginfo( 'name' ); ?>'>
-                    <?php else : ?>
                         <?php bloginfo( 'name' ); ?>
-                    <?php endif; ?>
                 </a>
+                <?php do_action('icl_language_selector'); ?>
                 <?php get_search_form(); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
             </div>
         </div>
         <div class="container">
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -49,12 +45,7 @@
             <nav class="collapse navbar-collapse navbar-main-collapse">
                 <?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav navbar-nav', 'container' => '', 'menu_id' => '', ) ); ?>
             </nav>
-        </div>
-    </div>
-    <div class="container book">
-        <div class="row">
-            <h2><?php bloginfo( 'name' ); ?></h2>
-            <ul class="tabs">
+            <ul class="tabs book-button">
                 <li><a data-toggle="modal" data-target="#reservation" href="#"><?php _e('book a room','belvue')?></a></li>
             </ul>
         </div>
