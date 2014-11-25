@@ -3378,3 +3378,6 @@ main .row {
   flex-basis: 100%; }
 
 /*# sourceMappingURL=style.css.map */
+.page-template-contact-theme-php .contact .row, .page-template-contact-theme-php .contact .row .flex  {
+    padding: 0;
+}

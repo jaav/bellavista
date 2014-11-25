@@ -191,14 +191,14 @@ get_header(); ?>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-                <?php if( have_rows('explore') ): ?>
+                <?php if( have_rows('explore_e') ): ?>
                     <div class="explore wrap">
                         <?php while ( have_rows('explore') ) : the_row(); ?>
                             <?php get_template_part('partials/carousel'); ?>
                         <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
-                <?php if( have_rows('carte') ): ?>
+                <?php if( have_rows('carte_e') ): ?>
                     <div class="carte wrap">
                         <?php while ( have_rows('carte') ) : the_row(); ?>
                             <?php get_template_part('partials/carousel'); ?>
