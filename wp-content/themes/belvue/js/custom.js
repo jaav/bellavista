@@ -110,36 +110,42 @@ $(document).ready(function() {
         e.preventDefault();
         var button = $('.row > .flex .trigger');
         var photo = $('.row > .flex .photo');
-        $(this).addClass('open');
+        $(this).addClass('open');//this has no point unless changing the arrow's direction
+        var thisRow = $(this).closest('.row');
 
-        if($('.row > .wrap').is(":visible")){
-            $('.row > .flex .desc p').hide();
+        //Show or hide the paragraphs in this section
+        if(thisRow.find('.wrap').is(":visible")){
+            thisRow.find('.flex>.desc>p, .flex>.desc>ul').hide();
         }
         else {
-            $('.row > .flex .desc p').show();
+            thisRow.find('.flex>.desc>p, .flex>.desc>ul').show();
         };
 
+        //Activate the 'A la carte' slider
         if($(this).hasClass("trigger_c")){
-            $('.trigger_e').removeClass("open");
-            $('.row > .explore').removeClass('show');
-            $('.row > .flex .desc').toggleClass('hide');
-            $('.row > .carte').addClass('show').delay(500).animate({ opacity: 1 });
-            $('.row > .explore').removeClass('show');
+            //$('.trigger_e').removeClass("open");//no point
+            //$('.row > .explore').removeClass('show');//no point
+            //$('.row > .flex .desc').toggleClass('hide');//no point
+            thisRow.find('.carte').addClass('show').delay(500).animate({ opacity: 1 });
+            thisRow.find('.explore').removeClass('show');
 
         }
+        //Activate the 'Explore' slider
         else if($(this).hasClass("trigger_e")){
-            $('.trigger_c').removeClass("open");
-            $('.row > .carte').removeClass('show');
-            $('.row > .explore').addClass('show').delay(500).animate({ opacity: 1 });
+            //$('.trigger_c').removeClass("open");
+            thisRow.find('.carte').removeClass('show');
+            thisRow.find('.explore').addClass('show').delay(500).animate({ opacity: 1 });
 
         };
-        photo.toggleClass("transparent");
+        //photo.toggleClass("transparent");
 
         //$('.row > .flex .trigger').
 
     });
 
     $('body').each(function(){
+        var width = $(this).width();
+        if(width <= 768) {
             $('.about .flex, .advantages .flex').owlCarousel({
                 pagination: false,
                 navigation: true,
@@ -151,6 +157,19 @@ $(document).ready(function() {
                 stopOnHover: true,
                 transitionStyle: "fade"
             })
+        }
+    });
+
+    $('.navbar-main-collapse ul.navbar-nav li a').click(function(ev){
+        var target = $(this).attr('href');
+        if(target.indexOf('#')===0){
+            if(target==='#footer')
+                $("html, body").animate({ scrollTop: $('footer').offset().top - 150 }, 600);
+            else
+                $("html, body").animate({ scrollTop: $('section.'+target.substr(1)).offset().top - 150 }, 600);
+            $('.navbar-collapse').collapse('hide');
+            ev.preventDefault();
+        }
     });
 });
 

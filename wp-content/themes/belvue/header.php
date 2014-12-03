@@ -29,7 +29,23 @@
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                         <?php bloginfo( 'name' ); ?>
                 </a>
-                <?php do_action('icl_language_selector'); ?>
+                <?php /*do_action('icl_language_selector'); */?>
+                <div id="lang_sel_list" class="lang_sel_list_horizontal">
+                    <ul>
+                        <li class="icl-en">
+                            <a href="http://belvue.ga-z.be" class="lang_sel_sel">EN</a>
+                        </li>
+                        <li class="icl-fr">
+                            <a href="http://belvue.ga-z.be?lang=fr" class="lang_sel_other">FR</a>
+                        </li>
+                        <li class="icl-nl">
+                            <a href="http://belvue.ga-z.be?lang=nl" class="lang_sel_other">NL</a>
+                        </li>
+                        <li class="icl-de">
+                            <a href="http://belvue.ga-z.be?lang=de" class="lang_sel_other">DE</a>
+                        </li>
+                    </ul>
+                </div>
                 <?php get_search_form(); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
             </div>

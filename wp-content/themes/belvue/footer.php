@@ -5,10 +5,20 @@
                 <div class="grid-span-2 snip">
                     <h3><?php _e('about Belvue','belvue')?></h3>
                     <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
+                    <div class="logos bxlexport">
+                        <div class="flag"><img src="<?php echo get_template_directory_uri() ?>/img/bxlexport.jpg" /></div>
+                        <h3><?php _e('Brussels Invest & Export','belvue')?></h3>
+                        <h4><?php _e('Adding value and creating jobs','belvue')?></h4>
+                    </div>
                 </div>
                 <div class="grid-span-2 snip">
-                    <h3><?php _e('more','belvue')?></h3>
+                    <h3><?php _e('Our Special Mission','belvue')?></h3>
                     <?php wp_nav_menu( array( 'theme_location' => 'membership', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
+                    <div class="logos feder">
+                        <div class="flag"><img src="<?php echo get_template_directory_uri() ?>/img/feder.jpg" /></div>
+                        <h3><?php _e('European Regional Development Fund','belvue')?></h3>
+                        <h4><?php _e('Investing in your future','belvue')?></h4>
+                    </div>
                 </div>
                 <div class="grid-span-2 snip">
                     <h3><?php _e( '', 'belvue' ); ?><Subscribe</h3>
@@ -43,13 +53,13 @@
                         <ul class="list-inline banner-social-buttons">
                             <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></a></li>
                             <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></a></li>
-                            <li><a href="<?php the_field('four', 7); ?>" target="_blank"><i class="fa fa-foursquare"></i> <?php _e( 'Fourquare', 'belvue' ); ?></a></li>
+                            <li><a href="<?php the_field('four', 7); ?>" target="_blank"><i class="fa fa-foursquare"></i> <?php _e( 'Foursquare', 'belvue' ); ?></a></li>
                             <li><a href="<?php the_field('yt', 7); ?>" target="_blank"><i class="fa fa-youtube"></i> <?php _e( 'Youtube', 'belvue' ); ?></a></li>
                             <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +', 'belvue' ); ?></a></li>
                         </ul>
                 </div>
                 <div class="grid-span-2 snip">
-                    <h3><?php _e( 'ike us on', 'belvue' ); ?>l</h3>
+                    <h3><?php _e( 'Like us on', 'belvue' ); ?></h3>
                     <h3><?php _e('share this page on','belvue')?></h3>
                     <ul class="list-inline banner-social-buttons">
                         <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></a></li>
@@ -59,7 +69,7 @@
                 </div>
             </div>
             <div class="flex">
-                <p class="grid-span-10"><?php _e( '© HOTEL BELVUE 2014', 'belvue' ); ?></p>
+                <p class="grid-span-10"><?php _e( '© HOTEL BELVUE 2014 by Hotelligen S.A.', 'belvue' ); ?></p>
             </div>
         </div>
     </footer>
