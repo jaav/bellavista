@@ -20,6 +20,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <?php wp_head(); ?>
+    <script>
+        if (/*@cc_on!@*/false) {
+            document.documentElement.className+=’ ie10′;
+        }
+    </script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom" <?php body_class(); ?>>
 <header  class="navbar navbar-fixed-top" role="navigation">

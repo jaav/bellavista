@@ -299,7 +299,7 @@ get_header(); ?>
                             <?php while (have_rows('pwt')) : the_row(); ?>
                                 <div class="full-image flex">
                                     <?php $photo = get_sub_field('photo') ?>
-                                    <img src="<?php echo $photo['sizes']['slider-small'] ?>"
+                                    <img src="<?php echo $photo['sizes']['slider-medium'] ?>"
                                          alt="<?php echo $photo['alt'] ?>"/>
 
                                     <div class="flex fixed">

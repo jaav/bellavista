@@ -125,12 +125,33 @@
       width: 100%;
     }
   }
+  .ie10 & {
+    $grid: 10;
+    div[class*=grid-span-] {
+      float: left;
+    }
+    @for $i from 1 through $grid {
+      .grid-span-#{$i} {
+        width: ((100 / $grid) * $i) * 1%;
+      }
+    }
+    .fixed.bl {
+      .grid-span-4 {
+        float: left;
+      }
+    }
+  }
+}
+.ie10 .flex .fixed.bl {
+  -ms-flex-pack: start;
+}
+.ie10 .discoveries .full-image.flex .flex.fixed {
+  -ms-flex-pack: justify;
 }
 .about {
   .flex {
     div[class*=grid-span-] {
       text-align: center;
-      flex-basis: 100%;
     }
   }
 }

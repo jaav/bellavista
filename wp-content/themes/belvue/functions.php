@@ -36,6 +36,7 @@ add_image_size( 'home-thumb', 1200, 600, true );
 add_image_size( 'slider', 600, 600, true );
 add_image_size( 'page-top', 720, 600, true );
 add_image_size( 'slider-small', 720, 320, true );
+add_image_size( 'slider-medium', 720, 420, true );
 
 /*
  * ACF options
