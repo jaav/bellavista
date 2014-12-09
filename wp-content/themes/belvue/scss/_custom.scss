@@ -1019,7 +1019,7 @@ main {
       }
       .owl-controls {
         left: 0px;
-        bottom: 30px;
+        bottom: 40px;
         z-index: 999;
         .owl-buttons div {
           float: left;
@@ -1037,6 +1037,9 @@ main {
     .tooltip{
       background: $pink;
       margin-left: 120px;
+      @-moz-document url-prefix() {
+        margin-top: 50%;
+      }
     }
   }
 }
@@ -1050,6 +1053,9 @@ main {
       .tooltip{
         background: $pink;
         margin-right: 120px;
+        @-moz-document url-prefix() {
+          margin-top: 50%;
+        }
       }
     }
     .explore {
@@ -1063,6 +1069,7 @@ main {
   .owl-item {
     .flex {
       z-index: 999;
+
     }
   }
   .flex {
@@ -1074,6 +1081,9 @@ main {
       .tooltip{
         background: $pink;
         margin-left: 120px;
+        @-moz-document url-prefix() {
+          margin-top: 50%;
+        }
       }
     }
   }
