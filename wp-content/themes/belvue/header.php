@@ -22,7 +22,7 @@
 <?php wp_head(); ?>
     <script>
         if (/*@cc_on!@*/false) {
-            document.documentElement.className+=’ ie10′;
+            document.documentElement.className+=' ie10';
         }
     </script>
 </head>

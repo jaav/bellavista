@@ -160,17 +160,41 @@ $(document).ready(function() {
         }
     });
 
-    $('.navbar-main-collapse ul.navbar-nav li a').click(function(ev){
-        var target = $(this).attr('href');
+    if($('.home').length){
+        $('.navbar-main-collapse ul.navbar-nav li a, footer .grid-span-1 a, footer .grid-span-2 a').click(function(ev){
+            var target = $(this).attr('href');
+            if(target.indexOf('#')===0){
+                if(target==='#footer')
+                    $("html, body").animate({ scrollTop: $('footer').offset().top - 150 }, 600);
+                else
+                    $("html, body").animate({ scrollTop: $('section.'+target.substr(1)).offset().top - 150 }, 600);
+                $('.navbar-collapse').collapse('hide');
+                ev.preventDefault();
+            }
+        });
+    }
+    else{
+        $('.navbar-main-collapse ul.navbar-nav li a, footer .grid-span-1 a, footer .grid-span-2 a').click(function(ev){
+            var target = $(this).attr('href');
+            if(target.indexOf('#')===0){
+                location.href = '/'+target;
+                ev.preventDefault();
+            }
+        });
+    }
+    //on page load, check hash in path and move to the correct anchor
+    var path = document.URL;
+    if(path.indexOf('/#')>0){
+        var target = path.substr(path.indexOf('/#')+1);
+        var test = $('section.'+target.substr(1));
         if(target.indexOf('#')===0){
             if(target==='#footer')
                 $("html, body").animate({ scrollTop: $('footer').offset().top - 150 }, 600);
             else
                 $("html, body").animate({ scrollTop: $('section.'+target.substr(1)).offset().top - 150 }, 600);
             $('.navbar-collapse').collapse('hide');
-            ev.preventDefault();
         }
-    });
+    }
 });
 
 $(window).resize(function(){
