@@ -50,7 +50,9 @@ if (function_exists('register_options_page')){
  */
 register_nav_menu( 'main', __( 'Main menu', 'belvue' ) );
 register_nav_menu( 'user', __( 'User menu', 'belvue' ) );
-register_nav_menu( 'membership', __( 'Membership menu', 'belvue' ) );
+register_nav_menu( 'footer_col_1', __( 'Footer Column 1', 'belvue' ) );
+register_nav_menu( 'footer_col_2', __( 'Footer Column 2', 'belvue' ) );
+register_nav_menu( 'usefullinks', __( 'Useful Links menu', 'belvue' ) );
 
 /*/*
  * Remove additional menu classes

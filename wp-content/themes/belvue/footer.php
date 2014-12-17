@@ -3,8 +3,7 @@
         <div class="container">
             <div class="row flex">
                 <div class="grid-span-2 snip">
-                    <h3><?php _e('about Belvue','belvue')?></h3>
-                    <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer_col_1', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
                     <div class="logos bxlexport">
                         <div class="flag"><img src="<?php echo get_template_directory_uri() ?>/img/bxlexport.jpg" /></div>
                         <h3><?php _e('Brussels Invest & Export','belvue')?></h3>
@@ -12,8 +11,7 @@
                     </div>
                 </div>
                 <div class="grid-span-2 snip">
-                    <h3><?php _e('Our Special Mission','belvue')?></h3>
-                    <?php wp_nav_menu( array( 'theme_location' => 'membership', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer_col_2', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
                     <div class="logos feder">
                         <div class="flag"><img src="<?php echo get_template_directory_uri() ?>/img/feder.jpg" /></div>
                         <h3><?php _e('European Regional Development Fund','belvue')?></h3>
@@ -51,25 +49,33 @@
                 <div class="grid-span-2 snip">
                     <h3><?php _e('Belvue social','belvue')?></h3>
                         <ul class="list-inline banner-social-buttons">
-                            <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></a></li>
-                            <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></a></li>
-                            <li><a href="<?php the_field('four', 7); ?>" target="_blank"><i class="fa fa-foursquare"></i> <?php _e( 'Foursquare', 'belvue' ); ?></a></li>
-                            <li><a href="<?php the_field('yt', 7); ?>" target="_blank"><i class="fa fa-youtube"></i> <?php _e( 'Youtube', 'belvue' ); ?></a></li>
-                            <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +', 'belvue' ); ?></a></li>
+                            <!--<li><a href="<?php /*the_field('facebook', 7);*/?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php /*_e( 'Facebook', 'belvue' ); */?></a></li>
+                            <li><a href="<?php /*the_field('twitter', 7); */?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php /*_e( 'Twitter', 'belvue' ); */?></a></li>
+                            <li><a href="<?php /*the_field('four', 7); */?>" target="_blank"><i class="fa fa-foursquare"></i> <?php /*_e( 'Foursquare', 'belvue' ); */?></a></li>
+                            <li><a href="<?php /*the_field('yt', 7); */?>" target="_blank"><i class="fa fa-youtube"></i> <?php /*_e( 'Youtube', 'belvue' ); */?></a></li>
+                            <li><a href="<?php /*the_field('gp', 7); */?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php /*_e( 'Google +', 'belvue' ); */?></a></li>-->
+                            <li><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></li>
+                            <li><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></li>
+                            <li><i class="fa fa-foursquare"></i> <?php _e( 'Foursquare', 'belvue' ); ?></li>
+                            <li><i class="fa fa-youtube"></i> <?php _e( 'Youtube', 'belvue' ); ?></li>
+                            <li><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +', 'belvue' ); ?></li>
                         </ul>
                 </div>
                 <div class="grid-span-2 snip">
                     <h3><?php _e( 'Like us on', 'belvue' ); ?></h3>
                     <h3><?php _e('share this page on','belvue')?></h3>
                     <ul class="list-inline banner-social-buttons">
-                        <li><a href="<?php the_field('facebook', 7);?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></a></li>
-                        <li><a href="<?php the_field('twitter', 7); ?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></a></li>
-                        <li><a href="<?php the_field('gp', 7); ?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +', 'belvue' ); ?></a></li>
+                        <li><i class="fa fa-facebook-square"></i> <?php _e( 'Facebook', 'belvue' ); ?></li>
+                        <li><i class="fa fa-twitter-square"></i> <?php _e( 'Twitter', 'belvue' ); ?></li>
+                        <li><i class="fa fa-google-plus-square"></i> <?php _e( 'Google +', 'belvue' ); ?></li>
+                        <!--<li><a href="<?php /*the_field('facebook', 7);*/?>" target="_blank"><i class="fa fa-facebook-square"></i> <?php /*_e( 'Facebook', 'belvue' ); */?></a></li>
+                        <li><a href="<?php /*the_field('twitter', 7); */?>" target="_blank"><i class="fa fa-twitter-square"></i> <?php /*_e( 'Twitter', 'belvue' ); */?></a></li>
+                        <li><a href="<?php /*the_field('gp', 7); */?>" target="_blank"><i class="fa fa-google-plus-square"></i> <?php /*_e( 'Google +', 'belvue' ); */?></a></li>-->
                     </ul>
                 </div>
             </div>
             <div class="flex">
-                <p class="grid-span-10"><?php _e( '© HOTEL BELVUE 2014 by Hotelligen S.A.', 'belvue' ); ?></p>
+                <p class="grid-span-10"><?php _e( '© HOTEL BELVUE 2014 by Hotelligen S.A.', 'belvue' ); ?><span class="footer-divider">-</span><span class="conditions"><a href="conditions"><?php _e( 'Conditions', 'belvue' ); ?></a></span> </p>
             </div>
         </div>
     </footer>

@@ -30,6 +30,8 @@ $dg: darken($b,5%);
 $gr: #be1fff;
 $r: #192c56;
 $be: #ccd8cc;
+$passive: #808080;
+$yellow: #CDB807;
 
 
 $ff: 'Arvo', serif;
@@ -114,14 +116,14 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
     color: $b;
     &:hover {
       background: $w;
-      color: $b;
+      color: $passive;
     }
   }
 }
 a {
-  color: $w;
+  color: $b;
   &:hover {
-    color: $r;
+    color: $pink;
     text-decoration: none;
   }
 }
@@ -211,6 +213,79 @@ body {
     em {
       font-style: normal;
       color: $w;
+    }
+  }
+}
+/* Pink booking button */
+
+ul.book-button {
+  position: absolute;
+  margin: 0;
+  bottom: 2px;
+  padding: 0;
+  right: 1px;
+  list-style: none;
+  @media (max-width: $screen-sm - 1) {
+    margin-top: -30px;
+    top: 91px;
+    bottom: auto;
+  }
+  li {
+    float: left;
+    width: 200px;
+    margin-left: 1px;
+    @media (max-width: $screen-sm - 1) {
+      width: auto;
+    }
+    a {
+      display: block;
+      height: 60px;
+      padding: 12px 29px;
+      line-height: 18px;
+      background: #df005d;
+      color: #FFF;
+      position: relative;
+      font-weight: bold;
+      font-size: 18px;
+      span.button-footer{
+        line-height: 10px;
+        font-weight: normal;
+        font-size: 16px;
+        @media (max-width: $screen-sm - 1) {
+          display: none;
+        }
+      }
+      @media (max-width: $screen-sm - 1) {
+        height: 30px;
+        line-height: 16px;
+        padding-top: 8px;
+      }
+      &:hover {
+        background: darken($pink,10%);
+      }
+      &:after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: '';
+        border: 10px solid;
+        border-color: transparent lighten($b,10%) lighten($b,10%) transparent ;
+        @media (max-width: $screen-sm - 1) {
+          border-width: 5px;
+        }
+      }
+    }
+  }
+}
+.events{
+  ul.book-button {
+    li{
+      a{
+        padding-top: 24px;
+        &:after {
+          border-color: transparent $yellow $yellow transparent ;
+        }
+      }
     }
   }
 }
@@ -355,7 +430,8 @@ header {
             border-top: 1px dotted lighten($b, 50%);
           }
           &:hover {
-            color: lighten($w,80%);
+            /*color: lighten($w,80%);*/
+            color: $pink;
             background: none;
           }
         }
@@ -364,54 +440,6 @@ header {
             a {
               border: 0;
             }
-          }
-        }
-      }
-    }
-  }
-  ul.book-button {
-    position: absolute;
-    margin: 0;
-    bottom: 2px;
-    padding: 0;
-    right: 1px;
-    @media (max-width: $screen-sm - 1) {
-      margin-top: -30px;
-      top: 91px;
-      bottom: auto;
-    }
-    li {
-      float: left;
-      width: 200px;
-      margin-left: 1px;
-      @media (max-width: $screen-sm - 1) {
-        width: auto;
-      }
-      a {
-        display: block;
-        height: 60px;
-        padding: 0 20px;
-        line-height: 60px;
-        font-size: 16px;
-        background: $pink;
-        color: $b;
-        position: relative;
-        @media (max-width: $screen-sm - 1) {
-          height: 30px;
-          line-height: 30px;
-        }
-        &:hover {
-          background: darken($pink,10%);
-        }
-        &:after {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          content: '';
-          border: 10px solid;
-          border-color: transparent lighten($b,10%) lighten($b,10%) transparent ;
-          @media (max-width: $screen-sm - 1) {
-            border-width: 5px;
           }
         }
       }
@@ -427,6 +455,7 @@ header {
     padding-top: 8px;
     padding-bottom: 8px;
     #menu-user-menu, #menu-user-menu-german, #menu-user-menu-dutch, #menu-user-menu-french {
+      font-weight: bold;
       float: right ;
       margin: 0;
       position: relative;
@@ -445,7 +474,7 @@ header {
           padding: 0 11px;
           color: lighten($b, 60%);
           &:hover {
-            color: $w;
+            color: $pink;
           }
         }
       }
@@ -549,8 +578,8 @@ footer {
     }
     .logos{
       position: absolute;
-      background-color: $be;
-      top: 90px;
+      background-color: transparent;
+      top: 120px;
       left: 10%;
       width: 78%;
       height: 118px;
@@ -568,13 +597,13 @@ footer {
       h3{
         font-size: 11px;
         line-height: 11px;
-        color: $r;
+        color: $b;
         margin: 10px 0 0;
       }
       h4{
         font-size: 11px;
         line-height: 11px;
-        color: #808080;
+        color: $passive;
         margin: 6px 0 12px;
       }
     }
@@ -604,7 +633,7 @@ footer {
       a {
         color: $b;
         &:hover {
-          color: $w;
+          color: $pink;
         }
       }
     }
@@ -621,6 +650,7 @@ footer {
   .banner-social-buttons {
     li {
       width: 100%;
+      color: $b;
       i {
         font-size: 24px;
         padding: 5px 0;
@@ -630,6 +660,13 @@ footer {
   form {
     input[type="search"] {}
     input[type="submit"] {}
+  }
+  #menu-footer-column-1, #menu-footer-column-2{
+    margin-left: 18px;
+    margin-top: 16px;
+  }
+  .footer-divider{
+    margin: 12px;
   }
 }
 
@@ -966,7 +1003,7 @@ main {
         li {
           font-size: 16px;
           line-height: 22px;
-          color: $w;
+          color: $b;
         }
       }
     }
@@ -1073,7 +1110,7 @@ main {
     }
   }
   .flex {
-    background: #CDB807;
+    background: $yellow;
     .desc {
       h3 {
         color: $b;
@@ -1153,6 +1190,7 @@ main {
 .faq {
   background: $gray;
   .snip {
+    padding-top: 0px;
     + .snip {
       border-left: 1px dotted lighten($w, 50%);
     }
@@ -1173,7 +1211,6 @@ main {
     font-weight: 100;
     line-height: 20px;
     font-size: 15px;
-    height: 80px;
     color: $w;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1287,6 +1324,7 @@ main {
   top: 40px;
   right: 0px;
   height: 24px;
+  display: none;
   a.lang_sel_sel, a.lang_sel_sel:visited{
     color: $pink !important;
     margin-left: 6px;

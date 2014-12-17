@@ -35,7 +35,6 @@
                         <?php bloginfo( 'name' ); ?>
                 </a>
                 <?php do_action('icl_language_selector'); ?>
-                <?php get_search_form(); ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'user', 'menu_class' => '', 'container' => '', 'menu_id' => '', ) ); ?>
             </div>
         </div>
@@ -51,7 +50,7 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav navbar-nav', 'container' => '', 'menu_id' => '', ) ); ?>
             </nav>
             <ul class="tabs book-button">
-                <li><a data-toggle="modal" data-target="#reservation" href="#"><?php _e('book a room','belvue')?></a></li>
+                <li><a data-toggle="modal" data-target="#reservation" href="#"><?php _e('Book now','belvue')?><br/><span class="button-footer"><?php _e('(best rate guarantee)','belvue')?></span></a></li>
             </ul>
         </div>
     </div>

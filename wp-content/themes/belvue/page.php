@@ -43,9 +43,8 @@
                         </div>
                     </div>
                 <?php else :?>
-                    <div class="flex">
-                        <h2 class="grid-span-4"><?php the_title(); ?></h2>
-                        <div class="grid-span-6">
+                    <div>
+                        <div class="grid-span-10">
                             <?php the_content(); ?>
                         </div>
                     </div>

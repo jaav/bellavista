@@ -204,6 +204,10 @@ get_header(); ?>
                                         <i class="fa fa-angle-down"></i></a>
                                     <a class="btn green trigger trigger_c"><span><?php _e('Set up à la carte', 'belvue') ?></span>
                                         <i class="fa fa-angle-down"></i></a>
+
+                                    <ul class="tabs book-button">
+                                        <li><a data-toggle="modal" data-target="#contact" href="#"><?php _e('Book a meeting','belvue')?></a></li>
+                                    </ul>
                                 </div>
                             <?php endif; ?>
                             <?php if (get_sub_field('photo')): ?>
