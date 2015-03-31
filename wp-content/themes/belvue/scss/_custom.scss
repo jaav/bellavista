@@ -172,11 +172,20 @@ body {
       right: 100%;
       bottom: 100%;
       border-color: #df005d #df005d transparent transparent;
+      @media (max-width: $screen-md) {
+        left: 36px;
+        top: -36px;
+        right: 100%;
+        bottom: 100%;
+      }
     }
   }
   &.red {
     &:after {
       border-color: $pink $pink transparent transparent;
+      @media (max-width: $screen-md) {
+        border-color: transparent transparent $pink $pink;
+      }
     }
   }
   &.red.tr {
@@ -187,6 +196,14 @@ body {
       top: 36px;
       height: 0;
       border-color: $pink transparent transparent $pink;
+      @media (max-width: $screen-md) {
+        left: initial;
+        top: initial;
+        bottom: -36px;
+        right: 36px;
+        height: 0;
+        border-color: #df005d transparent transparent #df005d;
+      }
     }
   }
   &.br {
@@ -407,7 +424,6 @@ header {
       li {
         float: left;
         margin-top: 10px;
-        height: 60px;
         min-width: 16%;
         @media(max-width: $screen-sm) {
           width: 100%;
@@ -433,6 +449,12 @@ header {
             /*color: lighten($w,80%);*/
             color: $pink;
             background: none;
+          }
+        }
+        a[title="only-mobile"]{
+          display: none;
+          @media(max-width: $screen-sm) {
+            display: block;
           }
         }
         @media(max-width: $screen-sm) {
@@ -531,11 +553,11 @@ header {
 }
 // main container
 main {
-  padding-top: 120px;
+  padding-top: 116px;
   border-left: 1px solid $r;
   border-right: 1px solid $r;
   @media (max-width: $screen-sm) {
-    padding-top: 47px
+    padding-top: 93px
   }
   @media (max-width: $screen-xs) {
   }
@@ -560,6 +582,11 @@ footer {
   background: $r;
   .container {
     padding: 0;
+    .flex{
+      @media (max-width: $screen-xs) {
+        display: flex;
+      }
+    }
   }
   .snip {
     padding: 0 20px;
@@ -979,9 +1006,6 @@ main {
     }
     .desc {
       padding: 38px 5%  20px 20px;
-      @media (max-width: $screen-sm) {
-        display: none;
-      }
       h3 {
         font-size: 25px;
         line-height: 1.15em;
@@ -1052,6 +1076,9 @@ main {
         .desc {
           padding: 0;
           margin-top: 25%;
+          @media (max-width: $screen-md) {
+            margin-top: 0;
+          }
         }
       }
       .owl-controls {
@@ -1066,24 +1093,37 @@ main {
   }
 }
 .room {
-  .flex {
+  .row{
     background: #00B49B;
-    h3 {
-      color: $b;
+    .flex {
+      h3 {
+        color: $b;
+      }
+      .tooltip{
+        background: $pink;
+        margin-left: 120px;
+        @-moz-document url-prefix() {
+          margin-top: 50%;
+        }
+        @media (max-width: $screen-md) {
+          margin-left: 0;
+        }
+      }
     }
-    .tooltip{
-      background: $pink;
-      margin-left: 120px;
-      @-moz-document url-prefix() {
-        margin-top: 50%;
+    .explore {
+      .owl-controls {
+        @media (max-width: $screen-md) {
+          bottom: initial;
+          top: 40%;
+        }
       }
     }
   }
 }
 .breakfast {
   .row {
+    background: #D49FC9;
     .flex {
-      background: #D49FC9;
       h3 {
         color: $b;
       }
@@ -1093,11 +1133,18 @@ main {
         @-moz-document url-prefix() {
           margin-top: 50%;
         }
+        @media (max-width: $screen-md) {
+          margin-right: 0;
+        }
       }
     }
     .explore {
       .owl-controls {
         left: 90%;
+        @media (max-width: $screen-md) {
+          left: 65%;
+          top: 40%;
+        }
       }
     }
   }
@@ -1109,17 +1156,30 @@ main {
 
     }
   }
-  .flex {
+  .row{
     background: $yellow;
-    .desc {
-      h3 {
-        color: $b;
+    .flex {
+      .desc {
+        h3 {
+          color: $b;
+        }
+        .tooltip{
+          background: $pink;
+          margin-left: 120px;
+          @-moz-document url-prefix() {
+            margin-top: 50%;
+          }
+          @media (max-width: $screen-md) {
+            margin-left: 0;
+          }
+        }
       }
-      .tooltip{
-        background: $pink;
-        margin-left: 120px;
-        @-moz-document url-prefix() {
-          margin-top: 50%;
+    }
+    .explore {
+      .owl-controls {
+        @media (max-width: $screen-md) {
+          left: 65%;
+          top: 40%;
         }
       }
     }
@@ -1129,6 +1189,9 @@ main {
   width: 50%;
   float: right;
   padding: 38px 0 20px 20px;
+  @media (max-width: $screen-md) {
+    width: 100%;
+  }
 }
 .contact {
   background-color: $be;
@@ -1246,8 +1309,8 @@ main {
   }
 }
 .slider {
+  background: #00B49B;
   .flex {
-    background: #00B49B;
     .desc {
       h2 {
         color: $b;
@@ -1256,11 +1319,15 @@ main {
   }
 }
 .discoveries {
+  background: #D49FC9;
   .owl-controls {
     left: -140px;
+    @media (max-width: $screen-md) {
+      right: 14px;
+      left: initial;
+    }
   }
   .flex {
-    background: #D49FC9;
     &.fixed {
       background: none;
     }
@@ -1268,6 +1335,9 @@ main {
       background: $pink;
       &:after {
         border-color: $pink $pink transparent transparent;
+        @media (max-width: $screen-md) {
+          border-width: 0px;
+        }
       }
     }
     .desc.snip {
@@ -1324,7 +1394,12 @@ main {
   top: 40px;
   right: 0px;
   height: 24px;
-  display: none;
+  font-weight: 600;
+  ul{
+    li.icl-nl, li.icl-de{
+      display: none;
+    }
+  }
   a.lang_sel_sel, a.lang_sel_sel:visited{
     color: $pink !important;
     margin-left: 6px;
@@ -1385,5 +1460,44 @@ main {
   margin: 0 -15px;
   .grid-span-4 {
     padding-left: 15px;
+  }
+}
+ul#menu-useful-links-menu{
+  list-style: none;
+  margin-top: 20px;
+  li{
+    a{
+      color: #000;
+      font-size: 18px;
+      line-height: 32px;
+      &:hover{
+        color: $pink;
+      }
+    }
+  }
+}
+
+/* MODAL OVERLAY */
+.wpcf7{
+  @media(max-width: $screen-md) {
+    input[type="text"], input[type="email"], textarea{
+      width: 100%;
+    }
+  }
+}
+
+/* PAGE SPECIFIC SETTINGS */
+.page-template-usefullinks-theme-php{
+  main{
+    .container{
+      a{
+        color: $gray-dark;
+        text-decoration: underline;
+      }
+      a:hover{
+        color: $pink;
+        text-decoration: none;
+      }
+    }
   }
 }

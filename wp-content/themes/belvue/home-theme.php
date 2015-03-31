@@ -206,7 +206,7 @@ get_header(); ?>
                                         <i class="fa fa-angle-down"></i></a>
 
                                     <ul class="tabs book-button">
-                                        <li><a data-toggle="modal" data-target="#contact" href="#"><?php _e('Book a meeting','belvue')?></a></li>
+                                        <li><a href="#contact"><?php _e('Book a meeting','belvue')?></a></li>
                                     </ul>
                                 </div>
                             <?php endif; ?>
@@ -350,5 +350,20 @@ get_header(); ?>
             </div>
         </div>
     </section>
+    <div class="contact-div">
+        <div class="modal fade" id="myContactForm" tabindex="-1" role="dialog" aria-labelledby="myContactFormLink" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Get in touch</h4>
+                    </div>
+                    <div class="modal-body">
+                        <?php the_field('contact_form'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <?php get_footer(); ?>
