@@ -4535,16 +4535,16 @@ main .row {
   padding-left: 15px;
 }
 
-ul#menu-useful-links-menu {
+ul.usefullinks {
   list-style: none;
   margin-top: 20px;
 }
-ul#menu-useful-links-menu li a {
+ul.usefullinks li a {
   color: #000;
   font-size: 18px;
   line-height: 32px;
 }
-ul#menu-useful-links-menu li a:hover {
+ul.usefullinks li a:hover {
   color: #df005d;
 }
 

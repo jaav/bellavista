@@ -167,9 +167,9 @@ $(document).ready(function () {
         $('.navbar-main-collapse ul.navbar-nav li a, footer .grid-span-1 a, footer .grid-span-2 a').click(function (ev) {
             var target = $(this).attr('href');
             if (target.indexOf('#') === 0) {
-                if (target === '#footer')
+                if (target.indexOf('#footer') >= 0)
                     $("html, body").animate({ scrollTop: $('footer').offset().top - 150 }, 600);
-                else if (target === '#contact')
+                else if (target.indexOf('#contact') >= 0)
                     $('#myContactForm').modal('show');
                 else
                     $("html, body").animate({ scrollTop: $('section.' + target.substr(1)).offset().top - 150 }, 600);
@@ -177,10 +177,10 @@ $(document).ready(function () {
                 ev.preventDefault();
             }
         });
-        $('#menu-user-menu a, section.events .book-button a').click(function (ev) {
+        $('#menu-user-menu a, #menu-user-menu-french a, section.events .book-button a').click(function (ev) {
             var target = $(this).attr('href');
             if (target.indexOf('#') === 0) {
-                if (target === '#contact') {
+                if (target.indexOf('#contact') >= 0) {
                     $('#myContactForm').modal('show');
                 }
                 ev.preventDefault();
@@ -190,16 +190,17 @@ $(document).ready(function () {
     else {
         $('.navbar-main-collapse ul.navbar-nav li a, footer .grid-span-1 a, footer .grid-span-2 a').click(function (ev) {
             var target = $(this).attr('href');
+            var languageParameter = location.href.indexOf('?lang=')>0 ? location.href.substr(location.href.indexOf('?lang='), 8) : '';
             if (target.indexOf('#') === 0) {
-                location.href = '/' + target;
+                location.href = '/' + languageParameter + target;
                 ev.preventDefault();
             }
         });
     }
     //on page load, check hash in path and move to the correct anchor
     var path = document.URL;
-    if (path.indexOf('/#') > 0) {
-        var target = path.substr(path.indexOf('/#') + 1);
+    if (path.indexOf('#') > 0) {
+        var target = path.substr(path.indexOf('#'));
         var test = $('section.' + target.substr(1));
         if (target.indexOf('#') === 0) {
             if (target === '#footer')
